@@ -1,0 +1,60 @@
+.home-coaching{
+    
+    display: grid;
+    grid-template-rows: repeat(2, auto); 
+    grid-template-columns: 65vw;
+    grid-row-gap: 3em;
+    margin: 5em 0;
+    text-align: center;
+    justify-content: center;
+
+    @media #{$breakpoint-sm}{
+        grid-template-columns: 50vw;
+    }
+    // .coaching-1-1,
+    // .coaching-free,
+    // .coaching-why{
+    //     display: grid;
+    //     grid-template-rows: 19em 24.5em;
+    //     height: 100%;
+    //     @media #{$breakpoint-sm}{
+    //         grid-template-rows: 16em 20em;
+    //     }
+    // }
+    
+    @media #{$breakpoint-min-md} {
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr; 
+        margin: 3em 0;
+        // .coaching-1-1{
+        //     grid-column: coaching-1-1;
+        // }
+        
+        // .coaching-free{
+        //     grid-column: coaching-free;
+        // }
+        // .coaching-why{
+        //     grid-column: coaching-why;
+        // }
+        // .coaching-1-1,
+        // .coaching-free,
+        // .coaching-why{
+        //     // grid-template-rows: 14em 18em;
+        //     @media #{$breakpoint-lg} {
+        //         grid-template-rows: 13em 14.5em;
+        //     }
+        //     @media #{$breakpoint-xl} {
+        //         grid-template-rows: 11em 13.5em;
+        //     }
+        //     @media #{$breakpoint-xxl} {
+        //         grid-template-rows: 12em 11.5em;
+        //     }
+        // }
+    }
+     
+    @media #{$breakpoint-xl} {
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+    }  
+    @media #{$breakpoint-xxl} {
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+    } 
+}

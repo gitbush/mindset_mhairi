@@ -1,0 +1,134 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.coach-cta-btn{
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    width: 10em;
+    background-color: white;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .7em;
+    @media #{$breakpoint-sm} {
+        height: 30px;
+    }
+    @media #{$breakpoint-min-md} {
+        width: 6.5em;
+    }
+    @media #{$breakpoint-xl} {
+        width: 5.5em;
+    }
+}
+
+.btn-white-sm{
+    background-color: white;
+    color: $base-text-color;
+    font-size: 1em;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+      }
+      @media #{$breakpoint-md} {
+        font-size: .78em;
+      }
+      @media #{$breakpoint-lg} {
+        font-size: .69em;
+      }
+      @media #{$breakpoint-xl} {
+        font-size: .58em;
+      }
+      @media #{$breakpoint-xxl} {
+        font-size: .56em;
+      }
+}
+
+.btn-pink{
+    background-color: $pink;
+    color: white;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+
+.about-cta-btn{
+    height: 30px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 12em;
+    background-color: $pink;
+    color: white;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-min-md} {
+        width: 9em;
+    }
+}
+
+.btn-light-pink{
+    background-color: $light-pink;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.1em;
+    padding: .6em 1em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .6em;
+    }
+}
+
+.btn-dark-pink{
+    background-color: $dark-pink;
+    text-transform: uppercase;
+    color: $base-text-color;
+    font-size: 1.1em;
+    padding: .6em 1em;
+    letter-spacing: .2em;
+    box-shadow: 3px 5px 9px -7px #3b403f;
+    @media #{$breakpoint-sm} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-md} {
+        font-size: .8em;
+        padding: .55em .8em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: .8em;
+        padding: .50em .9em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: .7em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .6em;
+        padding: .6em .6em;
+    }
+}
