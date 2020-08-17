@@ -58,3 +58,137 @@
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
     } 
 }
+
+// ---------------------------------------------------------------
+// Testimonials
+// ---------------------------------------------------------------
+
+.testimonials{
+    text-align: center;
+    margin: 7em 0 4em 0;
+    position: relative;
+    height: 20em;
+    @media #{$breakpoint-sm} {
+        height: 19em;
+    }
+    @media #{$breakpoint-md} {
+        height: 17em;
+        margin: 5em 0 2em 0;
+    }
+    @media #{$breakpoint-lg} {
+        height: 15em;
+        margin: 5em 0 2em 0;
+    }
+    @media #{$breakpoint-xl} {
+        margin: 4em 0 2em 0;
+        height: 15em;
+    }
+    @media #{$breakpoint-xxl} {
+        margin: 4em 0 2em 0;
+    }
+}
+
+.testimonials-title{
+    color: $pink;
+    font-family: $font-biko;
+}
+
+.slide-testimonial{
+    color: rgba(59,64,63,1);
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    font-size: 1.4em;
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-style: normal;
+    @media #{$breakpoint-md} {
+        font-size: 1.1em;
+    }
+    @media #{$breakpoint-lg} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-xl} {
+        font-size: 1em;
+    }
+    @media #{$breakpoint-xxl} {
+        font-size: .9em;
+    }
+    
+}
+
+.testimonials-slider{
+    position: relative;
+}
+
+.testimonial-item{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+
+.test-showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.testimonial-slide-text{
+    width: 80%;
+    margin: 2em auto;
+    @media #{$breakpoint-sm}, #{$breakpoint-md}, #{$breakpoint-lg} {
+        width: 60%;
+    }
+    @media #{$breakpoint-xl} {
+        width: 50%;
+    }
+    @media #{$breakpoint-xxl} {
+        width: 35%;
+    }
+    p{
+        font-style: italic;
+    }
+}
+
+.circle-slide-btn{    
+    color: rgba(247,217,137,1);
+    position: relative;
+    bottom: -10em;
+    height: 4em;
+    background-color: white;
+    border-radius: 2em;
+    width: 4em;
+    border-color: rgba(247,217,137,1);
+    border-width: 2px;
+    border-style: solid;
+    margin: 2em;
+    text-transform: uppercase;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        height: 4em;
+        width: 4em;
+        font-size: .8em;
+    }
+    @media #{$breakpoint-md}{
+        bottom: -9em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: .75em;
+        bottom: -10em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: .6em;
+        bottom: -12em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .5em;
+        bottom: -14em;
+    }
+}
