@@ -1,47 +1,148 @@
 
+.testimonials-section{
+    margin: 3em 0;
+}
+
 .testimonial-item {
     position: relative;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    @media  #{$breakpoint-lg}{
+        width: 80%;
+
+    }
+    @media  #{$breakpoint-xl}{
+        width: 75%;
+
+    }
+    @media  #{$breakpoint-xxl}{
+        width: 70%;
+
+    }
 }
 
 .testimonial-author {
     display: grid;
-    grid-template-columns: auto auto;
+    // grid-template-rows: auto auto;
     -webkit-box-align: baseline;
     align-items: baseline;
+    margin: auto;
+    width: 90%;
+    @media  #{$breakpoint-lg}{
+        width: 90%;
+
+    }
+    @media  #{$breakpoint-min-md}{
+        grid-template-columns: auto auto;
+
+    }
+    @media  #{$breakpoint-xxl}{
+        width: 75%;
+
+    }
 }
 
 .testimonial-author-name {
-    font-size: 2.5em;
-    text-align: center;
+    font-size: 4em;
+    width: 100%;
+    text-align: left;
+    letter-spacing: .1em;
+    @media  #{$breakpoint-md}{
+        font-size: 3em;
+
+    }
+    @media  #{$breakpoint-lg}{
+        font-size: 2.8em;
+
+    }
+    @media  #{$breakpoint-xl}{
+        font-size: 2.8em;
+
+    }
+    @media  #{$breakpoint-xxl}{
+        font-size: 2.5em;
+        text-align: right;
+
+    }
 }
 
 .testimonial-author-job {
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: grey;
     letter-spacing: 0.1em;
+    @media  #{$breakpoint-sm}{
+        font-size: 1.1em;
+    }
+    @media  #{$breakpoint-md}{
+        font-size: 1em;
+        margin-left: .5em;
+    }
+    @media  #{$breakpoint-lg}{
+        font-size: .9em;
+    }
+    @media  #{$breakpoint-xl}{
+        font-size: .9em;
+        margin-left: .5em;
+    }
+    @media  #{$breakpoint-xxl}{
+        font-size: 0.7em;
+        color: grey;
+        letter-spacing: 0.1em;
+
+    }
 }
 
 .testimonial-exert{
-    width: 80%;
+    width: 90%;
     color: #aa9659;
-    text-align: left;
-    margin: auto;
-    border-left: solid 1px black;
+    text-align: center;
+    margin: 2em auto;
+    @media  #{$breakpoint-lg}{
+        width: 80%;
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-xl}{
+        width: 70%;
+        margin: 1em auto;
+    }
+    @media  #{$breakpoint-xxl}{
+        width: 60%;
+
+    }
     p {
-        margin-left: 1em;
-        font-size: .9em;
+        font-size: 1.5em;
+        @media  #{$breakpoint-sm}{
+            font-size: 1.4em;
+        }
+        @media  #{$breakpoint-md}{
+            font-size: 1.1em;
+        }
+        @media  #{$breakpoint-lg}{
+            font-size: 1.1em;
+        }
+        @media  #{$breakpoint-xl}{
+            font-size: .9em;
+        }
+        @media  #{$breakpoint-xxl}{
+            font-size: .8em;
+        }
     }
 }
 
 .testimonial-main{
-    width: 80%;
+    width: 90%;
     text-align: left;
     margin: auto;
+    @media  #{$breakpoint-xxl}{
+        width: 65%;
+    }
 }
 
 .half-width-hr{
     width: 50%;
     margin: 2em auto;
+    @media  #{$breakpoint-xxl}{
+        width: 50%;
+        margin: 2em auto;
+    }
   }
