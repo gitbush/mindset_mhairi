@@ -7163,4 +7163,45 @@ footer {
     margin: 2em auto;
   }
 }
+
+.tick-list-img {
+  width: 100%;
+  height: 30em;
+}
+
+.tick-list-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.tick-list-title {
+  width: 90%;
+  margin: auto;
+}
+
+.tick-list-content {
+  margin: 2em auto;
+}
+
+.tick-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  width: 90%;
+  margin: 2em auto;
+}
+
+.tick {
+  font-size: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.tick-text {
+  margin-left: .9em;
+}
 /*# sourceMappingURL=main.css.map */
