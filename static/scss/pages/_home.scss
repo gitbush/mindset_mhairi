@@ -743,3 +743,60 @@
         font-size: 1em;
     }
 }
+
+// ---------------------------------------------------------------
+// Quiz section
+// ---------------------------------------------------------------
+
+.quiz-section{
+    text-align: center;
+    padding: 2em 0;
+    background-color: rgba(228, 241, 241, 1);
+}
+
+.quiz-cta-content{
+    width: 75%;
+    margin: 4em auto;
+    @media #{$breakpoint-md}{
+        width: 60%;
+        margin: 3em auto 0 auto;
+    }
+}
+
+.quiz-content-title{
+    font-weight: 400;
+    font-size: 1.3em;
+    @media #{$breakpoint-md}{
+        font-size: .9em;
+    }
+}
+
+.quiz-font{
+    font-size: 7.5em;
+    letter-spacing: .1em;
+    line-height: .6em;
+    @media #{$breakpoint-md}{
+        font-size: 5.5em;
+    }
+}
+
+.quiz-content-main{
+    margin: 1.5em auto;
+}
+
+.quiz-cta-btn{
+    font-size: 1.4em;
+    padding: .7em 2em;
+    font-weight: 500;
+    @media #{$breakpoint-md}{
+        font-size: 1.1em;
+        padding: .4em 1.8em;
+    }
+}
+
+.quiz-cta{
+    margin: 4em auto;
+    @media #{$breakpoint-md}{
+        margin: 2em auto;
+    }
+}

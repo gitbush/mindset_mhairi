@@ -1786,6 +1786,12 @@ footer {
   }
 }
 
+.btn-black {
+  background: black;
+  color: white;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
@@ -2823,6 +2829,74 @@ footer {
 @media only screen and (min-width: 1200px) {
   .love-hearts {
     font-size: 1em;
+  }
+}
+
+.quiz-section {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #e4f1f1;
+}
+
+.quiz-cta-content {
+  width: 75%;
+  margin: 4em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta-content {
+    width: 60%;
+    margin: 3em auto 0 auto;
+  }
+}
+
+.quiz-content-title {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-content-title {
+    font-size: .9em;
+  }
+}
+
+.quiz-font {
+  font-size: 7.5em;
+  letter-spacing: .1em;
+  line-height: .6em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-font {
+    font-size: 5.5em;
+  }
+}
+
+.quiz-content-main {
+  margin: 1.5em auto;
+}
+
+.quiz-cta-btn {
+  font-size: 1.4em;
+  padding: .7em 2em;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta-btn {
+    font-size: 1.1em;
+    padding: .4em 1.8em;
+  }
+}
+
+.quiz-cta {
+  margin: 4em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta {
+    margin: 2em auto;
   }
 }
 
@@ -5505,6 +5579,74 @@ footer {
 @media only screen and (min-width: 1200px) {
   .love-hearts {
     font-size: 1em;
+  }
+}
+
+.quiz-section {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #e4f1f1;
+}
+
+.quiz-cta-content {
+  width: 75%;
+  margin: 4em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta-content {
+    width: 60%;
+    margin: 3em auto 0 auto;
+  }
+}
+
+.quiz-content-title {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-content-title {
+    font-size: .9em;
+  }
+}
+
+.quiz-font {
+  font-size: 7.5em;
+  letter-spacing: .1em;
+  line-height: .6em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-font {
+    font-size: 5.5em;
+  }
+}
+
+.quiz-content-main {
+  margin: 1.5em auto;
+}
+
+.quiz-cta-btn {
+  font-size: 1.4em;
+  padding: .7em 2em;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta-btn {
+    font-size: 1.1em;
+    padding: .4em 1.8em;
+  }
+}
+
+.quiz-cta {
+  margin: 4em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-cta {
+    margin: 2em auto;
   }
 }
 
