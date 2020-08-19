@@ -7164,9 +7164,63 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .tick-list-grid {
+    display: -ms-grid;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4em;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tick-list-grid {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tick-list-grid {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .tick-list-grid {
+    width: 55%;
+  }
+}
+
 .tick-list-img {
   width: 100%;
   height: 30em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tick-list-img {
+    height: 27em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tick-list-img {
+    height: 25em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tick-list-img {
+    height: 23em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .tick-list-img {
+    height: 22em;
+  }
 }
 
 .tick-list-img img {
@@ -7181,8 +7235,20 @@ footer {
   margin: auto;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .tick-list-title {
+    width: 80%;
+  }
+}
+
 .tick-list-content {
-  margin: 2em auto;
+  margin: 2em auto 4em auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .tick-list-content {
+    margin: auto 1em;
+  }
 }
 
 .tick-item {
@@ -7194,11 +7260,47 @@ footer {
   margin: 2em auto;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .tick-item {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .tick-item {
+    margin: 1em auto;
+  }
+}
+
 .tick {
   font-size: 2em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tick {
+    font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tick {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .tick {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .tick {
+    font-size: 1em;
+  }
 }
 
 .tick-text {

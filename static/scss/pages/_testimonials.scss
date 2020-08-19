@@ -151,9 +151,40 @@
 // Tick list section
 // ---------------------------------------------------------------
 
+.tick-list-grid{
+    @media  #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        display: grid;
+        width: 90%; 
+        margin: auto;
+        margin-bottom: 4em;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media #{$breakpoint-lg}{
+        width: 80%; 
+    }
+    @media #{$breakpoint-xl}{
+        width: 70%; 
+    }
+    @media #{$breakpoint-xxl}{
+        width: 55%; 
+    }
+}
+
 .tick-list-img{
     width: 100%;
     height: 30em;
+    @media #{$breakpoint-md}, #{$breakpoint-lg}{
+        height: 27em;
+    }
+    @media #{$breakpoint-lg}{
+        height: 25em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 23em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 22em;
+    }
     img{
         height: 100%;
         object-fit: cover;
@@ -164,10 +195,16 @@
 .tick-list-title{
     width: 90%;
     margin: auto;
+    @media  #{$breakpoint-sm}{
+        width: 80%;
+    }
 }
 
 .tick-list-content{
-    margin: 2em auto;
+    margin: 2em auto 4em auto;
+    @media  #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin: auto 1em;
+    }
 }
 
 .tick-item{
@@ -175,11 +212,29 @@
     grid-template-columns: auto auto;
     width: 90%;
     margin: 2em auto;
+    @media  #{$breakpoint-sm}{
+        width: 80%;
+    }
+    @media  #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+        margin: 1em auto;
+    }
 }
 
 .tick{
     font-size: 2em;
     align-self: center;
+    @media  #{$breakpoint-md}{
+        font-size: 1.4em;
+    }
+    @media #{$breakpoint-lg}{
+        font-size: 1.2em;
+    }
+    @media #{$breakpoint-xl}{
+        font-size: 1.2em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: 1em; 
+    }
 }
 
 .tick-text{
