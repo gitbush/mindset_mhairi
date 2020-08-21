@@ -216,10 +216,10 @@
         grid-template-rows: 13em 14.5em;
     }
     @media #{$breakpoint-xl} {
-        grid-template-rows: 11em 13.5em;
+        grid-template-rows: 11em 14.5em;
     }
     @media #{$breakpoint-xxl} {
-        grid-template-rows: 12em 11.5em;
+        grid-template-rows: 12em 13.5em;
     }
 }
 
@@ -289,7 +289,7 @@
             grid-column: 3/5;
             grid-row: 1/1;
             text-align: start;
-            padding: 0 1em;
+            padding: 0 0 0 1em;
         }
         .home-about-img{
             grid-column: 2/3;
@@ -341,17 +341,16 @@
 .home-about-subtitle{
     font-family: $font-roboto;
     font-size: 1.3em;
-    font-weight: 400;
     padding: 5px 10px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.2em;
     color: $base-text-color;
     @media #{$breakpoint-md} {
-        font-size: 1em;
+        font-size: .8em;
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        font-size: .8em;
+        font-size: .7em;
     }
 }
 

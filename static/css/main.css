@@ -2177,8 +2177,8 @@ footer {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 11em 13.5em;
-        grid-template-rows: 11em 13.5em;
+    -ms-grid-rows: 11em 14.5em;
+        grid-template-rows: 11em 14.5em;
   }
 }
 
@@ -2186,8 +2186,8 @@ footer {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 12em 11.5em;
-        grid-template-rows: 12em 11.5em;
+    -ms-grid-rows: 12em 13.5em;
+        grid-template-rows: 12em 13.5em;
   }
 }
 
@@ -2272,7 +2272,7 @@ footer {
     -ms-grid-row: 1;
     grid-row: 1/1;
     text-align: start;
-    padding: 0 1em;
+    padding: 0 0 0 1em;
   }
   .home-about .home-about-img {
     -ms-grid-column: 2;
@@ -2349,7 +2349,6 @@ footer {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  font-weight: 400;
   padding: 5px 10px;
   text-transform: uppercase;
   line-height: 1.2;
@@ -2359,13 +2358,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about-subtitle {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .home-about-subtitle {
-    font-size: .8em;
+    font-size: .7em;
   }
 }
 
@@ -5083,8 +5082,8 @@ footer {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 11em 13.5em;
-        grid-template-rows: 11em 13.5em;
+    -ms-grid-rows: 11em 14.5em;
+        grid-template-rows: 11em 14.5em;
   }
 }
 
@@ -5092,8 +5091,8 @@ footer {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 12em 11.5em;
-        grid-template-rows: 12em 11.5em;
+    -ms-grid-rows: 12em 13.5em;
+        grid-template-rows: 12em 13.5em;
   }
 }
 
@@ -5178,7 +5177,7 @@ footer {
     -ms-grid-row: 1;
     grid-row: 1/1;
     text-align: start;
-    padding: 0 1em;
+    padding: 0 0 0 1em;
   }
   .home-about .home-about-img {
     -ms-grid-column: 2;
@@ -5255,7 +5254,6 @@ footer {
 .home-about-subtitle {
   font-family: "Roboto", serif;
   font-size: 1.3em;
-  font-weight: 400;
   padding: 5px 10px;
   text-transform: uppercase;
   line-height: 1.2;
@@ -5265,13 +5263,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about-subtitle {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .home-about-subtitle {
-    font-size: .8em;
+    font-size: .7em;
   }
 }
 
