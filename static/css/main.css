@@ -610,7 +610,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .normal-text {
-    font-size: .63em;
+    font-size: .6em;
   }
 }
 
@@ -663,7 +663,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .cta-title {
-    font-size: 1.3em;
+    font-size: 1em;
     letter-spacing: 0.2em;
   }
 }
@@ -1892,6 +1892,12 @@ footer {
 
 @media only screen and (min-width: 768px) and (min-width: 768px) {
   .home-hero .home-hero-text p {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1600px) {
+  .home-hero .home-hero-text p {
     height: 70px;
   }
 }
@@ -2050,7 +2056,6 @@ footer {
       grid-template-rows: repeat(2, auto);
   -ms-grid-columns: 65vw;
       grid-template-columns: 65vw;
-  grid-row-gap: 3em;
   margin: 5em 0;
   text-align: center;
   -webkit-box-pack: center;
@@ -2075,8 +2080,8 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
   }
 }
 
@@ -2228,9 +2233,9 @@ footer {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 610px;
-    -ms-grid-columns: 6em 15em (1fr)[2] 6em;
-        grid-template-columns: 6em 15em repeat(2, 1fr) 6em;
+    height: 29em;
+    -ms-grid-columns: 4em 15em (1fr)[2] 4em;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
@@ -2281,7 +2286,7 @@ footer {
   .home-about {
     -ms-grid-columns: auto 16em (12em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 12em) auto;
-    height: 29em;
+    height: 25em;
     margin-top: 4em;
   }
 }
@@ -2291,7 +2296,7 @@ footer {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
     margin-top: 4em;
-    height: 27em;
+    height: 21em;
   }
 }
 
@@ -2299,7 +2304,7 @@ footer {
   .home-about {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
-    height: 25em;
+    height: 19em;
   }
 }
 
@@ -2310,12 +2315,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .home-about-title {
-    margin: 2em auto 0 auto;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
   .home-about-title {
     margin: 2em auto 0 auto;
   }
@@ -2346,10 +2345,9 @@ footer {
 
 .home-about-img {
   width: 85vw;
-  margin: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 85%;
+  height: 100%;
   background-color: white;
   padding: 20px;
 }
@@ -2364,6 +2362,31 @@ footer {
   .home-about-img {
     width: 100%;
     background-color: #fbf2ec;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-about-img {
+    height: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-about-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-about-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-about-img {
+    height: 100%;
   }
 }
 
@@ -2417,7 +2440,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-window {
-    min-height: 15em;
+    min-height: 13em;
   }
 }
 
@@ -2439,6 +2462,12 @@ footer {
   font-size: 1.8em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .quote .quote-text {
+    margin: 1em .6em 0.4em .6em;
+  }
 }
 
 .quote .quote-author {
@@ -2468,12 +2497,12 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote {
-    height: 9em;
+    height: 10em;
     width: 31em;
-    padding: 1em;
+    padding: 2em;
   }
   .quote .quote-text {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -2482,14 +2511,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .quote {
-    height: 10em;
+    height: 8em;
     width: 25em;
-    padding: 2.2em 0;
+    padding: 1em 0;
   }
   .quote .quote-text {
-    font-size: 1em;
+    font-size: .9em;
     padding: 0 2em;
-    margin: 0.6em .6em .1em .6em;
+    margin: 1em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -2498,14 +2527,14 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .quote {
-    height: 9em;
+    height: 7em;
     width: 24em;
-    padding: 2.2em 0;
+    padding: 1em 0;
   }
   .quote .quote-text {
     font-size: .9em;
     padding: 0 2em;
-    margin: 0.6em .6em .1em .6em;
+    margin: 0.6em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -2894,6 +2923,18 @@ footer {
   background-color: #e4f1f1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-section {
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quiz-section {
+    padding: 1em 0;
+  }
+}
+
 .quiz-cta-content {
   width: 75%;
   margin: 4em auto;
@@ -2927,13 +2968,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-content-title {
-    font-size: .9em;
+    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-content-title {
-    font-size: .8em;
+    font-size: .75em;
   }
 }
 
@@ -2951,13 +2992,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-font {
-    font-size: 5.5em;
+    font-size: 4em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-font {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 }
 
@@ -2979,14 +3020,14 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-cta-btn {
-    font-size: 1.1em;
+    font-size: .9em;
     padding: .4em 1.8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-cta-btn {
-    font-size: 1em;
+    font-size: .9em;
     padding: .4em 1.8em;
   }
 }
@@ -3004,13 +3045,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-cta {
-    margin: 2em auto;
+    margin: 1em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-cta {
-    margin: 2em auto;
+    margin: 1em auto;
   }
 }
 
@@ -4551,30 +4592,29 @@ footer {
 .services-cta {
   position: relative;
   height: 35em;
-  margin: 4em 0 0 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-cta {
-    height: 20em;
+    height: 17em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .services-cta {
-    height: 20em;
+    height: 18em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .services-cta {
-    height: 20em;
+    height: 15em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .services-cta {
-    height: 17em;
+    height: 15em;
   }
 }
 
@@ -4625,7 +4665,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .services-cta-content {
-    height: 10em;
+    height: 7em;
   }
 }
 
@@ -4705,6 +4745,12 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (min-width: 768px) {
+  .home-hero .home-hero-text p {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1600px) {
   .home-hero .home-hero-text p {
     height: 70px;
   }
@@ -4864,7 +4910,6 @@ footer {
       grid-template-rows: repeat(2, auto);
   -ms-grid-columns: 65vw;
       grid-template-columns: 65vw;
-  grid-row-gap: 3em;
   margin: 5em 0;
   text-align: center;
   -webkit-box-pack: center;
@@ -4889,8 +4934,8 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .home-coaching {
-    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+    -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
   }
 }
 
@@ -5042,9 +5087,9 @@ footer {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 610px;
-    -ms-grid-columns: 6em 15em (1fr)[2] 6em;
-        grid-template-columns: 6em 15em repeat(2, 1fr) 6em;
+    height: 29em;
+    -ms-grid-columns: 4em 15em (1fr)[2] 4em;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
         grid-template-rows: repeat(3, 1fr);
   }
@@ -5095,7 +5140,7 @@ footer {
   .home-about {
     -ms-grid-columns: auto 16em (12em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 12em) auto;
-    height: 29em;
+    height: 25em;
     margin-top: 4em;
   }
 }
@@ -5105,7 +5150,7 @@ footer {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
     margin-top: 4em;
-    height: 27em;
+    height: 21em;
   }
 }
 
@@ -5113,7 +5158,7 @@ footer {
   .home-about {
     -ms-grid-columns: auto 12em (12em)[2] auto;
         grid-template-columns: auto 12em repeat(2, 12em) auto;
-    height: 25em;
+    height: 19em;
   }
 }
 
@@ -5124,12 +5169,6 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
-  .home-about-title {
-    margin: 2em auto 0 auto;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
   .home-about-title {
     margin: 2em auto 0 auto;
   }
@@ -5160,10 +5199,9 @@ footer {
 
 .home-about-img {
   width: 85vw;
-  margin: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 85%;
+  height: 100%;
   background-color: white;
   padding: 20px;
 }
@@ -5178,6 +5216,31 @@ footer {
   .home-about-img {
     width: 100%;
     background-color: #fbf2ec;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-about-img {
+    height: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-about-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .home-about-img {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-about-img {
+    height: 100%;
   }
 }
 
@@ -5231,7 +5294,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-window {
-    min-height: 15em;
+    min-height: 13em;
   }
 }
 
@@ -5253,6 +5316,12 @@ footer {
   font-size: 1.8em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .quote .quote-text {
+    margin: 1em .6em 0.4em .6em;
+  }
 }
 
 .quote .quote-author {
@@ -5282,12 +5351,12 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote {
-    height: 9em;
+    height: 10em;
     width: 31em;
-    padding: 1em;
+    padding: 2em;
   }
   .quote .quote-text {
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -5296,14 +5365,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .quote {
-    height: 10em;
+    height: 8em;
     width: 25em;
-    padding: 2.2em 0;
+    padding: 1em 0;
   }
   .quote .quote-text {
-    font-size: 1em;
+    font-size: .9em;
     padding: 0 2em;
-    margin: 0.6em .6em .1em .6em;
+    margin: 1em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -5312,14 +5381,14 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .quote {
-    height: 9em;
+    height: 7em;
     width: 24em;
-    padding: 2.2em 0;
+    padding: 1em 0;
   }
   .quote .quote-text {
     font-size: .9em;
     padding: 0 2em;
-    margin: 0.6em .6em .1em .6em;
+    margin: 0.6em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -5708,6 +5777,18 @@ footer {
   background-color: #e4f1f1;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quiz-section {
+    padding: 1em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quiz-section {
+    padding: 1em 0;
+  }
+}
+
 .quiz-cta-content {
   width: 75%;
   margin: 4em auto;
@@ -5741,13 +5822,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-content-title {
-    font-size: .9em;
+    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-content-title {
-    font-size: .8em;
+    font-size: .75em;
   }
 }
 
@@ -5765,13 +5846,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-font {
-    font-size: 5.5em;
+    font-size: 4em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-font {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 }
 
@@ -5793,14 +5874,14 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-cta-btn {
-    font-size: 1.1em;
+    font-size: .9em;
     padding: .4em 1.8em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-cta-btn {
-    font-size: 1em;
+    font-size: .9em;
     padding: .4em 1.8em;
   }
 }
@@ -5818,13 +5899,13 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-cta {
-    margin: 2em auto;
+    margin: 1em auto;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-cta {
-    margin: 2em auto;
+    margin: 1em auto;
   }
 }
 

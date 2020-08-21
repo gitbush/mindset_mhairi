@@ -31,6 +31,9 @@
                 justify-content: center;
                 align-items: center;
                 @media #{$breakpoint-min-md} {
+                    height: 60px;
+                }
+                @media #{$breakpoint-xxl} {
                     height: 70px;
                 }
             }
@@ -153,7 +156,6 @@
     display: grid;
     grid-template-rows: repeat(2, auto); 
     grid-template-columns: 65vw;
-    grid-row-gap: 3em;
     margin: 5em 0;
     text-align: center;
     justify-content: center;
@@ -168,7 +170,7 @@
     }
      
     @media #{$breakpoint-xl} {
-        grid-template-columns: auto [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) auto;
+        grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
     }  
     @media #{$breakpoint-xxl} {
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
@@ -274,8 +276,8 @@
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 610px;
-        grid-template-columns: 6em 15em repeat(2, 1fr) 6em;
+        height: 29em;
+        grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
         grid-template-rows:repeat(3, 1fr);
         .home-about-title{
             grid-column: 3/5;
@@ -304,17 +306,17 @@
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 12em) auto;
-        height: 29em;
+        height: 25em;
         margin-top: 4em;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
         grid-template-columns:  auto 13em repeat(2, 13em) auto;
         margin-top: 4em;
-        height: 27em;
+        height: 21em;
     }
     @media #{$breakpoint-xxl} {
         grid-template-columns:  auto 12em repeat(2, 12em) auto;
-        height: 25em;
+        height: 19em;
     }
 }
 
@@ -326,7 +328,7 @@
         margin: 2em auto 0 auto;
     }
     @media #{$breakpoint-xl} {
-        margin: 2em auto 0 auto;
+        // margin: 2em auto 0 auto;
     }
 }
 
@@ -349,10 +351,10 @@
 
 .home-about-img{
     width: 85vw;
-    margin: auto;
+    // margin: auto;
     -o-object-fit: cover;
     object-fit: cover;
-    height: 85%;
+    height: 100%;
     background-color: white;
     padding: 20px;
     @media #{$breakpoint-sm} {
@@ -361,6 +363,19 @@
     @media #{$breakpoint-min-md} {
         width: 100%;
         background-color: $light-pink;
+    }
+    @media #{$breakpoint-md} {
+        height: 90%;
+        margin: auto;
+    }
+    @media #{$breakpoint-lg} {
+        height: 100%;
+    }
+    @media #{$breakpoint-xl} {
+        height: 100%;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 100%;
     }
 
     img{
@@ -404,7 +419,7 @@
         min-height: 15em;
     }
     @media #{$breakpoint-xl} {
-        min-height: 15em;
+        min-height: 13em;
     }
 }
 
@@ -424,6 +439,9 @@
         font-size: 1.8em;
         margin: 0.6em .6em 0 .6em;
         letter-spacing: .3em;
+        @media #{$breakpoint-lg} {
+            margin: 1em .6em 0.4em .6em;
+        }
     }
     .quote-author{
         font-size: .8em;
@@ -444,37 +462,37 @@
         }
     }
     @media #{$breakpoint-lg} {
-        height: 9em;
+        height: 10em;
         width: 31em;
-        padding: 1em;
+        padding: 2em;
         .quote-text{
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
         .quote-author{
             font-size: .6em;
         }
     }
     @media #{$breakpoint-xl} {
-        height: 10em;
+        height: 8em;
         width: 25em;
-        padding: 2.2em 0;
+        padding: 1em 0;
         .quote-text{
-            font-size: 1em;
+            font-size: .9em;
             padding: 0 2em;
-            margin: 0.6em .6em .1em .6em;
+            margin: 1em .6em .6em .6em;
         }
         .quote-author{
             font-size: .6em;
         }
     }
     @media #{$breakpoint-xxl} {
-        height: 9em;
+        height: 7em;
         width: 24em;
-        padding: 2.2em 0;
+        padding: 1em 0;
         .quote-text{
             font-size: .9em;
             padding: 0 2em;
-            margin: 0.6em .6em .1em .6em;
+            margin: 0.6em .6em .6em .6em;
         }
         .quote-author{
             font-size: .6em;
@@ -752,6 +770,12 @@
     text-align: center;
     padding: 2em 0;
     background-color: rgba(228, 241, 241, 1);
+    @media #{$breakpoint-md}{
+        padding: 1em 0;
+    }
+    @media #{$breakpoint-xl}{
+        padding: 1em 0;
+    }
 }
 
 .quiz-cta-content{
@@ -775,10 +799,10 @@
     font-weight: 400;
     font-size: 1.3em;
     @media #{$breakpoint-md}{
-        font-size: .9em;
+        font-size: .8em;
     }
     @media #{$breakpoint-lg}{
-        font-size: .8em;
+        font-size: .75em;
     }
     @media #{$breakpoint-xl}{
         font-size: .6em;
@@ -790,10 +814,10 @@
     letter-spacing: .1em;
     line-height: .6em;
     @media #{$breakpoint-md}{
-        font-size: 5.5em;
+        font-size: 4em;
     }
     @media #{$breakpoint-lg}{
-        font-size: 4.5em;
+        font-size: 4em;
     }
     @media #{$breakpoint-xl}{
         font-size: 3.5em;
@@ -809,11 +833,11 @@
     padding: .7em 2em;
     font-weight: 500;
     @media #{$breakpoint-md}{
-        font-size: 1.1em;
+        font-size: .9em;
         padding: .4em 1.8em;
     }
     @media #{$breakpoint-lg}{
-        font-size: 1em;
+        font-size: .9em;
         padding: .4em 1.8em;
     }
     @media #{$breakpoint-xl}{
@@ -825,10 +849,10 @@
 .quiz-cta{
     margin: 4em auto;
     @media #{$breakpoint-md}{
-        margin: 2em auto;
+        margin: 1em auto;
     }
     @media #{$breakpoint-lg}{
-        margin: 2em auto;
+        margin: 1em auto;
     }
     @media #{$breakpoint-xl}{
         margin: 1em auto;
