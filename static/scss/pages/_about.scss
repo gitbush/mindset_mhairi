@@ -1063,8 +1063,11 @@
 
 .services-cta{
     position: relative;
-    height: 35em;
+    height: 25em;
     // margin: 4em 0 0 0;
+    @media #{$breakpoint-sm} {
+        height: 22em;
+    }
     @media #{$breakpoint-md} {
         height: 17em;
     }
@@ -1104,13 +1107,16 @@
     text-align: center;
     color: white;
     width: 23em;
-    height: 20em;
+    height: 17em;
     margin: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    @media #{$breakpoint-sm}{
+        height: 13em;
+    }
     @media #{$breakpoint-md}{
         height: 11em;
     }
@@ -1132,6 +1138,9 @@
     margin: auto;
     bottom: 1em;
     width: 220px;
+    @media #{$breakpoint-sm} {
+        width: 18em;
+    }
     @media #{$breakpoint-lg} {
         width: 270px;
     }

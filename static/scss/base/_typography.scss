@@ -211,12 +211,15 @@ $font-la-parisienne: 'la-parisienne', serif;
 
 .cta-title{
     font-family: $font-biko;
-    font-size: 2.5em;
+    font-size: 2.1em;
     font-weight: 400;
     padding: 5px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.1em;
+    @media #{$breakpoint-sm} {
+      font-size: 1.7em;
+    }
     @media #{$breakpoint-md} {
       font-size: 1.5em;
     }
@@ -235,12 +238,15 @@ $font-la-parisienne: 'la-parisienne', serif;
 
 .cta-subtitle{
     font-family: $font-biko;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 400;
     padding: 5px;
     text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.1em;
+    @media #{$breakpoint-sm} {
+      font-size: 1.3em;
+    }
     @media #{$breakpoint-md} {
       font-size: 1em;
     }
