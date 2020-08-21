@@ -1,3 +1,101 @@
+.testimonial-hero:before{
+    content: ' ';
+    background-color: transparent;
+}
+
+.testimonial-hero{
+    min-height: 26em;
+    @media  #{$breakpoint-md}{
+        min-height: 20em;
+    }
+    @media  #{$breakpoint-lg}{
+        min-height: 23em;
+    }
+    @media  #{$breakpoint-xl}{
+        min-height: 20em;
+    }
+    @media  #{$breakpoint-xxl}{
+        min-height: 17em;
+    }
+}
+
+.testimonial-hero-text{
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    @media  #{$breakpoint-sm}{
+        width: 65%;
+    }
+    @media  #{$breakpoint-md}{
+        width: 55%;
+    }
+    @media  #{$breakpoint-lg}{
+        width: 20em;
+    }
+    @media  #{$breakpoint-xl}{
+        width: 20em;
+    }
+    @media  #{$breakpoint-xxl}{
+        width: 15em;
+        height: 2.5em;  
+    }
+    h2{
+        display: flex;
+        text-transform: uppercase;
+        background-color: $light-pink;
+        width: auto;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: .2em;
+        font-size: 1.5em;
+        @media  #{$breakpoint-md}{
+            font-size: 1.25em;
+    
+        }
+        @media  #{$breakpoint-lg}{
+            font-size: 1.15em;
+    
+        }
+        @media  #{$breakpoint-xl}{
+            font-size: 1.1em;
+    
+        }
+        @media  #{$breakpoint-xxl}{
+            font-size: .8em;
+            height: 2.5em;
+    
+        }
+    }
+}
+
+.testimonial-intro{
+    background-color: white;
+
+    h2{
+        font-size: 1.7em;
+        @media  #{$breakpoint-sm}{
+            font-size: 1.5em;
+    
+        }
+        @media  #{$breakpoint-md}{
+            font-size: 1.05em;
+    
+        }
+        @media  #{$breakpoint-lg}, #{$breakpoint-xl}{
+            font-size: 1.0em;
+    
+        }
+        @media  #{$breakpoint-xxl}{
+            font-size: .8em;
+    
+        }
+    }
+}
 
 .testimonials-section{
     margin: 3em 0;
@@ -166,24 +264,31 @@
         width: 70%; 
     }
     @media #{$breakpoint-xxl}{
-        width: 55%; 
+        width: 50%; 
     }
 }
 
 .tick-list-img{
     width: 100%;
     height: 30em;
+    @media #{$breakpoint-sm}{
+        width: 80%;
+        margin: auto;
+    }
     @media #{$breakpoint-md}, #{$breakpoint-lg}{
         height: 27em;
     }
     @media #{$breakpoint-lg}{
-        height: 25em;
+        width: 95%;
+        height: 22em;
     }
     @media #{$breakpoint-xl}{
-        height: 23em;
+        height: 20em;
+        width: 95%;
     }
     @media #{$breakpoint-xxl}{
-        height: 22em;
+        height: 20em;
+        width: 100%;
     }
     img{
         height: 100%;
@@ -230,7 +335,7 @@
         font-size: 1.2em;
     }
     @media #{$breakpoint-xl}{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     @media #{$breakpoint-xxl}{
         font-size: 1em; 

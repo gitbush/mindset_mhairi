@@ -722,6 +722,10 @@
 
 .crazy-about-sect{
     margin-top: 1em;
+
+    @media #{$breakpoint-min-md}{
+        margin: 1em 0 4em 0;
+    }
     
 }
 

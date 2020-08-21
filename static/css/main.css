@@ -1991,6 +1991,12 @@ footer {
   }
 }
 
+@media only screen and (min-width: 1600px) {
+  .home-hero-text p {
+    font-size: .9em;
+  }
+}
+
 .home-hero-text .logo-sub {
   font-size: 2.9em;
   font-weight: 400;
@@ -4135,6 +4141,12 @@ footer {
   margin-top: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  .crazy-about-sect {
+    margin: 1em 0 4em 0;
+  }
+}
+
 .crazy-about-content {
   display: -ms-grid;
   display: grid;
@@ -4842,6 +4854,12 @@ footer {
   .home-hero-text {
     top: 25em;
     width: 16em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .home-hero-text p {
+    font-size: .9em;
   }
 }
 
@@ -7357,6 +7375,155 @@ footer {
   }
 }
 
+.testimonial-hero:before {
+  content: ' ';
+  background-color: transparent;
+}
+
+.testimonial-hero {
+  min-height: 26em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-hero {
+    min-height: 20em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-hero {
+    min-height: 23em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-hero {
+    min-height: 20em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-hero {
+    min-height: 17em;
+  }
+}
+
+.testimonial-hero-text {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-hero-text {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-hero-text {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-hero-text {
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-hero-text {
+    width: 20em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-hero-text {
+    width: 15em;
+    height: 2.5em;
+  }
+}
+
+.testimonial-hero-text h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  background-color: #fbf2ec;
+  width: auto;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: .2em;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-hero-text h2 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .testimonial-hero-text h2 {
+    font-size: 1.15em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-hero-text h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-hero-text h2 {
+    font-size: .8em;
+    height: 2.5em;
+  }
+}
+
+.testimonial-intro {
+  background-color: white;
+}
+
+.testimonial-intro h2 {
+  font-size: 1.7em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .testimonial-intro h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .testimonial-intro h2 {
+    font-size: 1.05em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .testimonial-intro h2 {
+    font-size: 1.0em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-intro h2 {
+    font-size: .8em;
+  }
+}
+
 .testimonials-section {
   margin: 3em 0;
 }
@@ -7597,13 +7764,20 @@ footer {
 
 @media only screen and (min-width: 1600px) {
   .tick-list-grid {
-    width: 55%;
+    width: 50%;
   }
 }
 
 .tick-list-img {
   width: 100%;
   height: 30em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .tick-list-img {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7614,19 +7788,22 @@ footer {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tick-list-img {
-    height: 25em;
+    width: 95%;
+    height: 22em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .tick-list-img {
-    height: 23em;
+    height: 20em;
+    width: 95%;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .tick-list-img {
-    height: 22em;
+    height: 20em;
+    width: 100%;
   }
 }
 
@@ -7700,7 +7877,7 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .tick {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
