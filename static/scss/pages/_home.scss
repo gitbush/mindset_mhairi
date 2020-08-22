@@ -776,7 +776,7 @@
 .quiz-section{
     text-align: center;
     padding: 2em 0;
-    background-color: rgba(228, 241, 241, 1);
+    background-color: $aqua-bg;
     @media #{$breakpoint-md}{
         padding: 1em 0;
     }

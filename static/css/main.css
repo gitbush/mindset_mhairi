@@ -1867,6 +1867,75 @@ footer {
   }
 }
 
+.quiz-full-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz-intro-fs {
+  height: auto;
+  width: 27em;
+  margin: auto;
+  text-align: center;
+}
+
+.quiz-font-fs {
+  font-size: 4em;
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.quiz-content-title-fs {
+  font-size: .8em;
+}
+
+.quiz-content-main-fs {
+  font-size: .7em;
+}
+
+.quiz-main-fs {
+  width: 28em;
+  margin: auto;
+}
+
+.quiz-title-fs {
+  margin-bottom: 0;
+}
+
+.quiz-label {
+  margin-left: 2em;
+}
+
+.quiz-item {
+  margin: .5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.quiz-checkboxes {
+  display: inline-block;
+}
+
+.quiz-label {
+  display: inline-block;
+}
+
+input[type='checkbox'] {
+  margin: .3em;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
