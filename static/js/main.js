@@ -20,13 +20,15 @@
     }
   };
  
-
-  hamburger.navToggle.addEventListener('click', function(e) { 
-    hamburger.doToggle(e); });
-  hamburger.navClose.addEventListener('click', function(e) { 
-    hamburger.doToggle(e); });
+  if(hamburger == true){
+    hamburger.navToggle.addEventListener('click', function(e) { 
+      hamburger.doToggle(e); });
+    hamburger.navClose.addEventListener('click', function(e) { 
+      hamburger.doToggle(e); });
+  }
 
 }());
+
 
 /**
  * 
@@ -101,3 +103,28 @@ if(heroSlides.length > 0){
 }
 
 
+let optionBtn = document.querySelectorAll('.option-btn')
+
+
+
+optionBtn.forEach(btn => {
+  btn.addEventListener('click', function(e){
+    e.preventDefault()
+    let sibling = getSibling(btn)
+    // console.log(btn)
+    btn.classList.add('highlight-btn')
+    // console.log(this.nextElementSibling)
+
+    if(sibling[0].classList.contains('highlight-btn')){
+      // this.nextElementSibling.classList.remove('highlight-btn')
+      sibling[0].classList.remove('highlight-btn')
+    }
+  })
+});
+
+function getSibling(el) {
+  var sibling = [];
+  elSib = el.parentNode.firstElementChild;
+  do { if (elSib != el) sibling.push(elSib); } while (elSib = elSib.nextElementSibling);
+  return sibling;
+}

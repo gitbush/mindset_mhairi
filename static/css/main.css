@@ -1898,7 +1898,7 @@ footer {
 }
 
 .quiz-content-main-fs {
-  font-size: .7em;
+  font-size: .65em;
 }
 
 .quiz-main-fs {
@@ -1934,6 +1934,22 @@ input[type='checkbox'] {
   margin: .3em;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.options {
+  text-align: center;
+}
+
+.option-btn {
+  background-color: antiquewhite;
+  border: none;
+  font-size: .77em;
+  padding: .2em .9em;
+  text-transform: uppercase;
+}
+
+.highlight-btn {
+  background-color: aqua;
 }
 
 @media only screen and (max-width: 500px) {
