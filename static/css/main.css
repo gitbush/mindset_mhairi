@@ -1867,6 +1867,15 @@ footer {
   }
 }
 
+html {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  height: 100%;
+}
+
 .quiz-full-screen {
   display: -webkit-box;
   display: -ms-flexbox;

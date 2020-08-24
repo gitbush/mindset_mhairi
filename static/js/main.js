@@ -103,9 +103,12 @@ if(heroSlides.length > 0){
 }
 
 
+/**
+ * Quiz  
+ */
+
+//  quiz options
 let optionBtn = document.querySelectorAll('.option-btn')
-
-
 
 optionBtn.forEach(btn => {
   btn.addEventListener('click', function(e){
@@ -128,3 +131,17 @@ function getSibling(el) {
   do { if (elSib != el) sibling.push(elSib); } while (elSib = elSib.nextElementSibling);
   return sibling;
 }
+
+
+const quizSubmitBtn = document.getElementById('quiz-submit');
+const quizResult = document.getElementById('quiz-result');
+
+let quizResultLoc = quizResult.getBoundingClientRect()
+quizSubmitBtn.addEventListener('click', e => {
+  e.preventDefault()
+  window.scrollTo(0, quizResultLoc.top + 50)
+})
+
+
+
+
