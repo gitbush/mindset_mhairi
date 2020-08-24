@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="static/css/main.css">
     <title>Quiz</title>
 </head>
@@ -28,6 +29,24 @@
                 </div>
             </div>
             <hr>
+            <div class="quiz-result d-none">
+                <div class="quiz-result-options">
+                    <p class="quiz-score-option normal-text">
+                        <span class="fw-b">9-10 Trues–</span>You were ready yesterday! What are you waiting for? Click HERE to set up your first session
+                    </p>
+                    <p class="quiz-score-option normal-text">
+                        <span class="fw-b">7-8 Trues–</span>You are ready for coaching. Review the answers that were false for you and think about what it would take for them to become true. Share them with your coach.
+                    </p>
+                    <p class="quiz-score-option normal-text">
+                        <span class="fw-b">5-6 Trues–</span>You may be ready depending on your willingness to change thoses falses to trues. Discuss with your coach how to make that happen.
+                    </p>
+                    <p class="quiz-score-option normal-text">
+                        <span class="fw-b">Below 5 Trues–</span>You are not quite ready for coaching, but that does not mean you won’t be ready in the future. Continue to visit our BLOG to learn more and when you are ready, we will be ready for you!
+                    </p>
+                </div>
+                <hr>
+            </div>
+            
             <div class="quiz-main-fs">
                 <form action="#" method="post" class="demoForm" id="demoForm">
                     <div class="quiz-item">
@@ -147,10 +166,15 @@
                         </div>
                     </div>
                     <hr class="quiz-hr">
+                    <button class="quiz-submit btn-pink normal-text">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="static/js/main.js"></script>
 </body>
