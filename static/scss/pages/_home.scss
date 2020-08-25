@@ -8,7 +8,7 @@
 .home-hero{
     @media #{$breakpoint-xs} {
         position: relative;
-        height: 53em;
+        height: 45em;
     }
     @media #{$breakpoint-sm}{
         position: relative;
@@ -75,8 +75,8 @@
         left: 0;
         right: 0;
         text-align: center;
-        font-size: 1.8em;
-        width: 14em;
+        font-size: 1.6em;
+        width: 15em;
         margin: auto;
         z-index: 3;
         p {
@@ -161,7 +161,7 @@
     display: grid;
     grid-template-rows: repeat(2, auto); 
     grid-row-gap: 4em;
-    grid-template-columns: 65vw;
+    grid-template-columns: 68vw;
     margin: 5em 0;
     text-align: center;
     justify-content: center;
@@ -204,7 +204,7 @@
 .coaching-free,
 .coaching-why{
     display: grid;
-    grid-template-rows: 19em 24.5em;
+    grid-template-rows: 23em 28.5em;
     height: 100%;
     @media #{$breakpoint-sm}{
         grid-template-rows: 16em 20em;
@@ -274,7 +274,7 @@
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 35em minmax(auto, 28em) 7em;
+    grid-template-rows: auto 35em minmax(auto, 45em) 7em;
 
     @media #{$breakpoint-sm} {
         grid-template-rows: auto 36em minmax(auto, 24em) 4em;
@@ -435,13 +435,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 17em;
+    height: 15em;
     width: 23em;
     margin: auto;
-    padding: 1.5em;
+    padding: 2em 1em;
     background: white;
     .quote-text{
-        font-size: 1.8em;
+        font-size: 1.5em;
         margin: 0.6em .6em 0 .6em;
         letter-spacing: .3em;
         @media #{$breakpoint-lg} {

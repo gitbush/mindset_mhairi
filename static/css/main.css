@@ -1619,7 +1619,7 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: .7em;
+  bottom: 1.5em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1993,7 +1993,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 53em;
+    height: 45em;
   }
 }
 
@@ -2096,8 +2096,8 @@ input[type='checkbox'] {
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 1.8em;
-    width: 14em;
+    font-size: 1.6em;
+    width: 15em;
     margin: auto;
     z-index: 3;
   }
@@ -2203,8 +2203,8 @@ input[type='checkbox'] {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   grid-row-gap: 4em;
-  -ms-grid-columns: 65vw;
-      grid-template-columns: 65vw;
+  -ms-grid-columns: 68vw;
+      grid-template-columns: 68vw;
   margin: 5em 0;
   text-align: center;
   -webkit-box-pack: center;
@@ -2264,8 +2264,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 19em 24.5em;
-      grid-template-rows: 19em 24.5em;
+  -ms-grid-rows: 23em 28.5em;
+      grid-template-rows: 23em 28.5em;
   height: 100%;
 }
 
@@ -2367,8 +2367,8 @@ input[type='checkbox'] {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 35em minmax(auto, 28em) 7em;
-      grid-template-rows: auto 35em minmax(auto, 28em) 7em;
+  -ms-grid-rows: auto 35em minmax(auto, 45em) 7em;
+      grid-template-rows: auto 35em minmax(auto, 45em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -2600,15 +2600,15 @@ input[type='checkbox'] {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 17em;
+  height: 15em;
   width: 23em;
   margin: auto;
-  padding: 1.5em;
+  padding: 2em 1em;
   background: white;
 }
 
 .quote .quote-text {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
@@ -4898,7 +4898,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 53em;
+    height: 45em;
   }
 }
 
@@ -5001,8 +5001,8 @@ input[type='checkbox'] {
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 1.8em;
-    width: 14em;
+    font-size: 1.6em;
+    width: 15em;
     margin: auto;
     z-index: 3;
   }
@@ -5108,8 +5108,8 @@ input[type='checkbox'] {
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
   grid-row-gap: 4em;
-  -ms-grid-columns: 65vw;
-      grid-template-columns: 65vw;
+  -ms-grid-columns: 68vw;
+      grid-template-columns: 68vw;
   margin: 5em 0;
   text-align: center;
   -webkit-box-pack: center;
@@ -5169,8 +5169,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 19em 24.5em;
-      grid-template-rows: 19em 24.5em;
+  -ms-grid-rows: 23em 28.5em;
+      grid-template-rows: 23em 28.5em;
   height: 100%;
 }
 
@@ -5272,8 +5272,8 @@ input[type='checkbox'] {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 35em minmax(auto, 28em) 7em;
-      grid-template-rows: auto 35em minmax(auto, 28em) 7em;
+  -ms-grid-rows: auto 35em minmax(auto, 45em) 7em;
+      grid-template-rows: auto 35em minmax(auto, 45em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -5505,15 +5505,15 @@ input[type='checkbox'] {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 17em;
+  height: 15em;
   width: 23em;
   margin: auto;
-  padding: 1.5em;
+  padding: 2em 1em;
   background: white;
 }
 
 .quote .quote-text {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
