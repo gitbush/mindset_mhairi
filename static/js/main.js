@@ -4,7 +4,7 @@
  */
 
 (function() {
-
+  
   var hamburger = {
     navToggle: document.querySelector('.nav-toggle'),
     nav: document.querySelector('nav'),
@@ -19,13 +19,21 @@
       this.navClose.classList.toggle('expanded');
     }
   };
- 
-  if(hamburger == true){
-    hamburger.navToggle.addEventListener('click', function(e) { 
-      hamburger.doToggle(e); });
-    hamburger.navClose.addEventListener('click', function(e) { 
-      hamburger.doToggle(e); });
-  }
+
+  hamburger.navToggle.addEventListener('click', function(e) { 
+    hamburger.doToggle(e); });
+  hamburger.navClose.addEventListener('click', function(e) { 
+    hamburger.doToggle(e); });
+    
+  // if(hamburger === true){
+    
+    
+
+  //   hamburger.navToggle.addEventListener('click', function(e) { 
+  //     hamburger.doToggle(e); });
+  //   hamburger.navClose.addEventListener('click', function(e) { 
+  //     hamburger.doToggle(e); });
+  // }
 
 }());
 
@@ -90,7 +98,6 @@ var heroSlides = document.querySelectorAll('.home-hero .home-hero-img');
 var currentHeroSlide = 0;
 
 if(heroSlides.length > 0){
-  console.log(heroSlides)
   setInterval(function() {
     heroSlides[currentHeroSlide].className = 'home-hero-img';
     currentHeroSlide = (currentHeroSlide+1)%heroSlides.length;
@@ -136,12 +143,18 @@ function getSibling(el) {
 const quizSubmitBtn = document.getElementById('quiz-submit');
 const quizResult = document.getElementById('quiz-result');
 
-let quizResultLoc = quizResult.getBoundingClientRect()
-quizSubmitBtn.addEventListener('click', e => {
-  e.preventDefault()
-  window.scrollTo(0, quizResultLoc.top + 50)
-})
 
+function getQuizLocation(){
+  let quizResultLoc = quizResult.getBoundingClientRect()
+  quizSubmitBtn.addEventListener('click', e => {
+    e.preventDefault()
+    window.scrollTo(0, quizResultLoc.top + 50)
+  })
+  
+}
 
+if(quizResult){
+  getQuizLocation();
+}
 
 
