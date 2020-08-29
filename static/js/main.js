@@ -149,6 +149,10 @@ if(quizResult){
   getQuizLocation();
 }
 
+//  quiz slider control 
+$('#carouselExampleControls').on('slide.bs.carousel', function () {
+  console.log($('#carouselExampleControls').carousel('relatedTarget'))
+})
 
 /**
  * Preloader 
@@ -159,3 +163,4 @@ $(window).load(function () {
       $(this).remove();
   });
 });
+
