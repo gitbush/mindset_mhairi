@@ -20,20 +20,12 @@
     }
   };
 
-  hamburger.navToggle.addEventListener('click', function(e) { 
-    hamburger.doToggle(e); });
-  hamburger.navClose.addEventListener('click', function(e) { 
-    hamburger.doToggle(e); });
-    
-  // if(hamburger === true){
-    
-    
-
-  //   hamburger.navToggle.addEventListener('click', function(e) { 
-  //     hamburger.doToggle(e); });
-  //   hamburger.navClose.addEventListener('click', function(e) { 
-  //     hamburger.doToggle(e); });
-  // }
+  if(hamburger.navToggle){
+    hamburger.navToggle.addEventListener('click', function(e) { 
+      hamburger.doToggle(e); });
+    hamburger.navClose.addEventListener('click', function(e) { 
+      hamburger.doToggle(e); });
+  }
 
 }());
 
