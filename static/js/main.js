@@ -150,8 +150,12 @@ if(quizResult){
 }
 
 
-$(window).on('load', function () {
-  $('#preloader').fadeOut('1000', function () {
+/**
+ * Preloader 
+ */
+
+$(window).load(function () {
+  $('#preloader').fadeOut(800, function () {
       $(this).remove();
   });
 });
