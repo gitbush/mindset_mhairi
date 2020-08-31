@@ -3529,7 +3529,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .about-hero-content {
-    width: 15em;
+    width: 19em;
     margin: auto;
   }
 }
@@ -3767,8 +3767,8 @@ input[type='checkbox'] {
   .about-detail-content {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 15em 4em 15em auto;
-        grid-template-columns: auto 15em 4em 15em auto;
+    -ms-grid-columns: auto 17em 4em 17em auto;
+        grid-template-columns: auto 17em 4em 17em auto;
   }
   .about-detail-content .normal-text {
     font-size: .65em;

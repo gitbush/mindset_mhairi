@@ -108,7 +108,7 @@
         margin: auto;
     }
     @media #{$breakpoint-xl} {
-        width: 15em;
+        width: 19em;
         margin: auto;
     }
     @media #{$breakpoint-xxl} {
@@ -265,7 +265,7 @@
     }
     @media #{$breakpoint-xl} {
         display: grid;
-        grid-template-columns: auto 15em 4em 15em auto;
+        grid-template-columns: auto 17em 4em 17em auto;
         .normal-text{
             font-size: .65em;
         }
