@@ -8,7 +8,7 @@
     background-color: white;
     text-align: center;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
-        height: 18em;
+        height: 21em;
     }
 }
 
@@ -26,7 +26,7 @@
         width: 21em;
         position: absolute;
         z-index: 2;
-        top: 4em;
+        top: 6em;
         left: 4em;
         // height: 10em;
     }
@@ -214,6 +214,14 @@ footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    @media #{$breakpoint-min-md}{
+        width: 11em;
+        position: absolute;
+        height: 17em;
+        z-index: 999;
+        right: 3em;
+        top: 2em;
+    }
 }
 
 .latest-post-item{
@@ -221,7 +229,9 @@ footer{
     // height: 50%;
     position: relative;
     background-color: $light-pink;
-
+    @media #{$breakpoint-min-md}{
+        flex: 1 1 50%;
+    }
     img{
         height: 100%;
         width: 100%;
@@ -242,8 +252,17 @@ footer{
         width: 72%;
         height: 40%;
     }
+    .sect-subtitle{
+        @media #{$breakpoint-md}{
+            font-size: .8em;
+        }
+    }
+    
 }
 
 .latest-post-ig{
     font-size: 2em;
+    @media #{$breakpoint-md}{
+        font-size: 1.5em;
+    }
 }
