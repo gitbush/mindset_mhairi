@@ -63,7 +63,7 @@
     }
     @media #{$breakpoint-lg}{
         // grid-template-columns: auto [text-start] minmax(7em, 1fr) [img-start] minmax(7em, 1fr) [text-end] minmax(7em, 1fr) [img-end] auto;
-        grid-template-columns: auto minmax(7em, 13em) repeat(2, minmax(3em, 5em)) minmax(7em, 8em) auto;
+        grid-template-columns: auto minmax(7em, 13em) repeat(2, minmax(3em, 5em)) minmax(7em, 11em) auto;
     }
 }
 
@@ -217,10 +217,10 @@
         grid-template-rows: 14em 18.5em;
     }
     @media #{$breakpoint-lg} {
-        grid-template-rows: 13em 14.5em;
+        grid-template-rows: 13em 15.5em;
     }
     @media #{$breakpoint-xl} {
-        grid-template-rows: 11em 15em;
+        grid-template-rows: 11em 14em;
     }
     @media #{$breakpoint-xxl} {
         grid-template-rows: 12em 13.5em;
@@ -316,7 +316,7 @@
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 12em) auto;
-        height: 25em;
+        height: 30em;
         margin-top: 4em;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
@@ -476,9 +476,9 @@
         }
     }
     @media #{$breakpoint-lg} {
-        height: 10em;
-        width: 31em;
-        padding: 2em;
+        height: 11em;
+        width: 32em;
+        padding: 2em 3em;
         .quote-text{
             font-size: 1.1em;
         }
