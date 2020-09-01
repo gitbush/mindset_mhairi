@@ -208,24 +208,29 @@ footer{
 // -----------------------------------------------------------------------------
 
 .latest-posts{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 9em);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 9em);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .latest-post-item{
-    height: 100%;
+    flex: 1 1 33.3333333%;
+    // height: 50%;
     position: relative;
     background-color: $light-pink;
 
     img{
         height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 }
 
 .latest-post-text{
-    height: 6em;
+    height: 70%;
     margin: auto;
     position: absolute;
     width: 80%;
@@ -233,6 +238,10 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    @media #{$breakpoint-sm}{
+        width: 72%;
+        height: 40%;
+    }
 }
 
 .latest-post-ig{
