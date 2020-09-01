@@ -165,7 +165,6 @@
     
     display: grid;
     grid-template-rows: repeat(2, auto); 
-    grid-row-gap: 4em;
     grid-template-columns: 68vw;
     margin: 5em 0;
     text-align: center;
@@ -215,7 +214,7 @@
         grid-template-rows: 16em 22em;
     }
     @media #{$breakpoint-md}{
-        grid-template-rows: 14em 18em;
+        grid-template-rows: 14em 18.5em;
     }
     @media #{$breakpoint-lg} {
         grid-template-rows: 13em 14.5em;
@@ -287,7 +286,7 @@
     }
     @media #{$breakpoint-min-md} {
         background-color: white;
-        height: 29em;
+        height: 38.5em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
         grid-template-rows:repeat(3, 1fr);
         .home-about-title{
@@ -469,11 +468,11 @@
         }
     }
     @media #{$breakpoint-md} {
-        height: 9em;
+        height: 11em;
         width: 31em;
-        padding: 1em;
+        padding: 2em 3em;
         .quote-text{
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
     }
     @media #{$breakpoint-lg} {

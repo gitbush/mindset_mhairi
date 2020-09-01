@@ -1772,7 +1772,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .coach-cta-btn {
-    width: 6.5em;
+    width: 8.5em;
   }
 }
 
@@ -2458,7 +2458,6 @@ input[type='checkbox'] {
   display: grid;
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
-  grid-row-gap: 4em;
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
   margin: 5em 0;
@@ -2538,8 +2537,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 14em 18em;
-        grid-template-rows: 14em 18em;
+    -ms-grid-rows: 14em 18.5em;
+        grid-template-rows: 14em 18.5em;
   }
 }
 
@@ -2638,7 +2637,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 29em;
+    height: 38.5em;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -2899,12 +2898,12 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quote {
-    height: 9em;
+    height: 11em;
     width: 31em;
-    padding: 1em;
+    padding: 2em 3em;
   }
   .quote .quote-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
@@ -5392,7 +5391,6 @@ input[type='checkbox'] {
   display: grid;
   -ms-grid-rows: (auto)[2];
       grid-template-rows: repeat(2, auto);
-  grid-row-gap: 4em;
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
   margin: 5em 0;
@@ -5472,8 +5470,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 14em 18em;
-        grid-template-rows: 14em 18em;
+    -ms-grid-rows: 14em 18.5em;
+        grid-template-rows: 14em 18.5em;
   }
 }
 
@@ -5572,7 +5570,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 29em;
+    height: 38.5em;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -5833,12 +5831,12 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quote {
-    height: 9em;
+    height: 11em;
     width: 31em;
-    padding: 1em;
+    padding: 2em 3em;
   }
   .quote .quote-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 }
 
