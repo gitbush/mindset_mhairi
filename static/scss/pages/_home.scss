@@ -12,7 +12,7 @@
     }
     @media #{$breakpoint-sm}{
         position: relative;
-        height: 66em;
+        height: 57em;
     }
     @media #{$breakpoint-min-md} {
         display: grid;
@@ -71,7 +71,7 @@
     font-family: $font-biko;
     @media #{$breakpoint-xs}, #{$breakpoint-sm}{
         position: absolute;
-        top: 16em;
+        top: 17em;
         left: 0;
         right: 0;
         text-align: center;
@@ -97,6 +97,11 @@
             top: 25em;
             width: 16em;
         }
+    }
+
+    @media #{$breakpoint-sm}{
+        top: 26em;
+        width: 20em;
     }
     p {
         @media #{$breakpoint-xxl}{
@@ -207,7 +212,7 @@
     grid-template-rows: 23em 28em;
     height: 100%;
     @media #{$breakpoint-sm}{
-        grid-template-rows: 16em 20em;
+        grid-template-rows: 16em 22em;
     }
     @media #{$breakpoint-md}{
         grid-template-rows: 14em 18em;
@@ -277,7 +282,7 @@
     grid-template-rows: auto 35em minmax(auto, 37em) 7em;
 
     @media #{$breakpoint-sm} {
-        grid-template-rows: auto 36em minmax(auto, 24em) 4em;
+        grid-template-rows: auto 36em minmax(auto, 28em) 4em;
         margin-top: 2em;
     }
     @media #{$breakpoint-min-md} {
@@ -444,6 +449,9 @@
         font-size: 1.5em;
         margin: 0.6em .6em 0 .6em;
         letter-spacing: .3em;
+        @media #{$breakpoint-sm} {
+            font-size: 1.4em;
+        }
         @media #{$breakpoint-lg} {
             margin: 1em .6em 0.4em .6em;
         }
@@ -457,7 +465,7 @@
         padding: 1.5em;
         .quote-text{
             margin: .6em .6em 0.4em .6em;
-            font-size: 1.6em;
+            font-size: 1.4em;
         }
     }
     @media #{$breakpoint-md} {
