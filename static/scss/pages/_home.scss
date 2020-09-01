@@ -204,7 +204,7 @@
 .coaching-free,
 .coaching-why{
     display: grid;
-    grid-template-rows: 23em 28.5em;
+    grid-template-rows: 23em 28em;
     height: 100%;
     @media #{$breakpoint-sm}{
         grid-template-rows: 16em 20em;
@@ -274,7 +274,7 @@
     padding-bottom: 2em;
     text-align: center;
     display: grid;
-    grid-template-rows: auto 35em minmax(auto, 45em) 7em;
+    grid-template-rows: auto 35em minmax(auto, 37em) 7em;
 
     @media #{$breakpoint-sm} {
         grid-template-rows: auto 36em minmax(auto, 24em) 4em;

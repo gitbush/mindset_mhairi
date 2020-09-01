@@ -13,7 +13,7 @@
 }
 
 .cf-content{
-    padding: 3em 4em;
+    padding: 3em 2em;
     position: relative;
     background-color: $gray;
     text-align: center;
@@ -94,6 +94,10 @@ footer{
         background-color: $gray;
     }
 }   
+
+// -----------------------------------------------------------------------------
+// To top
+// -----------------------------------------------------------------------------
 
 .back-to-top-footer{
     height: 7em;
@@ -196,4 +200,41 @@ footer{
     @media #{$breakpoint-min-md}{
         font-size: .6em;
     }
+}
+
+
+// -----------------------------------------------------------------------------
+// Latest IG posts
+// -----------------------------------------------------------------------------
+
+.latest-posts{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 9em);
+}
+
+.latest-post-item{
+    height: 100%;
+    position: relative;
+    background-color: $light-pink;
+
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.latest-post-text{
+    height: 6em;
+    margin: auto;
+    position: absolute;
+    width: 80%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.latest-post-ig{
+    font-size: 2em;
 }

@@ -1009,7 +1009,7 @@ body {
 }
 
 .cf-content {
-  padding: 3em 4em;
+  padding: 3em 2em;
   position: relative;
   background-color: #f0f3f3;
   text-align: center;
@@ -1244,6 +1244,42 @@ footer {
   .footer-text {
     font-size: .6em;
   }
+}
+
+.latest-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (9em)[2];
+      grid-template-rows: repeat(2, 9em);
+}
+
+.latest-post-item {
+  height: 100%;
+  position: relative;
+  background-color: #fbf2ec;
+}
+
+.latest-post-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.latest-post-text {
+  height: 6em;
+  margin: auto;
+  position: absolute;
+  width: 80%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.latest-post-ig {
+  font-size: 2em;
 }
 
 .nav {
@@ -2378,8 +2414,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 28.5em;
-      grid-template-rows: 23em 28.5em;
+  -ms-grid-rows: 23em 28em;
+      grid-template-rows: 23em 28em;
   height: 100%;
 }
 
@@ -2481,8 +2517,8 @@ input[type='checkbox'] {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 35em minmax(auto, 45em) 7em;
-      grid-template-rows: auto 35em minmax(auto, 45em) 7em;
+  -ms-grid-rows: auto 35em minmax(auto, 37em) 7em;
+      grid-template-rows: auto 35em minmax(auto, 37em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -5299,8 +5335,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 28.5em;
-      grid-template-rows: 23em 28.5em;
+  -ms-grid-rows: 23em 28em;
+      grid-template-rows: 23em 28em;
   height: 100%;
 }
 
@@ -5402,8 +5438,8 @@ input[type='checkbox'] {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 35em minmax(auto, 45em) 7em;
-      grid-template-rows: auto 35em minmax(auto, 45em) 7em;
+  -ms-grid-rows: auto 35em minmax(auto, 37em) 7em;
+      grid-template-rows: auto 35em minmax(auto, 37em) 7em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
