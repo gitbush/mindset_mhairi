@@ -1009,6 +1009,10 @@ body {
 }
 
 .cf-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 3em 2em;
   position: relative;
   background-color: #f0f3f3;
@@ -1024,12 +1028,12 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .cf-content {
     background-color: white;
-    padding: 1em 2em;
-    width: 21em;
+    padding: 0;
+    width: 37em;
     position: absolute;
     z-index: 2;
     top: 6em;
-    left: 4em;
+    left: 5em;
   }
 }
 
@@ -1260,12 +1264,7 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .latest-posts {
-    width: 11em;
-    position: absolute;
-    height: 17em;
-    z-index: 999;
-    right: 3em;
-    top: 2em;
+    height: 100%;
   }
 }
 
@@ -1280,8 +1279,8 @@ footer {
 @media only screen and (min-width: 768px) {
   .latest-post-item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
+        -ms-flex: 1 1 33.3333333%;
+            flex: 1 1 33.3333333%;
   }
 }
 

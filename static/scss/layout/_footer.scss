@@ -13,6 +13,8 @@
 }
 
 .cf-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 3em 2em;
     position: relative;
     background-color: $gray;
@@ -22,12 +24,12 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         background-color: white;
-        padding: 1em 2em;
-        width: 21em;
+        padding: 0;
+        width: 37em;
         position: absolute;
         z-index: 2;
         top: 6em;
-        left: 4em;
+        left: 5em;
         // height: 10em;
     }
     @media #{$breakpoint-lg}{
@@ -215,12 +217,12 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     @media #{$breakpoint-min-md}{
-        width: 11em;
-        position: absolute;
-        height: 17em;
-        z-index: 999;
-        right: 3em;
-        top: 2em;
+        // width: 11em;
+        // position: absolute;
+        height: 100%;
+        // z-index: 999;
+        // right: 5em;
+        // top: 2em;
     }
 }
 
@@ -230,7 +232,7 @@ footer{
     position: relative;
     background-color: $light-pink;
     @media #{$breakpoint-min-md}{
-        flex: 1 1 50%;
+        flex: 1 1 33.3333333%;
     }
     img{
         height: 100%;
