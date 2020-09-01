@@ -13,34 +13,31 @@
 }
 
 .cf-content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 3em 2em;
-    position: relative;
-    background-color: $gray;
-    text-align: center;
     @media #{$breakpoint-sm}{
-        padding: 3em 7em;
+        // padding: 3em 7em;
     }
-    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
+    @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         background-color: white;
         padding: 0;
-        width: 37em;
+        width: 37.5em;
         position: absolute;
         z-index: 2;
-        top: 6em;
-        left: 5em;
+        top: 4em;
+        left: 0;
+        right: 0;
+        margin: auto;
         // height: 10em;
     }
     @media #{$breakpoint-lg}{
-        padding: 1em 2em;
-        width: 20em;
+        width: 40em;
     }
     @media #{$breakpoint-xl}{
-        padding: 1.5em 2em;
-        width: 21em;
-        top: 4em;
-        left: 7em;
+        width: 40em;
+    }
+    @media #{$breakpoint-xxl}{
+        width: 36em;
     }
 
     .normal-text{
@@ -63,7 +60,7 @@
         font-size: .8em;
     }
     @media #{$breakpoint-xl}{
-        font-size: .75em;
+        font-size: .7em;
     }
 }
 
@@ -266,5 +263,49 @@ footer{
     font-size: 2em;
     @media #{$breakpoint-md}{
         font-size: 1.5em;
+    }
+}
+
+.ig-intro{
+    position: relative;
+    display: grid;
+    height: 22em;
+    grid-template-columns: 1fr 1fr;
+    // padding: 3em 2em;
+    position: relative;
+    background-color: $gray;
+    text-align: center;
+    @media #{$breakpoint-md}{
+        height: 14em;
+    }
+    @media #{$breakpoint-lg},#{$breakpoint-xl}{
+        height: 14em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 12em;
+    }
+
+}
+
+.ig-intro-content{
+    height: 16em;
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @media #{$breakpoint-sm}{
+        height: 14em;
+    }
+    @media #{$breakpoint-md}{
+        height: 9em;
+    }
+    @media #{$breakpoint-lg}{
+        height: 10em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 8em;
     }
 }
