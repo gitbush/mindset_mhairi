@@ -151,7 +151,7 @@ if(quizResult){
 
 //  quiz slider control 
 $('#carouselExampleControls').on('slide.bs.carousel', function () {
-  console.log($('#carouselExampleControls').carousel('relatedTarget'))
+  // console.log($('#carouselExampleControls').carousel('relatedTarget'))
 })
 
 /**
