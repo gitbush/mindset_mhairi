@@ -1954,6 +1954,45 @@ footer {
   text-transform: uppercase;
 }
 
+.circle-slide-btn {
+  color: #f7d989;
+  position: relative;
+  height: 4em;
+  background-color: white;
+  border-radius: 2em;
+  width: 4em;
+  border-color: #f7d989;
+  border-width: 2px;
+  border-style: solid;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .circle-slide-btn {
+    height: 4em;
+    width: 4em;
+    font-size: .8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .circle-slide-btn {
+    font-size: .75em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .circle-slide-btn {
+    font-size: .6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .circle-slide-btn {
+    font-size: .5em;
+  }
+}
+
 .quiz-banner {
   text-align: center;
   padding: 1em 0;
@@ -2141,6 +2180,10 @@ body {
   bottom: 0;
 }
 
+.carousel-item {
+  height: 14em;
+}
+
 .quiz-font-fs {
   font-size: 4em;
   margin: 0;
@@ -2153,7 +2196,7 @@ body {
 }
 
 .quiz-content {
-  height: 10em;
+  height: 23em;
   width: 29em;
 }
 
@@ -2197,6 +2240,24 @@ input[type='checkbox'] {
           transform: scale(1.2);
 }
 
+.quiz-controls {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 50%;
+}
+
+.carousel-control {
+  position: relative;
+  width: 100%;
+}
+
 .options {
   text-align: center;
 }
@@ -2204,9 +2265,9 @@ input[type='checkbox'] {
 .option-btn {
   background-color: #fadcd2;
   border: none;
-  font-size: .77em;
-  padding: .2em .9em;
-  margin: 1em auto;
+  font-size: 1.1em;
+  padding: .6em 1.8em;
+  margin: 1em;
   text-transform: uppercase;
 }
 
