@@ -11,53 +11,30 @@
 
     <div class="quiz-full-screen">
         <div class="quiz-content">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item quiz-carousel-item active">
-                        <div class="quiz-item">
-                            <!-- <div class="quiz-checkboxes">
-                                <input type="checkbox" name="3[]" value="3" class="checkbox"/>
-                                <input type="checkbox" name="3[]" value="3" class="checkbox"/>
-                            </div> -->
-                            <label class="normal-text quiz-label">1. I understand that I am ultimately responsible for the life I live and that I have the power to make the
-                                changes I want to make.</label> 
-                            <div class="options">
-                                <button class="option-btn">True</button>
-                                <button class="option-btn">False</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item quiz-carousel-item">
-                        <div class="quiz-item">
-                            <!-- <div class="quiz-checkboxes">
-                                <input type="checkbox" name="4[]" value="4" class="checkbox"/>
-                                <input type="checkbox" name="4[]" value="4" class="checkbox"/>
-                            </div> -->
-                            <label class="normal-text quiz-label">2. I acknowledge that much of the coaching process takes place in between coaching sessions, and I am
-                                ready and willing to put in the necessary work.</label> 
-                            <div class="options">
-                                <button class="option-btn">True</button>
-                                <button class="option-btn">False</button>
-                            </div>
-                        </div>
+            <div id="quiz" class="quiz-item">
+                <div id="question" class="normal-text quiz-label"></div> 
+                <div class="options">
+                    <button id="choiceTrue" class="option-btn">True</button>
+                    <button id="choiceFalse" class="option-btn">False</button>
+                </div>
+            </div>
+            <div id="resultDiv" class="quiz-result">
+                <h2 class="quiz-title sect-title">
+                    The coaching  
+                </h2>
+                <h3 class="quiz-font logo-font">
+                    quiz
+                </h3>
+                <div class="quiz-cta-content">
+                    <h4 class="quiz-content-title sect-title">
+                        Find out if coaching is for you in less than 60 seconds
+                    </h4>
+                    <p id="quizResult" class="quiz-content-main normal-text"></p>
+                    <div class="quiz-cta">
+                        <a href="" class="quiz-cta-btn btn-black normal-text">Take the quiz</a>
                     </div>
                 </div>
-                <div class="quiz-controls">
-                    <a class="carousel-control-prev carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                        <button class="circle-slide-btn">Prev</button>
-                        <span class="sr-only">Prev</span>
-                    </a>
-                    <div class="quiz-number">
-                        <p class="normal-text">1/10</p>
-                    </div>
-                    <a class="carousel-control-next carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
-                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                        <button class="circle-slide-btn">Next</button>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-            </div>   
+            </div>
         </div>
     </div>
     <!-- jQuery -->

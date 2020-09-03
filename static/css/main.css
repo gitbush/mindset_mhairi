@@ -2305,6 +2305,10 @@ input[type='checkbox'] {
   margin: auto;
 }
 
+#resultDiv {
+  display: none;
+}
+
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
