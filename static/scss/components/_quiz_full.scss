@@ -18,6 +18,11 @@ body { height: 100%; }
     bottom: 0;
 }
 
+.quiz-section{
+    height: 27em;
+    position: relative;
+}
+
 .carousel,
 .carousel-inner{
     height: 100%;
@@ -65,12 +70,16 @@ body { height: 100%; }
     
 }
 
-.quiz-label{
-    margin-left: 2em;
-}
-
 .quiz-item{
-    margin: .5em;
+    height: 75%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
     display: grid;
     grid-template-rows: auto auto;
 
@@ -109,6 +118,11 @@ input[type='checkbox'] {
 
 .options{
     text-align: center;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 1em;
 }
 
 .option-btn{
@@ -154,5 +168,9 @@ input[type='checkbox'] {
 }
 
 #resultDiv{
+    display: none;
+}
+
+#quiz{
     display: none;
 }

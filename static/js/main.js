@@ -156,7 +156,8 @@ $('#carouselExampleControls').on('slide.bs.carousel', function () {
 
 
 // select all elements
-// const start = document.getElementById("start");
+const quizIntro = document.getElementById("quizIntro");
+const quizStart = document.getElementById("quizStart");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const choiceTrue = document.getElementById("choiceTrue");
@@ -164,24 +165,30 @@ const choiceFalse = document.getElementById("choiceFalse");
 // const counter = document.getElementById("counter");
 const quizResult = document.getElementById("quizResult");
 const resultDiv = document.getElementById("resultDiv");
+const questionNumber = document.getElementById("questionNumber");
+let numberOfQuestions = 3
 
 
 
 // create our questions
 let questions = [
   {
-      question : `1. I understand that I am ultimately responsible for the life I live and that I have the power to make the
+      question : `I understand that I am ultimately responsible for the life I live and that I have the power to make the
       changes I want to make.`,
       choiceTrue : "True",
       choiceFalse : "False",
+      number: `1/${numberOfQuestions}`,
   },{
-      question : `2. I acknowledge that much of the coaching process takes place in between coaching sessions, and I am ready and willing to put in the necessary work.`,
+      question : `I acknowledge that much of the coaching process takes place in between coaching sessions, and I am ready and willing to put in the necessary work.`,
       choiceTrue : "True",
       choiceFalse : "False",
+      number: `2/${numberOfQuestions}`
   },{
-      question : `3. I am committed to the process of coaching and will dedicate at least three months to allow the process to work.`,
+      question : `I am committed to the process of coaching and will dedicate at least three months to allow the process to work.`,
       choiceTrue : "True",
       choiceFalse : "False",
+      number: `3/${numberOfQuestions}`
+
   }
 ];
 
@@ -198,7 +205,6 @@ let results = [
 
 
 // create some variables
-
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
@@ -211,6 +217,21 @@ function renderQuestion(){
   question.innerHTML = `<p>${q.question}</p>`;
   choiceTrue.innerHTML = q.choiceTrue;
   choiceFalse.innerHTML = q.choiceFalse;
+  questionNumber.innerHTML = q.number
+}
+
+quizStart.addEventListener("click", (e) =>{ 
+  e.preventDefault();
+  startQuiz();
+  });
+
+
+// start quiz
+function startQuiz(){
+  console.log('yes')
+  quizIntro.style.display = "none";
+  renderQuestion();
+  quiz.style.display = "block";
 }
 
 renderQuestion();
@@ -260,7 +281,7 @@ function getSibling(el) {
 // result render
 function resultRender(){
   quiz.style.display ="none"
-  resultDiv.style.display = "block";
+  quizIntro.style.display = "block";
     
   
   quizResult.innerHTML = `${results[0].result}`;
