@@ -149,11 +149,6 @@ function getSibling(el) {
 //   getQuizLocation();
 // }
 
-//  quiz slider control 
-$('#carouselExampleControls').on('slide.bs.carousel', function () {
-  // console.log($('#carouselExampleControls').carousel('relatedTarget'))
-})
-
 
 // select all elements
 const quizIntro = document.getElementById("quizIntro");
@@ -207,8 +202,7 @@ let results = [
 // create some variables
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
-let count = 0;
-let score = 0;
+let trueCount = 0;
 
 // render a question
 function renderQuestion(){
@@ -228,7 +222,6 @@ quizStart.addEventListener("click", (e) =>{
 
 // start quiz
 function startQuiz(){
-  console.log('yes')
   quizIntro.style.display = "none";
   renderQuestion();
   quiz.style.display = "block";
@@ -243,7 +236,8 @@ optionBtn.forEach(btn => {
     let sibling = getSibling(btn)
     // console.log(btn)
     btn.classList.add('highlight-btn')
-    // console.log(this.nextElementSibling)
+    checkAnswer(btn)
+
     setTimeout(() => 
         nextQuestion(btn), 500)
     // if(runningQuestion < lastQuestion){
@@ -260,15 +254,18 @@ optionBtn.forEach(btn => {
 
 function nextQuestion(btn){
   if(runningQuestion < lastQuestion){
-    console.log(runningQuestion)
     runningQuestion++
     btn.classList.remove('highlight-btn')
     renderQuestion()
   } else{
-    console.log('last')
     resultRender()
   }
-  
+}
+
+function checkAnswer(btn){
+  if(btn.innerHTML === "True"){
+    trueCount ++
+  }
 }
 
 function getSibling(el) {
@@ -282,9 +279,14 @@ function getSibling(el) {
 function resultRender(){
   quiz.style.display ="none"
   quizIntro.style.display = "block";
-    
-  
-  quizResult.innerHTML = `${results[0].result}`;
+  if(trueCount === 3){
+    quizResult.innerHTML = `${results[0].result}`;
+  } 
+  else if(trueCount === 2){
+    quizResult.innerHTML = `${results[1].result}`;
+  } else{
+    quizResult.innerHTML = `${results[2].result}`;
+  }
 }
 
 
