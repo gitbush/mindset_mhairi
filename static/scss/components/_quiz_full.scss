@@ -126,7 +126,8 @@ input[type='checkbox'] {
 }
 
 .option-btn{
-    background-color:$dark-pink;
+    background-color: white;
+    display: inline-block;
     border: none;
     font-size: 1.1em;
     padding: .6em 1.8em;
@@ -135,19 +136,13 @@ input[type='checkbox'] {
 }
 
 .highlight-btn{
-    background-color: black;
-    color: white;
+    background-color: $light-pink;
+    color: $base-text-color;
 }
 
 .quiz-hr{
     margin: 0 auto;
     width: 20em;
-}
-
-.quiz-result{
-    text-align: left;
-    width: 35em;
-    margin: 2em auto;
 }
 
 .quiz-submit{
@@ -165,6 +160,13 @@ input[type='checkbox'] {
 .quiz-fs-text{
     width: 70%;
     margin: auto;
+}
+
+#question{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 #resultDiv{
@@ -194,6 +196,7 @@ input[type='checkbox'] {
     bottom: 0;
     left: 0;
     right: 0;
+    
 
     // .quiz-cta{
     //     position: absolute;
@@ -202,7 +205,50 @@ input[type='checkbox'] {
     //     left: 0;
     //     right: 0;
     // }
-    
+}
+
+.quiz-result{
+    height: 17em!important;
+}
+
+// .quiz-intro{
+//     opacity: 0;
+//     transition: all 2s linear;
+// }
+
+
+.fade-in{
+    animation: fadeIn 2s;
+}
+
+.slide-out-in{
+    animation: slideOutIn 2s
+}
+
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutIn{
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 500px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 #quizCta{
@@ -303,6 +349,7 @@ input[type='checkbox'] {
         font-size: .7em;
         padding: .5em 1.8em;
     }
+    
 }
 
 .quiz-cta{

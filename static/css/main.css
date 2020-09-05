@@ -761,6 +761,11 @@ body {
   line-height: 1.5;
 }
 
+a:visited, a:hover, a:active, a:focus {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
 /**
  * Clear inner floats
  */
@@ -1952,6 +1957,14 @@ footer {
   background: black;
   color: white;
   text-transform: uppercase;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.btn-black:active {
+  text-decoration: none !important;
+  outline: none !important;
+  background: white;
 }
 
 .circle-slide-btn {
@@ -2277,7 +2290,8 @@ input[type='checkbox'] {
 }
 
 .option-btn {
-  background-color: #fadcd2;
+  background-color: white;
+  display: inline-block;
   border: none;
   font-size: 1.1em;
   padding: .6em 1.8em;
@@ -2286,19 +2300,13 @@ input[type='checkbox'] {
 }
 
 .highlight-btn {
-  background-color: black;
-  color: white;
+  background-color: #fbf2ec;
+  color: #3b403f;
 }
 
 .quiz-hr {
   margin: 0 auto;
   width: 20em;
-}
-
-.quiz-result {
-  text-align: left;
-  width: 35em;
-  margin: 2em auto;
 }
 
 .quiz-submit {
@@ -2317,6 +2325,13 @@ input[type='checkbox'] {
 .quiz-fs-text {
   width: 70%;
   margin: auto;
+}
+
+#question {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 #resultDiv {
@@ -2344,6 +2359,62 @@ input[type='checkbox'] {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.quiz-result {
+  height: 17em !important;
+}
+
+.fade-in {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+.slide-out-in {
+  -webkit-animation: slideOutIn 2s;
+          animation: slideOutIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOutIn {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideOutIn {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 #quizCta {
@@ -2798,8 +2869,9 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 28em;
-      grid-template-rows: 23em 28em;
+  -ms-grid-rows: 23em 26em;
+      grid-template-rows: 23em 26em;
+  margin: 2em 0;
   height: 100%;
 }
 
@@ -5569,8 +5641,9 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 28em;
-      grid-template-rows: 23em 28em;
+  -ms-grid-rows: 23em 26em;
+      grid-template-rows: 23em 26em;
+  margin: 2em 0;
   height: 100%;
 }
 

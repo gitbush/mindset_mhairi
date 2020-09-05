@@ -208,7 +208,8 @@
 .coaching-free,
 .coaching-why{
     display: grid;
-    grid-template-rows: 23em 28em;
+    grid-template-rows: 23em 26em;
+    margin: 2em 0;
     height: 100%;
     @media #{$breakpoint-sm}{
         grid-template-rows: 16em 22em;

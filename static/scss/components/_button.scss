@@ -138,6 +138,13 @@
     background: black;
     color: white;
     text-transform: uppercase;
+    transition: all 1s ease-in;
+
+    &:active{
+        text-decoration: none !important;
+        outline: none !important;
+        background: white;
+    }
 }
 
 .circle-slide-btn{    

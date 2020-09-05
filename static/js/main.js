@@ -195,7 +195,7 @@ let results = [
   {
       result : `You were ready yesterday! What are you waiting for? Click HERE to set up your first session`,
   },{
-      result : `You may be ready depending on your willingness to change thoses falses to trues. Discuss with your coach how to make that happen.`,
+      result : `You may be ready depending on your willingness to change thoses falses to trues. Click HERE to set up your first session`,
   },{
       result : `You are not quite ready for coaching, but that does not mean you won’t be ready in the future. `,
   }
@@ -209,19 +209,25 @@ let trueCount = 0;
 
 // render a question
 function renderQuestion(){
+
   let q = questions[runningQuestion];
-  
   question.innerHTML = `<p>${q.question}</p>`;
   choiceTrue.innerHTML = q.choiceTrue;
   choiceFalse.innerHTML = q.choiceFalse;
   questionNumber.innerHTML = q.number
+  setTimeout(() => 
+  question.classList.remove('fade-in'), 2500)
+  
+  
 }
 if(quizIntroBtn){
   quizIntroBtn.addEventListener("click", (e) =>{ 
 
       console.log('intro')
       e.preventDefault();
-      renderQuizIntro();
+      setTimeout(() => 
+      renderQuizIntro(), 200)
+     
           
   });
 }
@@ -231,7 +237,9 @@ if(quizStart){
     if(quizStart.innerHTML === "Take the quiz"){
       console.log('quiz')
       e.preventDefault();
-      startQuiz();
+      setTimeout(() => 
+      startQuiz(), 200)
+      
     }
 
   });
@@ -242,6 +250,8 @@ if(quizStart){
 function renderQuizIntro(){
   quizCta.style.display = "none"
   quizIntro.style.display ="block"
+  quizIntro.classList.add("fade-in")
+  
 }
 
 function renderQuiz(){
@@ -254,6 +264,7 @@ function startQuiz(){
   quizIntro.style.display = "none";
   renderQuestion();
   quiz.style.display = "block";
+  quiz.classList.add("fade-in")
 }
 
 // renderQuestion();
@@ -268,7 +279,7 @@ optionBtn.forEach(btn => {
     checkAnswer(btn)
 
     setTimeout(() => 
-        nextQuestion(btn), 500)
+        nextQuestion(btn), 300)
     // if(runningQuestion < lastQuestion){
       
     //   setTimeout(() => 
@@ -283,8 +294,11 @@ optionBtn.forEach(btn => {
 
 function nextQuestion(btn){
   if(runningQuestion < lastQuestion){
+   
     runningQuestion++
     btn.classList.remove('highlight-btn')
+    question.classList.add('fade-in')
+    
     renderQuestion()
   } else{
     resultRender()
@@ -308,6 +322,7 @@ function getSibling(el) {
 function resultRender(){
   quiz.style.display ="none";
   quizIntro.style.display = "block";
+  quizIntro.classList.add("quiz-result")
   if(trueCount === 3){
     quizIntroText.innerHTML = `${results[0].result}`;
     quizStart.innerHTML = `Work with Mhairi`;
