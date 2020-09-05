@@ -102,28 +102,23 @@ if(heroSlides.length > 0){
 }
 
 
-/**
- * Quiz  
+/**  
+ * Coaching personality quiz
  */
 
 //  quiz options
 let optionBtn = document.querySelectorAll('.option-btn')
 
+// Set bg to pink when option is selected
 optionBtn.forEach(btn => {
   btn.addEventListener('click', function(e){
     e.preventDefault()
     let sibling = getSibling(btn)
-    // console.log(btn)
     btn.classList.add('highlight-btn')
-    // console.log(this.nextElementSibling)
-
-    // if(sibling[0].classList.contains('highlight-btn')){
-    //   // this.nextElementSibling.classList.remove('highlight-btn')
-    //   sibling[0].classList.remove('highlight-btn')
-    // }
   })
 });
 
+// Stop both options being able to be selected selected (not used)
 function getSibling(el) {
   var sibling = [];
   elSib = el.parentNode.firstElementChild;
@@ -132,25 +127,7 @@ function getSibling(el) {
 }
 
 
-// const quizSubmitBtn = document.getElementById('quiz-submit');
-// const quizResult = document.getElementById('quiz-result');
-
-
-// function getQuizLocation(){
-//   let quizResultLoc = quizResult.getBoundingClientRect()
-//   quizSubmitBtn.addEventListener('click', e => {
-//     e.preventDefault()
-//     window.scrollTo(0, quizResultLoc.top + 50)
-//   })
-  
-// }
-
-// if(quizResult){
-//   getQuizLocation();
-// }
-
-
-// select all elements
+// quiz variables
 const quizIntro = document.getElementById("quizIntro");
 const quizCta = document.getElementById("quizCta");
 const quizStart = document.getElementById("quizStart");
@@ -160,12 +137,10 @@ const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const choiceTrue = document.getElementById("choiceTrue");
 const choiceFalse = document.getElementById("choiceFalse");
-// const counter = document.getElementById("counter");
 const quizResult = document.getElementById("quizResult");
 const resultDiv = document.getElementById("resultDiv");
 const questionNumber = document.getElementById("questionNumber");
 let numberOfQuestions = 3
-
 
 
 // create our questions
@@ -195,7 +170,7 @@ let results = [
   {
       result : `You were ready yesterday! What are you waiting for? Click HERE to set up your first session`,
   },{
-      result : `You may be ready depending on your willingness to change thoses falses to trues. Click HERE to set up your first session`,
+      result : `You may be ready depending on your willingness to change thoses falses to trues. Click below to set up your first session`,
   },{
       result : `You are not quite ready for coaching, but that does not mean you won’t be ready in the future. `,
   }
@@ -218,24 +193,23 @@ function renderQuestion(){
   setTimeout(() => 
   question.classList.remove('fade-in'), 2500)
   
-  
 }
+
+// On click of first CTA button, show intro section
 if(quizIntroBtn){
   quizIntroBtn.addEventListener("click", (e) =>{ 
 
-      console.log('intro')
       e.preventDefault();
       setTimeout(() => 
       renderQuizIntro(), 200)
-     
           
   });
 }
 
+// On click of start quiz, show quiz container
 if(quizStart){
   quizStart.addEventListener("click", (e) =>{ 
     if(quizStart.innerHTML === "Take the quiz"){
-      console.log('quiz')
       e.preventDefault();
       setTimeout(() => 
       startQuiz(), 200)
@@ -245,8 +219,7 @@ if(quizStart){
   });
 }
 
-
-
+// show quiz intro
 function renderQuizIntro(){
   quizCta.style.display = "none"
   quizIntro.style.display ="block"
@@ -254,11 +227,13 @@ function renderQuizIntro(){
   
 }
 
+// show quiz
 function renderQuiz(){
   console.log('quiz')
   quizIntro.style.display ="none"
   quiz.style.display = "block"
 }
+
 // start quiz
 function startQuiz(){
   quizIntro.style.display = "none";
@@ -267,9 +242,7 @@ function startQuiz(){
   quiz.classList.add("fade-in")
 }
 
-// renderQuestion();
-//  quiz options
-
+//  Add pink bg to selected option
 optionBtn.forEach(btn => {
   btn.addEventListener('click', function(e){
     e.preventDefault()
@@ -280,18 +253,11 @@ optionBtn.forEach(btn => {
 
     setTimeout(() => 
         nextQuestion(btn), 300)
-    // if(runningQuestion < lastQuestion){
-      
-    //   setTimeout(() => 
-    //     nextQuestion(btn), 500)
-      
-    // } else{
-    //   setTimeout(() => 
-    //     nextQuestion(btn), 500)
-    // }
+    
   })
 });
 
+// Render next question data
 function nextQuestion(btn){
   if(runningQuestion < lastQuestion){
    
@@ -305,20 +271,14 @@ function nextQuestion(btn){
   }
 }
 
+// check if answer is true and increment count
 function checkAnswer(btn){
   if(btn.innerHTML === "True"){
     trueCount ++
   }
 }
 
-function getSibling(el) {
-  var sibling = [];
-  elSib = el.parentNode.firstElementChild;
-  do { if (elSib != el) sibling.push(elSib); } while (elSib = elSib.nextElementSibling);
-  return sibling;
-}
-
-// result render
+// Show resuting text from quiz
 function resultRender(){
   quiz.style.display ="none";
   quizIntro.style.display = "block";
@@ -341,7 +301,7 @@ function resultRender(){
 
 
 /**
- * Preloader 
+ * Preloader spinner
  */
 
 $(window).load(function () {

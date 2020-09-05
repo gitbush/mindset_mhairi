@@ -10,6 +10,9 @@
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}{
         height: 21em;
     }
+    @media #{$breakpoint-xxl}{
+        height: 18em;
+    }
 }
 
 .cf-content{
@@ -37,7 +40,7 @@
         width: 42em;
     }
     @media #{$breakpoint-xxl}{
-        width: 42em;
+        width: 33em;
     }
 
     .normal-text{
@@ -61,6 +64,9 @@
     }
     @media #{$breakpoint-xl}{
         font-size: .7em;
+    }
+    @media #{$breakpoint-xxl}{
+        font-size: .6em;
     }
 }
 
@@ -264,6 +270,9 @@ footer{
     @media #{$breakpoint-md}{
         font-size: 1.5em;
     }
+    @media #{$breakpoint-xxl}{
+        font-size: 1.3em;
+    }
 }
 
 .ig-intro{
@@ -282,7 +291,7 @@ footer{
         height: 14em;
     }
     @media #{$breakpoint-xxl}{
-        height: 12em;
+        height: 100%;
     }
 
 }
@@ -307,5 +316,8 @@ footer{
     }
     @media #{$breakpoint-xl}{
         height: 8em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 7em;
     }
 }

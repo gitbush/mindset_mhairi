@@ -184,6 +184,7 @@
     }  
     @media #{$breakpoint-xxl} {
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+        margin: 1em 0 3em 0;
     } 
 }
 
@@ -224,7 +225,7 @@
         grid-template-rows: 11em 14em;
     }
     @media #{$breakpoint-xxl} {
-        grid-template-rows: 12em 13.5em;
+        grid-template-rows: 12em 12em;
     }
 }
 
@@ -503,9 +504,9 @@
     @media #{$breakpoint-xxl} {
         height: 7em;
         width: 24em;
-        padding: 1em 0;
+        padding: 1.5em 0;
         .quote-text{
-            font-size: .9em;
+            font-size: .8em;
             padding: 0 2em;
             margin: 0.6em .6em .6em .6em;
         }
