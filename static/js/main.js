@@ -152,7 +152,10 @@ function getSibling(el) {
 
 // select all elements
 const quizIntro = document.getElementById("quizIntro");
+const quizCta = document.getElementById("quizCta");
 const quizStart = document.getElementById("quizStart");
+const quizIntroBtn = document.getElementById("quizIntroBtn");
+const quizIntroText = document.getElementById("quizIntroText");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
 const choiceTrue = document.getElementById("choiceTrue");
@@ -213,13 +216,39 @@ function renderQuestion(){
   choiceFalse.innerHTML = q.choiceFalse;
   questionNumber.innerHTML = q.number
 }
+if(quizIntroBtn){
+  quizIntroBtn.addEventListener("click", (e) =>{ 
 
-quizStart.addEventListener("click", (e) =>{ 
-  e.preventDefault();
-  startQuiz();
+      console.log('intro')
+      e.preventDefault();
+      renderQuizIntro();
+          
   });
+}
+
+if(quizStart){
+  quizStart.addEventListener("click", (e) =>{ 
+    if(quizStart.innerHTML === "Take the quiz"){
+      console.log('quiz')
+      e.preventDefault();
+      startQuiz();
+    }
+
+  });
+}
 
 
+
+function renderQuizIntro(){
+  quizCta.style.display = "none"
+  quizIntro.style.display ="block"
+}
+
+function renderQuiz(){
+  console.log('quiz')
+  quizIntro.style.display ="none"
+  quiz.style.display = "block"
+}
 // start quiz
 function startQuiz(){
   quizIntro.style.display = "none";
@@ -227,7 +256,7 @@ function startQuiz(){
   quiz.style.display = "block";
 }
 
-renderQuestion();
+// renderQuestion();
 //  quiz options
 
 optionBtn.forEach(btn => {
@@ -277,15 +306,21 @@ function getSibling(el) {
 
 // result render
 function resultRender(){
-  quiz.style.display ="none"
+  quiz.style.display ="none";
   quizIntro.style.display = "block";
   if(trueCount === 3){
-    quizResult.innerHTML = `${results[0].result}`;
+    quizIntroText.innerHTML = `${results[0].result}`;
+    quizStart.innerHTML = `Work with Mhairi`;
+    quizStart.href = `contact.html`;
   } 
   else if(trueCount === 2){
-    quizResult.innerHTML = `${results[1].result}`;
+    quizIntroText.innerHTML = `${results[1].result}`;
+    quizStart.innerHTML = `Work with Mhairi`;
+    quizStart.href = `contact.html`;
+
   } else{
-    quizResult.innerHTML = `${results[2].result}`;
+    quizIntroText.innerHTML = `${results[2].result}`;
+    quizStart.style.display = "none";
   }
 }
 
