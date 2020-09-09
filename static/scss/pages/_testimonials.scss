@@ -95,10 +95,30 @@
     
         }
     }
+
+    .sect-subtitle{
+        @media  #{$breakpoint-md}{
+            margin: 2em 0 1em 0;
+    
+        }
+        
+    }
+}
+
+.testimonial-intro-text{
+    @media  #{$breakpoint-md}{
+        margin-bottom: 0;
+
+    }
+    
 }
 
 .testimonials-section{
-    margin: 3em 0;
+    @media  #{$breakpoint-md}{
+        margin: 2em 0;
+
+    }
+    
 }
 
 .testimonial-item {
