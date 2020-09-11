@@ -75,7 +75,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 13em;
+        height: 17em;
         margin: auto;
     }
     @media #{$breakpoint-lg}{
@@ -93,7 +93,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 10em;
+        height: 13em;
         margin: auto;
     }
     @media #{$breakpoint-xxl}{
@@ -105,7 +105,22 @@
         height: 9em;
         margin: auto;
     }
+
+    .about-title{
+        @media #{$breakpoint-xl}{
+            font-size: 1.4em;
+            letter-spacing: .2em;
+            margin: 0;
+        }
+    }
     
+    .sect-title{
+        @media #{$breakpoint-xl}{
+            margin: .5em 0 .9em;
+        }
+
+        
+    }
     .normal-text{
         margin-top: 2em;
        
@@ -212,6 +227,17 @@
     }
 }
 
+.services-logo-title{
+    @media #{$breakpoint-md}{
+        font-size: 3em;
+        line-height: .8;
+        margin: 0 ;
+    }
+
+    @media #{$breakpoint-xl}{
+        line-height: .6;
+    }
+}
 // ---------------------------------------------------------------
 // services intro
 // ---------------------------------------------------------------
@@ -234,7 +260,7 @@
     font-family: $font-biko;
     @media #{$breakpoint-md}{
         font-size: 1.2em;
-        width: 27em;
+        width: 34em;
         // margin-top: 0;
     }
     @media #{$breakpoint-lg}{
@@ -243,8 +269,8 @@
         // margin-top: 0;
     }
     @media #{$breakpoint-xl}{
-        font-size: 1.1em;
-        width: 27em;
+        font-size: 1em;
+        width: 34em;
         // margin-top: 0;
     }
     @media #{$breakpoint-xxl}{
@@ -325,7 +351,26 @@
     @media #{$breakpoint-sm}{
         margin: 3em 6em;
     }
-    @media #{$breakpoint-min-md}{
+    @media #{$breakpoint-md}{
+        margin: 0;
+        &:nth-child(1){
+            grid-column: 2;
+            grid-row: 1;
+        }
+        &:nth-child(2){
+            grid-column: 4;
+            grid-row: 1;
+        }
+        &:nth-child(3){
+            grid-column: 2;
+            grid-row: 2;
+        }
+        &:nth-child(4){
+            grid-column: 4;
+            grid-row: 2;
+        }
+    }
+    @media #{$breakpoint-xl}{
         margin: 0;
         &:nth-child(1){
             grid-column: 2;
@@ -335,6 +380,9 @@
         }
         &:nth-child(3){
             grid-column: 6;
+        }
+        &:nth-child(4){
+            grid-column: 8;
         }
     }
 }
@@ -366,7 +414,10 @@
 .who-content{
     @media #{$breakpoint-md}{
         display: grid;
-        grid-template-columns: auto 11em 1em 11em 1em 11em auto;
+            // grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
+            grid-template-columns: auto 14em 3em 14em 3em auto;
+            grid-template-rows: auto auto;
+
     }   
     @media #{$breakpoint-lg}{
         display: grid;
@@ -374,7 +425,8 @@
     } 
     @media #{$breakpoint-xl}{
         display: grid;
-        grid-template-columns: auto 10em 2em 10em 2em 10em auto;
+        grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
+
     } 
     @media #{$breakpoint-xxl}{
         display: grid;
@@ -413,7 +465,7 @@
     }
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 0;
-        padding: .8em 1em;
+        padding: .8em .7em;
         height: 26em;
         width: 100%;
     }
@@ -429,7 +481,7 @@
 }
 
 .how-title{
-    margin: .8em 0 0 0;
+    margin: .8em 0 .5em 0;
 }
 
 .how-sub{
@@ -451,6 +503,9 @@
         margin: 0;
         height: 3.5em;
     }
+    @media #{$breakpoint-xl}{
+        font-size: .9em;
+    }
 }
 
 .how-content{
@@ -470,16 +525,47 @@
 .signature-package{
     margin: 4em auto;
     width: 21em;
+    text-align: center;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 3em 0;
+        margin: 2em 0;
         width: 100%;
     }
 }
 
+
 .signature-content{
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         display: grid;
-        grid-template-columns: auto repeat(2, 19em) auto;
+        grid-template-columns: auto 18em 1em 18em auto;
+        text-align: left;
+    }
+    @media #{$breakpoint-xl}{
+        grid-template-columns: auto 15em 1em 15em 1em 15em auto;
+    }
+}
+
+.coaching-package-item{
+    position: relative;
+    @media #{$breakpoint-md}{
+        height: 18em;
+        &:nth-child(1){
+            grid-column: 2;
+        }
+        &:nth-child(2){
+            grid-column: 4;
+        }
+    }
+    @media #{$breakpoint-xl}{
+        height: 14em;
+        &:nth-child(1){
+            grid-column: 2;
+        }
+        &:nth-child(2){
+            grid-column: 4;
+        }
+        &:nth-child(3){
+            grid-column: 6;
+        }
     }
 }
 
@@ -598,12 +684,16 @@
     }
     @media #{$breakpoint-md}{
         width: 11.5em;
+        position: absolute;
+        bottom: 0;
     }
     @media #{$breakpoint-lg}{
         width: 11em;
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 1em auto 0 0;
+        position: absolute;
+        bottom: 0;
     }
 
     a{
