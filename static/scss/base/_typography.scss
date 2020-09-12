@@ -210,6 +210,22 @@ $font-la-parisienne: 'la-parisienne', serif;
   font-weight: 400;
   letter-spacing: .3em;
   line-height: 1.2;
+  font-size: 1.5em;
+  @media #{$breakpoint-sm}{
+      font-size: 1.25em;
+  }
+  @media #{$breakpoint-md}{
+      font-size: 1.2em;
+  }
+  @media #{$breakpoint-lg}{
+      font-size: 1.1em;
+  }
+  @media #{$breakpoint-xl}{
+      font-size: 1em;
+  }
+  @media #{$breakpoint-xxl}{
+      font-size: .9em;
+  }
 }
 
 .to-top-text{

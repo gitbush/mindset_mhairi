@@ -737,30 +737,16 @@
         height: 11em;
     }
     @media #{$breakpoint-md}{
-        width: 29em;
+        width: 34em;
         height: 9em;
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
         width: 32em;
-        height: 7em;
+        height: 8em;
     }
-    .quote-text-dark{
-        font-size: 1.5em;
-        @media #{$breakpoint-sm}{
-            font-size: 1.4em;
-        }
-        @media #{$breakpoint-md}{
-            font-size: 1.2em;
-        }
-        @media #{$breakpoint-lg}{
-            font-size: 1.1em;
-        }
-        @media #{$breakpoint-xl}{
-            font-size: 1em;
-        }
-        @media #{$breakpoint-xxl}{
-            font-size: .98em;
-        }
+    @media #{$breakpoint-xxl}{
+        width: 34em;
+        height: 6em;
     }
 }
 
