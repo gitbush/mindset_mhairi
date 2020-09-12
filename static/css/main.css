@@ -617,7 +617,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .normal-text {
-    font-size: .6em;
+    font-size: .62em;
   }
 }
 
@@ -4084,14 +4084,14 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-text {
-    font-size: .9em;
+    font-size: .93em;
     letter-spacing: 0.2em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-text {
-    font-size: .9em;
+    font-size: .95em;
     margin: 0;
     letter-spacing: 0.2em;
   }
@@ -4107,7 +4107,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .about-text {
-    font-size: .6em;
+    font-size: .7em;
     margin: 0;
     letter-spacing: 0.2em;
   }
@@ -4166,36 +4166,35 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .about-detail-title {
-    width: 16em;
-    font-size: 1.5em;
+    width: 20em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-title {
-    width: 23em;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    width: 34em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-detail-title {
-    width: 23em;
-    font-size: 1.35em;
+    font-size: 1.1em;
+    width: 34em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about-detail-title {
-    width: 25em;
     font-size: 1em;
+    width: 34em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .about-detail-title {
-    width: 22em;
-    font-size: 1em;
+    font-size: .9em;
+    width: 36em;
   }
 }
 
@@ -4213,7 +4212,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-subtitle {
-    width: 55vw;
+    width: 31em;
     font-size: 1em;
   }
 }
@@ -4359,8 +4358,6 @@ input[type='checkbox'] {
 .about-detail-quote {
   margin: 3em 0;
   width: 23em;
-  font-style: italic;
-  font-size: 1.1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -4371,29 +4368,56 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-detail-quote {
-    width: 30em;
-    font-size: .9em;
+    width: 34em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .about-detail-quote {
     width: 60vw;
-    font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .about-detail-quote {
     width: 55vw;
-    font-size: .7em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .about-detail-quote {
+    margin: 2em 0;
     width: 40vw;
-    font-size: .6em;
+  }
+}
+
+.about-detail-quote .logo-3 {
+  font-size: 3.6em;
+  margin: 0 0 .8em 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-detail-quote .logo-3 {
+    font-size: 3.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about-detail-quote .logo-3 {
+    font-size: 3em;
+    margin: 0 0 .5em 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-detail-quote .logo-3 {
+    font-size: 2.8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-detail-quote .logo-3 {
+    font-size: 2.7em;
   }
 }
 
@@ -5129,6 +5153,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1200px) {
   .favourite-text {
     font-size: .56em;
+    margin-bottom: .6em;
   }
 }
 
