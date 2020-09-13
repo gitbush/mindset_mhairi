@@ -7026,7 +7026,6 @@ input[type='checkbox'] {
   }
 }
 
-<<<<<<< HEAD
 .services-logo-title {
   line-height: .7;
 }
@@ -7037,8 +7036,6 @@ input[type='checkbox'] {
   }
 }
 
-=======
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-logo-title {
     font-size: 3em;
@@ -7047,7 +7044,6 @@ input[type='checkbox'] {
   }
 }
 
-<<<<<<< HEAD
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .services-logo-title {
     line-height: .6;
@@ -7060,8 +7056,6 @@ input[type='checkbox'] {
   }
 }
 
-=======
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
 .services-intro {
   background-color: #f0f3f3;
   text-align: center;
@@ -7280,26 +7274,14 @@ input[type='checkbox'] {
   .who-item:nth-child(1) {
     -ms-grid-column: 2;
     grid-column: 2;
-    -ms-grid-row: 1;
-    grid-row: 1;
   }
   .who-item:nth-child(2) {
     -ms-grid-column: 4;
     grid-column: 4;
-    -ms-grid-row: 1;
-    grid-row: 1;
   }
   .who-item:nth-child(3) {
-    -ms-grid-column: 2;
-    grid-column: 2;
-    -ms-grid-row: 2;
-    grid-row: 2;
-  }
-  .who-item:nth-child(4) {
-    -ms-grid-column: 4;
-    grid-column: 4;
-    -ms-grid-row: 2;
-    grid-row: 2;
+    -ms-grid-column: 6;
+    grid-column: 6;
   }
   .who-item:nth-child(4) {
     -ms-grid-column: 8;
@@ -7349,15 +7331,8 @@ input[type='checkbox'] {
   .who-content {
     display: -ms-grid;
     display: grid;
-<<<<<<< HEAD
     -ms-grid-columns: auto 14em 2em 14em auto;
         grid-template-columns: auto 14em 2em 14em auto;
-=======
-    -ms-grid-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
-        grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
-    -ms-grid-columns: auto 14em 3em 14em 3em auto;
-        grid-template-columns: auto 14em 3em 14em 3em auto;
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
   }
@@ -7532,10 +7507,6 @@ input[type='checkbox'] {
 
 .signature-package {
   margin: 4em auto;
-<<<<<<< HEAD
-=======
-  width: 21em;
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
   text-align: center;
 }
 
@@ -7562,7 +7533,6 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .signature-content {
-<<<<<<< HEAD
     width: 28em;
     margin: auto;
   }
@@ -7597,19 +7567,11 @@ input[type='checkbox'] {
   .signature-content {
     -ms-grid-columns: auto 15em 2em 15em 2em 15em auto;
         grid-template-columns: auto 15em 2em 15em 2em 15em auto;
-=======
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto 18em 1em 18em auto;
-        grid-template-columns: auto 18em 1em 18em auto;
-    text-align: left;
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
   }
 }
 
 .coaching-package-item {
   position: relative;
-<<<<<<< HEAD
   margin: 1.5em 0 0 0;
 }
 
@@ -7617,13 +7579,10 @@ input[type='checkbox'] {
   .coaching-package-item {
     margin: 1.5em 0 0 0;
   }
-=======
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .coaching-package-item {
-<<<<<<< HEAD
     margin: var(--gap) 0 0 var(--gap);
     height: 24.5em;
     width: 18em;
@@ -7636,15 +7595,11 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .coaching-package-item {
     height: 19em;
-=======
-    height: 18em;
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
   }
   .coaching-package-item:nth-child(1) {
     -ms-grid-column: 2;
     grid-column: 2;
   }
-<<<<<<< HEAD
   .coaching-package-item:nth-child(3) {
     -ms-grid-column: 4;
     grid-column: 4;
@@ -7664,11 +7619,6 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1600px) {
   .coaching-package-item {
     height: 17em;
-=======
-  .coaching-package-item:nth-child(2) {
-    -ms-grid-column: 4;
-    grid-column: 4;
->>>>>>> a3768225eb8a82a23c809c500eeeb9ff092508b8
   }
 }
 
