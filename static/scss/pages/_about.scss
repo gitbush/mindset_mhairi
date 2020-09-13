@@ -833,7 +833,7 @@
         width: 50%;
     }
     @media #{$breakpoint-xl}{
-        width: 50%;
+        width: 60%;
     }
 
     .fw-b{
@@ -1159,28 +1159,30 @@
         height: 7em;
     }
     @media #{$breakpoint-xxl} {
-        height: 7.5em;
+        height: 5.5em;
     }
 }
 
 .services-cta-btn{
     left: 0;
     right: 0;
-    position: absolute;
+    position: relative;
+    display: inline-block;
     margin: auto;
-    bottom: 1em;
-    width: 220px;
+    bottom: 0;
+    padding: .7em 1.5em;
     @media #{$breakpoint-sm} {
         width: 18em;
     }
-    @media #{$breakpoint-lg} {
-        width: 270px;
-    }
-    @media #{$breakpoint-xl} {
-        width: 270px;
-    }
+    // @media #{$breakpoint-lg} {
+    //     width: 270px;
+    // }
+    // @media #{$breakpoint-xl} {
+    //     width: 270px;
+    // }
     @media #{$breakpoint-xxl} {
-        width: 310px;
+        // width: 310px;
+        padding: .7em 1.5em;
     }
     
 }

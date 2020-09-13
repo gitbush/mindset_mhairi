@@ -110,10 +110,16 @@
     background-color: $dark-pink;
     text-transform: uppercase;
     color: $base-text-color;
-    font-size: 1.1em;
-    padding: .6em 1em;
+    font-size: 1.18em;
+    padding: .5em 1em;
     letter-spacing: .2em;
     box-shadow: 3px 5px 9px -7px #3b403f;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    display: inline-block;
+    margin: auto;
     @media #{$breakpoint-sm} {
         font-size: 1em;
     }
