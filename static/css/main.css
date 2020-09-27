@@ -2537,7 +2537,7 @@ input[type='checkbox'] {
 }
 
 .quiz-result {
-  height: 17em !important;
+  height: 21em !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -2548,13 +2548,13 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quiz-result {
-    height: 10em !important;
+    height: 11em !important;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quiz-result {
-    height: 10em !important;
+    height: 11em !important;
   }
 }
 
@@ -2566,7 +2566,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .quiz-result {
-    height: 8em !important;
+    height: 10em !important;
   }
 }
 

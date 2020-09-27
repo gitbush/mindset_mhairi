@@ -140,39 +140,60 @@ const choiceFalse = document.getElementById("choiceFalse");
 const quizResult = document.getElementById("quizResult");
 const resultDiv = document.getElementById("resultDiv");
 const questionNumber = document.getElementById("questionNumber");
-let numberOfQuestions = 3
+let numberOfQuestions = 7
 
 
 // create our questions
 let questions = [
   {
-      question : `I understand that I am ultimately responsible for the life I live and that I have the power to make the
-      changes I want to make.`,
+      question : `I am ready to make a positive change and live a life I absolutely love`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `1/${numberOfQuestions}`,
   },{
-      question : `I acknowledge that much of the coaching process takes place in between coaching sessions, and I am ready and willing to put in the necessary work.`,
+      question : `I want to get unstuck and stop repeating the same old patterns`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `2/${numberOfQuestions}`
   },{
-      question : `I am committed to the process of coaching and will dedicate at least three months to allow the process to work.`,
+      question : `I know deep down that I have the power to change my life`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `3/${numberOfQuestions}`
-
+  },{
+      question : `I acknowledge that much of the coaching process takes place between sessions and I’m ready and willing to do the work`,
+      choiceTrue : "True",
+      choiceFalse : "False",
+      number: `4/${numberOfQuestions}`
+  },{
+      question : `I am ready to challenge and confront my way of thinking and doing in order to change my life for the better`,
+      choiceTrue : "True",
+      choiceFalse : "False",
+      number: `5/${numberOfQuestions}`
+  },{
+      question : `I recognise my coach can’t fix my problems on my behalf, the work is mine to do with their expert support`,
+      choiceTrue : "True",
+      choiceFalse : "False",
+      number: `6/${numberOfQuestions}`
+  },{
+      question : `I can happily imagine myself drinking champagne on a sunny rooftop bar (this isn’t a coaching question, just wondering if we will be BFFs)`,
+      choiceTrue : "True",
+      choiceFalse : "False",
+      number: `7/${numberOfQuestions}`
   }
 ];
 
 // create our results
 let results = [
   {
-      result : `You were ready yesterday! What are you waiting for? Click HERE to set up your first session`,
+      result : `You were ready yesterday! Nothing can stand in your way. Lets chat! Book your free, no obligation clarity call here with yours truly`,
   },{
-      result : `You may be ready depending on your willingness to change thoses falses to trues. Click below to set up your first session`,
+      result : `You are ready...yet a little tentative.  That’s okay!  Often the biggest step is commiting to the process and affirming you are active 
+                rather than passive in your current situation.  I’m here to help. Book your free, no obligation clarity call here and let's chat about 
+                your next steps`,
   },{
-      result : `You are not quite ready for coaching, but that does not mean you won’t be ready in the future. `,
+      result : `You might not be quite ready...yet.  Think of the questions you answered ‘False’ to, what would it take to turn 1 or more of those to ‘True’? 
+                If you want to discuss with an expert you can book your free clarity call with me here`,
   }
 ];
 
@@ -283,19 +304,20 @@ function resultRender(){
   quiz.style.display ="none";
   quizIntro.style.display = "block";
   quizIntro.classList.add("quiz-result")
-  if(trueCount === 3){
+  if(trueCount >= 5){
     quizIntroText.innerHTML = `${results[0].result}`;
-    quizStart.innerHTML = `Work with Mhairi`;
+    quizStart.innerHTML = `Free clarity call`;
     quizStart.href = `contact.html`;
   } 
-  else if(trueCount === 2){
-    quizIntroText.innerHTML = `${results[1].result}`;
-    quizStart.innerHTML = `Work with Mhairi`;
+  else if(trueCount < 3){
+    quizIntroText.innerHTML = `${results[2].result}`;
+    quizStart.innerHTML = `Free clarity call`;
     quizStart.href = `contact.html`;
 
   } else{
-    quizIntroText.innerHTML = `${results[2].result}`;
-    quizStart.style.display = "none";
+    quizIntroText.innerHTML = `${results[1].result}`;
+    quizStart.innerHTML = `Free clarity call`;
+    quizStart.href = `contact.html`;
   }
 }
 

@@ -258,21 +258,21 @@ input[type='checkbox'] {
 }
 
 .quiz-result{
-    height: 17em!important;
+    height: 21em!important;
     @media #{$breakpoint-sm} {
         height: 15em!important;
     }
     @media #{$breakpoint-md} {
-        height: 10em!important;
+        height: 11em!important;
     }
     @media #{$breakpoint-lg} {
-        height: 10em!important;
+        height: 11em!important;
     }
     @media #{$breakpoint-xl} {
         height: 9em!important;
     }
     @media #{$breakpoint-xl} {
-        height: 8em!important;
+        height: 10em!important;
     }
 }
 
