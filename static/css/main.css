@@ -2497,7 +2497,7 @@ input[type='checkbox'] {
 
 #quizIntro {
   display: none;
-  height: 21em;
+  height: 23em;
   position: absolute;
   margin: auto;
   top: 0;
@@ -2514,19 +2514,19 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #quizIntro {
-    height: 12em;
+    height: 11em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   #quizIntro {
-    height: 12em;
+    height: 11em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   #quizIntro {
-    height: 10em;
+    height: 9em;
   }
 }
 

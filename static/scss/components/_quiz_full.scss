@@ -232,7 +232,7 @@ input[type='checkbox'] {
 
 #quizIntro{
     display: none;
-    height: 21em;
+    height: 23em;
     position: absolute;
     margin: auto;
     top: 0;
@@ -244,13 +244,13 @@ input[type='checkbox'] {
         height: 17em;
     }
     @media #{$breakpoint-md} {
-        height: 12em;
+        height: 11em;
     }
     @media #{$breakpoint-lg} {
-        height: 12em;
+        height: 11em;
     }
     @media #{$breakpoint-xl} {
-        height: 10em;
+        height: 9em;
     }
     @media #{$breakpoint-xxl} {
         height: 8em;
