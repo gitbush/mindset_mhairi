@@ -194,9 +194,13 @@
     @media #{$breakpoint-min-md}{
         grid-column: 2;
     }
+    @media #{$breakpoint-xl}{
+        height: 20em;
+    }
     img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
         @media #{$breakpoint-xxl}{
             height: 85%;
         }
