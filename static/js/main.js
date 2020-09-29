@@ -41,6 +41,7 @@ AOS.init({
   once: true,
 });
 
+var rellax = new Rellax('.rellax');
 
 /**
  * 

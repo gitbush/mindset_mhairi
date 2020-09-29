@@ -3988,6 +3988,10 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1200px) {
   .about-hero-img img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 50% 15%;
+       object-position: 50% 15%;
   }
 }
 
@@ -5493,6 +5497,13 @@ input[type='checkbox'] {
   }
 }
 
+.services-cta img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .services-parallax-window {
   min-height: 100%;
   background: transparent;
@@ -6941,6 +6952,8 @@ input[type='checkbox'] {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 15%;
+     object-position: 50% 15%;
 }
 
 @media only screen and (min-width: 1600px) {
