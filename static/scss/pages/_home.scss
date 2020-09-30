@@ -411,6 +411,13 @@
 
 .quote-parallax-container{
     position: relative;
+    height: 16em;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 .quote-parallax-window {
     min-height: 25em;

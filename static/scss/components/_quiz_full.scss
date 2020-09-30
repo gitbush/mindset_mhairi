@@ -346,6 +346,7 @@ input[type='checkbox'] {
     text-align: center;
     padding: 2em 0;
     background-color: $aqua-bg;
+    z-index: 5;
     @media #{$breakpoint-md}{
         padding: 1em 0;
     }
