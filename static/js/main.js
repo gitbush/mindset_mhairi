@@ -147,7 +147,8 @@ let numberOfQuestions = 7
 // create our questions
 let questions = [
   {
-      question : `I am ready to make a positive change and live a life I absolutely love`,
+      question : `I am ready to make a positive change and 
+                  live a life I absolutely love`,
       choiceTrue : "True",
       choiceFalse : "False",
       number: `1/${numberOfQuestions}`,

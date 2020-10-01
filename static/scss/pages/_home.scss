@@ -243,23 +243,23 @@
 .coaching-free,
 .coaching-why{
     display: grid;
-    grid-template-rows: 23em 26em;
+    grid-template-rows: 23em 23em;
     margin: 2em 0;
     height: 100%;
     @media #{$breakpoint-sm}{
-        grid-template-rows: 18em 22em;
+        grid-template-rows: 18em 20em;
     }
     @media #{$breakpoint-md}{
-        grid-template-rows: 14em 18.5em;
+        grid-template-rows: 14em 17.5em;
     }
     @media #{$breakpoint-lg} {
-        grid-template-rows: 13em 15.5em;
+        grid-template-rows: 13em 15em;
     }
     @media #{$breakpoint-xl} {
-        grid-template-rows: 11em 14em;
+        grid-template-rows: 11em 13em;
     }
     @media #{$breakpoint-xxl} {
-        grid-template-rows: 12em 12em;
+        grid-template-rows: 12em 11em;
     }
 }
 
@@ -458,6 +458,7 @@
         height: 150%;
         width: 100%;
         object-fit: cover;
+        object-position: 50% 3%;
     }
 }
 .quote-parallax-window {

@@ -2345,7 +2345,7 @@ body {
 
 @media only screen and (min-width: 1200px) {
   .quiz-item {
-    height: 11em;
+    height: 10em;
   }
 }
 
@@ -2471,7 +2471,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   #question {
-    width: 55%;
+    width: 42%;
     margin: 1em auto;
   }
 }
@@ -2570,7 +2570,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .quiz-result {
-    height: 10em !important;
+    height: 9em !important;
   }
 }
 
@@ -3151,8 +3151,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 26em;
-      grid-template-rows: 23em 26em;
+  -ms-grid-rows: 23em 23em;
+      grid-template-rows: 23em 23em;
   margin: 2em 0;
   height: 100%;
 }
@@ -3161,8 +3161,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 18em 22em;
-        grid-template-rows: 18em 22em;
+    -ms-grid-rows: 18em 20em;
+        grid-template-rows: 18em 20em;
   }
 }
 
@@ -3170,8 +3170,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 14em 18.5em;
-        grid-template-rows: 14em 18.5em;
+    -ms-grid-rows: 14em 17.5em;
+        grid-template-rows: 14em 17.5em;
   }
 }
 
@@ -3179,8 +3179,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 13em 15.5em;
-        grid-template-rows: 13em 15.5em;
+    -ms-grid-rows: 13em 15em;
+        grid-template-rows: 13em 15em;
   }
 }
 
@@ -3188,8 +3188,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 11em 14em;
-        grid-template-rows: 11em 14em;
+    -ms-grid-rows: 11em 13em;
+        grid-template-rows: 11em 13em;
   }
 }
 
@@ -3197,8 +3197,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 12em 12em;
-        grid-template-rows: 12em 12em;
+    -ms-grid-rows: 12em 11em;
+        grid-template-rows: 12em 11em;
   }
 }
 
@@ -3469,6 +3469,8 @@ input[type='checkbox'] {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 3%;
+     object-position: 50% 3%;
 }
 
 .quote-parallax-window {
@@ -6068,8 +6070,8 @@ input[type='checkbox'] {
 .coaching-why {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 23em 26em;
-      grid-template-rows: 23em 26em;
+  -ms-grid-rows: 23em 23em;
+      grid-template-rows: 23em 23em;
   margin: 2em 0;
   height: 100%;
 }
@@ -6078,8 +6080,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 18em 22em;
-        grid-template-rows: 18em 22em;
+    -ms-grid-rows: 18em 20em;
+        grid-template-rows: 18em 20em;
   }
 }
 
@@ -6087,8 +6089,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 14em 18.5em;
-        grid-template-rows: 14em 18.5em;
+    -ms-grid-rows: 14em 17.5em;
+        grid-template-rows: 14em 17.5em;
   }
 }
 
@@ -6096,8 +6098,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 13em 15.5em;
-        grid-template-rows: 13em 15.5em;
+    -ms-grid-rows: 13em 15em;
+        grid-template-rows: 13em 15em;
   }
 }
 
@@ -6105,8 +6107,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 11em 14em;
-        grid-template-rows: 11em 14em;
+    -ms-grid-rows: 11em 13em;
+        grid-template-rows: 11em 13em;
   }
 }
 
@@ -6114,8 +6116,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 12em 12em;
-        grid-template-rows: 12em 12em;
+    -ms-grid-rows: 12em 11em;
+        grid-template-rows: 12em 11em;
   }
 }
 
@@ -6386,6 +6388,8 @@ input[type='checkbox'] {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 3%;
+     object-position: 50% 3%;
 }
 
 .quote-parallax-window {
