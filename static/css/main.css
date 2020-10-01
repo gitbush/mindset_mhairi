@@ -3049,7 +3049,8 @@ input[type='checkbox'] {
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
   margin-top: 3em;
-  height: 165em;
+  padding-bottom: 3em;
+  height: 153em;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -5968,7 +5969,8 @@ input[type='checkbox'] {
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
   margin-top: 3em;
-  height: 165em;
+  padding-bottom: 3em;
+  height: 153em;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
