@@ -1109,10 +1109,10 @@
         height: 18em;
     }
     @media  #{$breakpoint-xl}{
-        height: 15em;
+        height: 14em;
     }
     @media  #{$breakpoint-xxl}{
-        height: 15em;
+        height: 14em;
     }
     img{
         height: 150%;
@@ -1162,7 +1162,8 @@
     right: 0;
     left: 0;
     @media #{$breakpoint-sm}{
-        height: 13em;
+        height: 11em;
+        width: 28em;
     }
     @media #{$breakpoint-md}{
         height: 11em;

@@ -256,7 +256,7 @@ $font-la-parisienne: 'la-parisienne', serif;
       letter-spacing: 0.2em;
     }
     @media #{$breakpoint-xxl} {
-      font-size: 1.1em;
+      font-size: .95em;
       letter-spacing: 0.2em;
     }
 }
@@ -283,7 +283,7 @@ $font-la-parisienne: 'la-parisienne', serif;
       letter-spacing: 0.2em;
     }
     @media #{$breakpoint-xl} {
-      font-size: .8em;
+      font-size: .75em;
       letter-spacing: 0.2em;
     }
 }

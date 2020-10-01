@@ -714,7 +714,7 @@ template {
 
 @media only screen and (min-width: 1600px) {
   .cta-title {
-    font-size: 1.1em;
+    font-size: .95em;
     letter-spacing: 0.2em;
   }
 }
@@ -756,7 +756,7 @@ template {
 
 @media only screen and (min-width: 1200px) {
   .cta-subtitle {
-    font-size: .8em;
+    font-size: .75em;
     letter-spacing: 0.2em;
   }
 }
@@ -2882,6 +2882,10 @@ input[type='checkbox'] {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .home-hero .home-hero-2 {
+    -o-object-position: 50% 25%;
+       object-position: 50% 25%;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
@@ -3040,17 +3044,23 @@ input[type='checkbox'] {
       grid-template-rows: repeat(2, auto);
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
-  margin: 5em 0;
+  margin-top: 3em;
+  height: 165em;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  background: white;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
+    height: 135em;
+    padding-bottom: 3em;
   }
 }
 
@@ -3058,7 +3068,14 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
-    margin: 3em 0;
+    height: 39em;
+    margin: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-coaching {
+    height: 35em;
   }
 }
 
@@ -3066,6 +3083,7 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+    height: 31em;
   }
 }
 
@@ -3073,7 +3091,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 0 0;
+    height: 31em;
   }
 }
 
@@ -3083,15 +3102,43 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .coaching-free {
     grid-column: coaching-free;
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-free img {
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .coaching-why {
     grid-column: coaching-why;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-why img {
+    -o-object-position: 50% 45%;
+       object-position: 50% 45%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .coaching-why img {
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
 }
 
@@ -3110,8 +3157,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 16em 22em;
-        grid-template-rows: 16em 22em;
+    -ms-grid-rows: 18em 22em;
+        grid-template-rows: 18em 22em;
   }
 }
 
@@ -3167,6 +3214,13 @@ input[type='checkbox'] {
   height: 100%;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .coaching-img img {
+    -o-object-position: 50% 25%;
+       object-position: 50% 25%;
+  }
+}
+
 .coaching-title {
   font-family: "Roboto", serif;
   font-size: 1.3rem;
@@ -3219,7 +3273,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 38.5em;
+    height: 36.5em;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -3397,11 +3451,17 @@ input[type='checkbox'] {
 
 .quote-parallax-container {
   position: relative;
-  height: 16em;
+  height: 19em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote-parallax-container {
+    height: 14em;
+  }
 }
 
 .quote-parallax-container img {
-  height: 100%;
+  height: 150%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -5496,13 +5556,13 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .services-cta {
-    height: 15em;
+    height: 14em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .services-cta {
-    height: 15em;
+    height: 14em;
   }
 }
 
@@ -5556,7 +5616,8 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-cta-content {
-    height: 13em;
+    height: 11em;
+    width: 28em;
   }
 }
 
@@ -5668,6 +5729,10 @@ input[type='checkbox'] {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .home-hero .home-hero-2 {
+    -o-object-position: 50% 25%;
+       object-position: 50% 25%;
   }
 }
 
@@ -5827,17 +5892,23 @@ input[type='checkbox'] {
       grid-template-rows: repeat(2, auto);
   -ms-grid-columns: 68vw;
       grid-template-columns: 68vw;
-  margin: 5em 0;
+  margin-top: 3em;
+  height: 165em;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  background: white;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
+    height: 135em;
+    padding-bottom: 3em;
   }
 }
 
@@ -5845,7 +5916,14 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
-    margin: 3em 0;
+    height: 39em;
+    margin: 0 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-coaching {
+    height: 35em;
   }
 }
 
@@ -5853,6 +5931,7 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
+    height: 31em;
   }
 }
 
@@ -5860,7 +5939,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    margin: 1em 0 3em 0;
+    margin: 1em 0 0 0;
+    height: 31em;
   }
 }
 
@@ -5870,15 +5950,43 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .coaching-free {
     grid-column: coaching-free;
   }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-free img {
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .coaching-why {
     grid-column: coaching-why;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-why img {
+    -o-object-position: 50% 45%;
+       object-position: 50% 45%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .coaching-why img {
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%;
   }
 }
 
@@ -5897,8 +6005,8 @@ input[type='checkbox'] {
   .coaching-1-1,
   .coaching-free,
   .coaching-why {
-    -ms-grid-rows: 16em 22em;
-        grid-template-rows: 16em 22em;
+    -ms-grid-rows: 18em 22em;
+        grid-template-rows: 18em 22em;
   }
 }
 
@@ -5954,6 +6062,13 @@ input[type='checkbox'] {
   height: 100%;
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .coaching-img img {
+    -o-object-position: 50% 25%;
+       object-position: 50% 25%;
+  }
+}
+
 .coaching-title {
   font-family: "Roboto", serif;
   font-size: 1.3rem;
@@ -6006,7 +6121,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .home-about {
     background-color: white;
-    height: 38.5em;
+    height: 36.5em;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -6184,11 +6299,17 @@ input[type='checkbox'] {
 
 .quote-parallax-container {
   position: relative;
-  height: 16em;
+  height: 19em;
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote-parallax-container {
+    height: 14em;
+  }
 }
 
 .quote-parallax-container img {
-  height: 100%;
+  height: 150%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
