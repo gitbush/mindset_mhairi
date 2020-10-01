@@ -8817,34 +8817,6 @@ input[type='checkbox'] {
   padding: 0;
 }
 
-.testimonial-intro h2 {
-  font-size: 1.7em;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .testimonial-intro h2 {
-    font-size: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .testimonial-intro h2 {
-    font-size: 1.05em;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .testimonial-intro h2 {
-    font-size: 1.0em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .testimonial-intro h2 {
-    font-size: .8em;
-  }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-intro .sect-subtitle {
     margin: 1em 0 1em 0;
