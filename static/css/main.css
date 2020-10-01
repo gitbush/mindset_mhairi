@@ -5176,6 +5176,13 @@ input[type='checkbox'] {
 
 .crazy-about-title {
   height: 7em;
+  margin: 0 4.5em;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .crazy-about-title {
+    height: 5em;
+  }
 }
 
 @media only screen and (min-width: 768px) {
