@@ -32,17 +32,22 @@
 .about-hero-img{
     text-align: center;
     height: 28em;
+    width: 90vw;
+    margin: auto;
 
     @media #{$breakpoint-md} {
         grid-column: 2/4;
+        width: 100%;
         height: 21em;
     }
     @media #{$breakpoint-lg} {
         grid-column: 2/4;
+        width: 100%;
         height: 23em;
     }
     @media #{$breakpoint-xl} {
         grid-column: 2/4;
+        width: 100%;
         height: 21em;
     }
     @media #{$breakpoint-xxl}{
@@ -51,14 +56,19 @@
     }
 
     img{
-        width: 90vw;
+        width: 100%;
         height: 100%;
-
+        object-fit: cover;
+        @media #{$breakpoint-sm} {
+            object-position: 50% 20%;
+        }
         @media #{$breakpoint-md} {
             width: 90%;
+            object-position: 50% 20%;
         }
         @media #{$breakpoint-lg} {
             width: 100%;
+            object-position: 50% 20%;
         }
         @media #{$breakpoint-xl} {
             width: 100%;
@@ -184,14 +194,12 @@
 }
 
 .about-detail-title{
-    font-size: 1.65em;
     width: 14.4em;
     font-weight: 400;
     @media #{$breakpoint-sm}{
         width: 20em;
     }
     @media #{$breakpoint-md}{
-        font-size: 1.2em;
         width: 34em;
         // margin-top: 0;
     }
@@ -213,7 +221,6 @@
 }
 
 .about-detail-subtitle{
-    font-size: 1.35em;
     margin: 0.7em;
     @media #{$breakpoint-sm} {
         width: 24em;
@@ -221,7 +228,6 @@
     }
     @media #{$breakpoint-md} {
         width: 31em;
-        font-size: 1em;
     }
     @media #{$breakpoint-lg} {
         width: 27em;
@@ -399,7 +405,8 @@
     grid-template-columns: 7em 1fr;
     margin: 4em 0;
 
-    .fas{
+    .fas,
+    .fab{
         font-size: 3.4em;
         margin: auto 0;
         @media #{$breakpoint-sm} {
@@ -755,9 +762,16 @@
 
 .crazy-about-sect{
     margin-top: 1em;
-
+    height: 102em;
+    background: white;
+    z-index: 5;
+    position: relative;
+    @media #{$breakpoint-sm}{
+       height: 140em;
+    }
     @media #{$breakpoint-min-md}{
-        margin: 1em 0 4em 0;
+        margin: 1em 0 0 0;
+        height: 36em;
     }
     
 }
@@ -807,10 +821,12 @@
 }
 
 .crazy-about-title{
-    height: 5em;
-
+    height: 7em;
+    @media #{$breakpoint-min-md} {
+        height: 4em; 
+    }
     .sect-title{
-        line-height: 3.2;
+        line-height: 2;
         height: auto;
         margin: auto;
         @media #{$breakpoint-xxl}{
@@ -1103,10 +1119,10 @@
         height: 22em;
     }
     @media #{$breakpoint-md} {
-        height: 17em;
+        height: 16em;
     }
     @media #{$breakpoint-lg} {
-        height: 18em;
+        height: 15em;
     }
     @media  #{$breakpoint-xl}{
         height: 14em;
