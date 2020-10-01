@@ -78,7 +78,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        height: 17em;
+        height: 16em;
         margin: auto;
     }
     @media #{$breakpoint-lg}{
@@ -195,16 +195,14 @@
         grid-column: 2;
     }
     @media #{$breakpoint-xl}{
-        height: 20em;
+        height: 100%;
     }
     img{
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: 50% 15%;
-        @media #{$breakpoint-xxl}{
-            height: 85%;
-        }
+       
     }
 }
 
@@ -295,7 +293,7 @@
 
     }
     @media #{$breakpoint-lg}{
-        margin: 2em 0;
+        margin: 1em 0;
     }
     @media #{$breakpoint-min-md}{
         background-color: white;
@@ -340,7 +338,7 @@
     font-size: 1.5em;
     font-family: $font-biko;
     color: $pink;
-    margin: 1em 0 1.5em 0;
+    margin: 1em 1em 1.5em 1em;
     @media #{$breakpoint-sm}{
         font-size: 1.4em;
         margin: 1em 1em 1.5em 1em;
@@ -391,24 +389,29 @@
 .who-is-this-for{
     text-align: center;
     margin: 4em 0 0 0;
+    padding-bottom: 3em;
     height: auto;
     background: white;
     position: relative;
     z-index: 5;
-    padding-bottom: 1em;
     @media #{$breakpoint-min-md}{
-        margin: 2em 0 2em 0;;
+        margin: 2em 0 0 0;
+        padding-bottom: 1em;
     }
     @media #{$breakpoint-xl}{
-        margin: 0 0 2em 0;
+        margin: 0 0 0 0;
+        padding-bottom: 2em;
     }
     @media #{$breakpoint-xxl}{
-        margin: 2em 0 2em 0;
+        margin: 2em 0 0 0;
     }
 }
 
 .who-item{
     margin: 3em;
+    &:nth-child(4){
+        margin-bottom: 0;
+    }
     @media #{$breakpoint-sm}{
         margin: 3em 6em;
     }
@@ -477,23 +480,25 @@
 .who-content{
     @media #{$breakpoint-md}{
         display: grid;
-            // grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
-            grid-template-columns: auto 14em 2em 14em auto;
-            grid-template-rows: auto auto;
+        grid-template-columns: auto 14em 2em 14em auto;
+        grid-template-rows: auto auto;
+        margin: 2em;
 
     }   
     @media #{$breakpoint-lg}{
         display: grid;
         grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
+        margin: 2em;
     } 
     @media #{$breakpoint-xl}{
         display: grid;
         grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
-
+        margin: 2em;
     } 
     @media #{$breakpoint-xxl}{
         display: grid;
         grid-template-columns: auto 9em 2em 9em 2em 9em 2em 9em auto;
+        margin: 1em;
     } 
 }
 
@@ -506,6 +511,9 @@
     position: relative;
     background: white;
     padding-top: 1em;
+    @media #{$breakpoint-min-md}{
+        padding-top: 2em;
+    }
 }
 
 .how-item{
@@ -549,6 +557,9 @@
 
 .how-title{
     margin: .8em 0 .5em 0;
+    @media #{$breakpoint-min-md}{
+        margin: 0 0 .5em 0;
+    }
 }
 
 .how-sub{
@@ -609,7 +620,7 @@
     position: relative;
     z-index: 5;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 2em 0;
+        margin: 2em 0 0 0;
         width: 100%;
     }
     .how-title{

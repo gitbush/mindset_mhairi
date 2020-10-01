@@ -3863,9 +3863,26 @@ input[type='checkbox'] {
   height: 23em;
 }
 
+@media only screen and (min-width: 768px) {
+  .testimonial-container {
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-container {
+    height: 14em;
+  }
+}
+
 .testimonial-container img {
   height: 150%;
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 5%;
+     object-position: 50% 5%;
+  opacity: .5;
 }
 
 .testimonial-parallax-window {
@@ -3935,7 +3952,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .testimonial-parallax {
-    width: 34em;
+    width: 28em;
     height: 6em;
   }
 }
@@ -6757,9 +6774,26 @@ input[type='checkbox'] {
   height: 23em;
 }
 
+@media only screen and (min-width: 768px) {
+  .testimonial-container {
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .testimonial-container {
+    height: 14em;
+  }
+}
+
 .testimonial-container img {
   height: 150%;
   width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 5%;
+     object-position: 50% 5%;
+  opacity: .5;
 }
 
 .testimonial-parallax-window {
@@ -6829,7 +6863,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .testimonial-parallax {
-    width: 34em;
+    width: 28em;
     height: 6em;
   }
 }
@@ -6980,7 +7014,7 @@ input[type='checkbox'] {
     right: 0;
     top: 0;
     bottom: 0;
-    height: 17em;
+    height: 16em;
     margin: auto;
   }
 }
@@ -7146,7 +7180,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1200px) {
   .services-hero-img {
-    height: 20em;
+    height: 100%;
   }
 }
 
@@ -7157,12 +7191,6 @@ input[type='checkbox'] {
      object-fit: cover;
   -o-object-position: 50% 15%;
      object-position: 50% 15%;
-}
-
-@media only screen and (min-width: 1600px) {
-  .services-hero-img img {
-    height: 85%;
-  }
 }
 
 .services-title {
@@ -7297,7 +7325,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .services-intro {
-    margin: 2em 0;
+    margin: 1em 0;
   }
 }
 
@@ -7356,7 +7384,7 @@ input[type='checkbox'] {
   font-size: 1.5em;
   font-family: "biko", serif;
   color: #f58c7c;
-  margin: 1em 0 1.5em 0;
+  margin: 1em 1em 1.5em 1em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -7433,33 +7461,39 @@ input[type='checkbox'] {
 .who-is-this-for {
   text-align: center;
   margin: 4em 0 0 0;
+  padding-bottom: 3em;
   height: auto;
   background: white;
   position: relative;
   z-index: 5;
-  padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 768px) {
   .who-is-this-for {
-    margin: 2em 0 2em 0;
+    margin: 2em 0 0 0;
+    padding-bottom: 1em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .who-is-this-for {
-    margin: 0 0 2em 0;
+    margin: 0 0 0 0;
+    padding-bottom: 2em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .who-is-this-for {
-    margin: 2em 0 2em 0;
+    margin: 2em 0 0 0;
   }
 }
 
 .who-item {
   margin: 3em;
+}
+
+.who-item:nth-child(4) {
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -7566,6 +7600,7 @@ input[type='checkbox'] {
         grid-template-columns: auto 14em 2em 14em auto;
     -ms-grid-rows: auto auto;
         grid-template-rows: auto auto;
+    margin: 2em;
   }
 }
 
@@ -7575,6 +7610,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
         grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
+    margin: 2em;
   }
 }
 
@@ -7584,6 +7620,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
         grid-template-columns: auto 11em 1em 11em 1em 11em 1em 11em auto;
+    margin: 2em;
   }
 }
 
@@ -7593,6 +7630,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto 9em 2em 9em 2em 9em 2em 9em auto;
         grid-template-columns: auto 9em 2em 9em 2em 9em 2em 9em auto;
+    margin: 1em;
   }
 }
 
@@ -7601,6 +7639,12 @@ input[type='checkbox'] {
   position: relative;
   background: white;
   padding-top: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-it-works {
+    padding-top: 2em;
+  }
 }
 
 .how-item {
@@ -7665,6 +7709,12 @@ input[type='checkbox'] {
 
 .how-title {
   margin: .8em 0 .5em 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .how-title {
+    margin: 0 0 .5em 0;
+  }
 }
 
 .how-sub {
@@ -7751,7 +7801,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-package {
-    margin: 2em 0;
+    margin: 2em 0 0 0;
     width: 100%;
   }
 }

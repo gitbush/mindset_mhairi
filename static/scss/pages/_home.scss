@@ -749,9 +749,20 @@
     position: relative;
     background: black;
     height: 23em;
+    @media #{$breakpoint-min-md}{
+        height: 15em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 14em;
+    }
+   
     img{
         height: 150%;
         width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        object-position: 50% 5%;
+        opacity: .5;
     }
 }
 
@@ -799,7 +810,7 @@
         height: 8em;
     }
     @media #{$breakpoint-xxl}{
-        width: 34em;
+        width: 28em;
         height: 6em;
     }
 }
