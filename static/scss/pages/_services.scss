@@ -287,7 +287,7 @@
     text-align: center;
     display: grid;
     justify-items: center;
-    padding: 1em 0;
+    padding: 3em 0;
     @media #{$breakpoint-sm}{
         padding: 1em 0;
 
@@ -304,7 +304,7 @@
 }
 
 .intro-title{
-    margin-top: 2em;
+    margin-top: 0;
     font-family: $font-biko;
     width: 15.5em;
     @media #{$breakpoint-sm}{
@@ -312,7 +312,7 @@
         margin-top: 1em;
     }
     @media #{$breakpoint-md}{
-        font-size: 1.2em;
+        // font-size: 1.2em;
         width: 34em;
         // margin-top: 0;
     }
@@ -395,8 +395,11 @@
     position: relative;
     z-index: 5;
     @media #{$breakpoint-min-md}{
-        margin: 2em 0 0 0;
+        margin: 0 0 0 0;
         padding-bottom: 1em;
+    }
+    @media #{$breakpoint-lg}{
+        margin: 0 0 0 0;
     }
     @media #{$breakpoint-xl}{
         margin: 0 0 0 0;
@@ -519,10 +522,10 @@
 .how-item{
     background-color: $lightest-pink;
     margin: 4em 1.5em;
-    height: 35.5em;
+    height: auto;
     padding: 2em 2em;
     @media #{$breakpoint-sm}{
-        height: 27em;
+        height: auto;
         margin: 4em auto;
         width: 70%;
     }
@@ -541,17 +544,17 @@
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 0;
         padding: .8em .7em;
-        height: 26em;
+        height: 22em;
         width: 100%;
     }
     @media #{$breakpoint-lg}{
-        height: 23em;
-    }
-    @media #{$breakpoint-xl}{
         height: 19em;
     }
+    @media #{$breakpoint-xl}{
+        height: 16em;
+    }
     @media #{$breakpoint-xxl}{
-        height: 17em;
+        height: 14em;
     }
 }
 

@@ -752,6 +752,9 @@
     @media #{$breakpoint-min-md}{
         height: 15em;
     }
+    @media #{$breakpoint-xl}{
+        height: 14em;
+    }
     @media #{$breakpoint-xxl}{
         height: 14em;
     }
@@ -762,7 +765,7 @@
         -o-object-fit: cover;
         object-fit: cover;
         object-position: 50% 5%;
-        opacity: .5;
+        opacity: .8;
     }
 }
 
@@ -807,7 +810,7 @@
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
         width: 32em;
-        height: 8em;
+        height: 6em;
     }
     @media #{$breakpoint-xxl}{
         width: 28em;

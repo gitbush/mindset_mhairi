@@ -3869,6 +3869,12 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .testimonial-container {
+    height: 14em;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .testimonial-container {
     height: 14em;
@@ -3882,7 +3888,7 @@ input[type='checkbox'] {
   object-fit: cover;
   -o-object-position: 50% 5%;
      object-position: 50% 5%;
-  opacity: .5;
+  opacity: .8;
 }
 
 .testimonial-parallax-window {
@@ -3946,7 +3952,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .testimonial-parallax {
     width: 32em;
-    height: 8em;
+    height: 6em;
   }
 }
 
@@ -6780,6 +6786,12 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .testimonial-container {
+    height: 14em;
+  }
+}
+
 @media only screen and (min-width: 1600px) {
   .testimonial-container {
     height: 14em;
@@ -6793,7 +6805,7 @@ input[type='checkbox'] {
   object-fit: cover;
   -o-object-position: 50% 5%;
      object-position: 50% 5%;
-  opacity: .5;
+  opacity: .8;
 }
 
 .testimonial-parallax-window {
@@ -6857,7 +6869,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .testimonial-parallax {
     width: 32em;
-    height: 8em;
+    height: 6em;
   }
 }
 
@@ -7314,7 +7326,7 @@ input[type='checkbox'] {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  padding: 1em 0;
+  padding: 3em 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -7340,7 +7352,7 @@ input[type='checkbox'] {
 }
 
 .intro-title {
-  margin-top: 2em;
+  margin-top: 0;
   font-family: "biko", serif;
   width: 15.5em;
 }
@@ -7354,7 +7366,6 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .intro-title {
-    font-size: 1.2em;
     width: 34em;
   }
 }
@@ -7470,8 +7481,14 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) {
   .who-is-this-for {
-    margin: 2em 0 0 0;
+    margin: 0 0 0 0;
     padding-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .who-is-this-for {
+    margin: 0 0 0 0;
   }
 }
 
@@ -7650,13 +7667,13 @@ input[type='checkbox'] {
 .how-item {
   background-color: rgba(251, 242, 236, 0.6);
   margin: 4em 1.5em;
-  height: 35.5em;
+  height: auto;
   padding: 2em 2em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .how-item {
-    height: 27em;
+    height: auto;
     margin: 4em auto;
     width: 70%;
   }
@@ -7684,26 +7701,26 @@ input[type='checkbox'] {
   .how-item {
     margin: 0;
     padding: .8em .7em;
-    height: 26em;
+    height: 22em;
     width: 100%;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .how-item {
-    height: 23em;
+    height: 19em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .how-item {
-    height: 19em;
+    height: 16em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .how-item {
-    height: 17em;
+    height: 14em;
   }
 }
 
