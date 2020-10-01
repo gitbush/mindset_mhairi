@@ -637,8 +637,8 @@ template {
   font-weight: 400;
 }
 
-.quote-text-dark {
-  color: #3b403f;
+.quote-text-white {
+  color: white;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: .3em;
@@ -647,31 +647,31 @@ template {
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .quote-text-dark {
+  .quote-text-white {
     font-size: 1.25em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .quote-text-dark {
+  .quote-text-white {
     font-size: 1.2em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .quote-text-dark {
+  .quote-text-white {
     font-size: 1.1em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .quote-text-dark {
+  .quote-text-white {
     font-size: 1em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
-  .quote-text-dark {
+  .quote-text-white {
     font-size: .9em;
   }
 }
@@ -3859,6 +3859,13 @@ input[type='checkbox'] {
 
 .testimonial-container {
   position: relative;
+  background: black;
+  height: 23em;
+}
+
+.testimonial-container img {
+  height: 150%;
+  width: 100%;
 }
 
 .testimonial-parallax-window {
@@ -3866,7 +3873,7 @@ input[type='checkbox'] {
   background: transparent;
   position: relative;
   text-align: center;
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -6746,6 +6753,13 @@ input[type='checkbox'] {
 
 .testimonial-container {
   position: relative;
+  background: black;
+  height: 23em;
+}
+
+.testimonial-container img {
+  height: 150%;
+  width: 100%;
 }
 
 .testimonial-parallax-window {
@@ -6753,7 +6767,7 @@ input[type='checkbox'] {
   background: transparent;
   position: relative;
   text-align: center;
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -7306,6 +7320,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .intro-title {
     width: 23em;
+    margin-top: 1em;
   }
 }
 
@@ -7347,6 +7362,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-intro-subtitle {
     font-size: 1.4em;
+    margin: 1em 1em 1.5em 1em;
   }
 }
 
@@ -7416,7 +7432,12 @@ input[type='checkbox'] {
 
 .who-is-this-for {
   text-align: center;
-  margin: 4em 0;
+  margin: 4em 0 0 0;
+  height: auto;
+  background: white;
+  position: relative;
+  z-index: 5;
+  padding-bottom: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -7577,6 +7598,9 @@ input[type='checkbox'] {
 
 .how-it-works {
   text-align: center;
+  position: relative;
+  background: white;
+  padding-top: 1em;
 }
 
 .how-item {
@@ -7716,8 +7740,13 @@ input[type='checkbox'] {
 }
 
 .signature-package {
-  margin: 4em auto;
+  margin: 4em auto 0 auto;
+  padding-bottom: 4em;
   text-align: center;
+  height: auto;
+  background: white;
+  position: relative;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
@@ -7830,6 +7859,10 @@ input[type='checkbox'] {
   .coaching-package-item {
     height: 17em;
   }
+}
+
+.coaching-package-intro {
+  margin-bottom: 2em;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {

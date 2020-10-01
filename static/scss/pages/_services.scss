@@ -311,6 +311,7 @@
     width: 15.5em;
     @media #{$breakpoint-sm}{
         width: 23em;
+        margin-top: 1em;
     }
     @media #{$breakpoint-md}{
         font-size: 1.2em;
@@ -342,6 +343,7 @@
     margin: 1em 0 1.5em 0;
     @media #{$breakpoint-sm}{
         font-size: 1.4em;
+        margin: 1em 1em 1.5em 1em;
     }
     @media #{$breakpoint-md}{
         font-size: 1.1em;
@@ -388,7 +390,12 @@
 
 .who-is-this-for{
     text-align: center;
-    margin: 4em 0;
+    margin: 4em 0 0 0;
+    height: auto;
+    background: white;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 1em;
     @media #{$breakpoint-min-md}{
         margin: 2em 0 2em 0;;
     }
@@ -496,6 +503,9 @@
 
 .how-it-works{
     text-align: center;
+    position: relative;
+    background: white;
+    padding-top: 1em;
 }
 
 .how-item{
@@ -591,8 +601,13 @@
 // ---------------------------------------------------------------
 
 .signature-package{
-    margin: 4em auto;
+    margin: 4em auto 0 auto;
+    padding-bottom: 4em;
     text-align: center;
+    height: auto;
+    background: white;
+    position: relative;
+    z-index: 5;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 2em 0;
         width: 100%;
@@ -668,6 +683,10 @@
     @media #{$breakpoint-xxl}{
         height: 17em;
     }
+}
+
+.coaching-package-intro{
+    margin-bottom: 2em;
 }
 
 .signature-includes{

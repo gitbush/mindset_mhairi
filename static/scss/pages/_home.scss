@@ -747,6 +747,12 @@
 
 .testimonial-container{
     position: relative;
+    background: black;
+    height: 23em;
+    img{
+        height: 150%;
+        width: 100%;
+    }
 }
 
 .testimonial-parallax-window{
@@ -754,7 +760,7 @@
     background: transparent;
     position: relative;
     text-align: center;
-    opacity: 0.2!important;
+    opacity: 0.5!important;
     @media #{$breakpoint-sm}{
         min-height: 16em;
     }
