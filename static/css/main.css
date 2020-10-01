@@ -5092,22 +5092,17 @@ input[type='checkbox'] {
 
 .crazy-about-sect {
   margin-top: 1em;
-  height: 102em;
+  height: auto;
+  padding-bottom: 2em;
   background: white;
   z-index: 5;
   position: relative;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .crazy-about-sect {
-    height: 140em;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .crazy-about-sect {
     margin: 1em 0 0 0;
-    height: 36em;
+    padding-bottom: 4em;
   }
 }
 
