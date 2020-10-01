@@ -77,26 +77,6 @@
     background-color: white;
     padding: 0;
 
-    // h2{
-    //     font-size: 1.7em;
-    //     @media  #{$breakpoint-sm}{
-    //         font-size: 1.5em;
-    
-    //     }
-    //     @media  #{$breakpoint-md}{
-    //         font-size: 1.05em;
-    
-    //     }
-    //     @media  #{$breakpoint-lg}, #{$breakpoint-xl}{
-    //         font-size: 1.0em;
-    
-    //     }
-    //     @media  #{$breakpoint-xxl}{
-    //         font-size: .8em;
-    
-    //     }
-    // }
-
     .sect-subtitle{
         @media  #{$breakpoint-md}{
             margin: 1em 0 1em 0;
