@@ -860,6 +860,14 @@ a:visited, a:hover, a:active, a:focus {
   width: 1px;
 }
 
+break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
 [data-aos="numbers-slide"] {
   opacity: 0;
   -webkit-transition-property: opacity, -webkit-transform;
@@ -7330,7 +7338,7 @@ input[type='checkbox'] {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -8806,6 +8814,7 @@ input[type='checkbox'] {
 
 .testimonial-intro {
   background-color: white;
+  padding: 0;
 }
 
 .testimonial-intro h2 {
@@ -8838,7 +8847,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-intro .sect-subtitle {
-    margin: 2em 0 1em 0;
+    margin: 1em 0 1em 0;
   }
 }
 
@@ -9061,6 +9070,89 @@ input[type='checkbox'] {
   .half-width-hr {
     width: 50%;
     margin: 2em auto;
+  }
+}
+
+.you-will-gain-section {
+  padding: 2em 0 0 0;
+}
+
+.you-will-gain {
+  width: 80vw;
+  margin: 1em auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .you-will-gain {
+    width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .you-will-gain {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: auto;
+    margin: 2em auto;
+  }
+}
+
+.gain-item {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .gain-item {
+    position: relative;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 30% !important;
+    padding: 0 .5em;
+  }
+  .gain-item:nth-of-type(1):after, .gain-item:nth-of-type(2):after, .gain-item:nth-of-type(4):after, .gain-item:nth-of-type(5):after {
+    content: "";
+    background-color: #f58c7c;
+    position: absolute;
+    width: 2px;
+    height: 80%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.gain-item .sect-subtitle {
+  margin: .5em;
+}
+
+@media only screen and (min-width: 768px) {
+  .gain-item-content {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .gain-item-content {
+    height: 100%;
+    width: 95%;
   }
 }
 

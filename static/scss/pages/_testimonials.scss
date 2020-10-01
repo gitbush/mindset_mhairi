@@ -75,6 +75,7 @@
 
 .testimonial-intro{
     background-color: white;
+    padding: 0;
 
     h2{
         font-size: 1.7em;
@@ -98,7 +99,7 @@
 
     .sect-subtitle{
         @media  #{$breakpoint-md}{
-            margin: 2em 0 1em 0;
+            margin: 1em 0 1em 0;
     
         }
         
@@ -265,6 +266,76 @@
     }
   }
 
+// ---------------------------------------------------------------
+// You will gain section
+// ---------------------------------------------------------------
+
+.you-will-gain-section{
+    padding: 2em 0 0 0;
+}
+
+.you-will-gain{
+    width: 80vw;
+    margin: 1em auto;
+    position: relative;
+    @media  #{$breakpoint-sm}{
+        width: 55vw;
+    }
+    @media  #{$breakpoint-min-md}{
+        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        height: auto;
+        margin: 2em auto;
+    }
+
+}
+
+.gain-item{
+    position: relative;
+    @media  #{$breakpoint-min-md}{
+        position: relative;
+        align-self: center;
+        width: 30%!important;
+        padding: 0 .5em;
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(4),
+        &:nth-of-type(5){
+            &:after{
+                content: "";
+                background-color: #f58c7c;
+                position: absolute;
+                width: 2px;
+                height: 80%;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                display: block;
+            }
+        }
+    }
+    .sect-subtitle{
+        margin: .5em;
+    }
+}
+
+.gain-item-content{
+    @media  #{$breakpoint-min-md}{
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 95%;
+    }
+    @media  #{$breakpoint-lg}{
+        height: 100%;
+        width: 95%;
+    }
+}
 // ---------------------------------------------------------------
 // Tick list section
 // ---------------------------------------------------------------
