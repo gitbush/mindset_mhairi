@@ -194,7 +194,7 @@
 }
 
 .about-detail-title{
-    width: 14.4em;
+    width: 18em;
     font-weight: 400;
     @media #{$breakpoint-sm}{
         width: 20em;
@@ -221,7 +221,7 @@
 }
 
 .about-detail-subtitle{
-    margin: 0.7em;
+    margin: 1.2em;
     @media #{$breakpoint-sm} {
         width: 24em;
         font-size: 1.1em;
