@@ -1169,8 +1169,14 @@ footer {
 
 @media only screen and (min-width: 768px) {
   footer {
-    height: 1.5em;
+    height: 2.5em;
     background-color: #f0f3f3;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  footer {
+    height: 3em;
   }
 }
 
@@ -1479,7 +1485,7 @@ footer {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nav {
     padding: 1em 2em .6em 1.5em;
-    height: 18em;
+    height: 17em;
     width: 12.5em;
   }
 }
