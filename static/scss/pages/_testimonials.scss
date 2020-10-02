@@ -87,7 +87,7 @@
 }
 
 .testimonial-intro-text{
-    @media  #{$breakpoint-md}{
+    @media  #{$breakpoint-min-md}{
         margin-bottom: 0;
 
     }
@@ -95,7 +95,8 @@
 }
 
 .testimonials-section{
-    @media  #{$breakpoint-md}{
+    margin: 3em 0;
+    @media  #{$breakpoint-min-md}{
         margin: 2em 0;
 
     }
@@ -275,8 +276,8 @@
     position: relative;
     @media  #{$breakpoint-min-md}{
         position: relative;
-        align-self: center;
-        width: 30%!important;
+        align-self: end;
+        width: 31%!important;
         padding: 0 .5em;
         &:nth-of-type(1),
         &:nth-of-type(2),
@@ -287,7 +288,7 @@
                 background-color: #f58c7c;
                 position: absolute;
                 width: 2px;
-                height: 80%;
+                height: 3em;
                 margin: auto;
                 top: 0;
                 bottom: 0;
@@ -316,6 +317,11 @@
         width: 95%;
     }
 }
+
+.not-alone{
+    background-color: $gray;
+}
+
 // ---------------------------------------------------------------
 // Tick list section
 // ---------------------------------------------------------------
