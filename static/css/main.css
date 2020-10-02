@@ -5606,6 +5606,10 @@ input[type='checkbox'] {
 .services-cta {
   position: relative;
   height: 25em;
+  background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -5658,25 +5662,10 @@ input[type='checkbox'] {
      object-position: 50% 55%;
 }
 
-@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
-  .services-cta .parallax-container {
-    z-index: -1;
-    bottom: 0em;
-    width: 100%;
-    min-height: 100%;
-    position: fixed;
-    background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-}
-
-@media only screen and (max-width: 500px) and (min-width: 768px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) {
-  .services-cta .parallax-container {
-    opacity: 0.7;
-  }
+.parallax-container {
+  background-color: black;
+  height: 100%;
+  opacity: .6;
 }
 
 .services-parallax-window {
