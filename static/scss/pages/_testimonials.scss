@@ -21,23 +21,23 @@
 
 .testimonial-hero-text{
     text-align: center;
-    width: 95%;
+    width: 18em;
     margin: auto;
     position: absolute;
     bottom: 1em;
     left: 0;
     right: 0;
     @media  #{$breakpoint-sm}{
-        width: 65%;
+        width: 18em;
     }
     @media  #{$breakpoint-md}{
-        width: 55%;
+        width: 17em;
     }
     @media  #{$breakpoint-lg}{
-        width: 20em;
+        width: 15em;
     }
     @media  #{$breakpoint-xl}{
-        width: 20em;
+        width: 15em;
     }
     @media  #{$breakpoint-xxl}{
         width: 15em;

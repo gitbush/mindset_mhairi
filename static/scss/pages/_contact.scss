@@ -323,6 +323,9 @@
     font-family: $font-biko;
     letter-spacing: .2em;
     margin: 1.5em 0;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 // ---------------------------------------------------------------
@@ -331,6 +334,9 @@
 
 .faq-section{
     text-align: center;
+    position: relative;
+    background: white;
+    z-index: 5;
 }
 
 .faq-title{
@@ -370,24 +376,42 @@
         margin: 1em .5em;
         
     }
+    &:nth-of-type(5),
+        &:nth-of-type(6),
+        &:nth-of-type(7),
+        &:nth-of-type(8){
+            .faq-sub{
+                @media #{$breakpoint-md}{
+                    height: 3em;
+                }
+                @media #{$breakpoint-lg}{
+                    height: 4em;
+                }
+                @media #{$breakpoint-xl}{
+                    height: 3em;
+                }
+            }
+        }
     
 }
 
 .faq-sub{
+    margin-bottom: 1em;
     @media #{$breakpoint-md}{
         height: 4.5em; 
         font-size: .75em;
+        margin-bottom: 1em;
     }
     @media #{$breakpoint-lg}{
-        height: 5em;
+        height: 6em;
         font-size: .8em;
     }
     @media #{$breakpoint-xl}{
-        height: 3em;
+        height: 5em;
         font-size: .7em;
     }
     @media #{$breakpoint-xxl}{
-        height: 2.5em;
+        height: 4.5em;
         font-size: .55em;
         
     }

@@ -309,17 +309,17 @@ function resultRender(){
   if(trueCount >= 5){
     quizIntroText.innerHTML = `${results[0].result}`;
     quizStart.innerHTML = `Free clarity call`;
-    quizStart.href = `contact.html`;
+    quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
   } 
   else if(trueCount < 3){
     quizIntroText.innerHTML = `${results[2].result}`;
     quizStart.innerHTML = `Free clarity call`;
-    quizStart.href = `contact.html`;
+    quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
 
   } else{
     quizIntroText.innerHTML = `${results[1].result}`;
     quizStart.innerHTML = `Free clarity call`;
-    quizStart.href = `contact.html`;
+    quizStart.href = `https://app.acuityscheduling.com/schedule.php?owner=19489834&appointmentType=17193339`;
   }
 }
 

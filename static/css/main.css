@@ -1070,7 +1070,7 @@ break {
         grid-template-columns: 1fr 1fr;
     background-color: white;
     padding: 0;
-    width: 37.5em;
+    width: 35.5em;
     position: absolute;
     z-index: 2;
     top: 4em;
@@ -1082,13 +1082,13 @@ break {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .cf-content {
-    width: 42em;
+    width: 36em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .cf-content {
-    width: 42em;
+    width: 39em;
   }
 }
 
@@ -1394,19 +1394,7 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .ig-intro {
-    height: 14em;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .ig-intro {
-    height: 14em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 768px) {
   .ig-intro {
     height: 100%;
   }
@@ -1820,6 +1808,10 @@ footer {
   bottom: 5px;
 }
 
+a:focus {
+  outline: 0;
+}
+
 .coach-cta-btn {
   height: 30px;
   margin: 0 auto;
@@ -1834,6 +1826,10 @@ footer {
   left: 0;
   right: 0;
   bottom: 1.5em;
+}
+
+.coach-cta-btn:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -1903,21 +1899,33 @@ footer {
   }
 }
 
+.btn-white-sm:hover {
+  cursor: pointer;
+  color: #3b403f;
+}
+
 .btn-pink {
+  text-decoration: none;
   background-color: #f58c7c;
   color: white;
   height: 100%;
   position: relative;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.2em;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  height: 60%;
+}
+
+.btn-pink:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .about-cta-btn {
@@ -1936,6 +1944,10 @@ footer {
           box-shadow: 3px 5px 9px -7px #3b403f;
 }
 
+.about-cta-btn:hover {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .about-cta-btn {
     width: 9em;
@@ -1950,6 +1962,10 @@ footer {
   padding: .6em 1em;
   -webkit-box-shadow: 3px 5px 9px -7px #3b403f;
           box-shadow: 3px 5px 9px -7px #3b403f;
+}
+
+.btn-light-pink:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -2026,6 +2042,11 @@ footer {
   }
 }
 
+.btn-dark-pink:hover {
+  cursor: pointer;
+  color: #3b403f;
+}
+
 .btn-black {
   background: black;
   color: white;
@@ -2038,6 +2059,11 @@ footer {
   text-decoration: none !important;
   outline: none !important;
   background: white;
+}
+
+.btn-black:hover {
+  cursor: pointer;
+  color: white;
 }
 
 .circle-slide-btn {
@@ -8611,8 +8637,15 @@ input[type='checkbox'] {
   margin: 1.5em 0;
 }
 
+.contact-btn:hover {
+  cursor: pointer;
+}
+
 .faq-section {
   text-align: center;
+  position: relative;
+  background: white;
+  z-index: 5;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8668,29 +8701,52 @@ input[type='checkbox'] {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .faq-item:nth-of-type(5) .faq-sub, .faq-item:nth-of-type(6) .faq-sub, .faq-item:nth-of-type(7) .faq-sub, .faq-item:nth-of-type(8) .faq-sub {
+    height: 3em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-item:nth-of-type(5) .faq-sub, .faq-item:nth-of-type(6) .faq-sub, .faq-item:nth-of-type(7) .faq-sub, .faq-item:nth-of-type(8) .faq-sub {
+    height: 4em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .faq-item:nth-of-type(5) .faq-sub, .faq-item:nth-of-type(6) .faq-sub, .faq-item:nth-of-type(7) .faq-sub, .faq-item:nth-of-type(8) .faq-sub {
+    height: 3em;
+  }
+}
+
+.faq-sub {
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .faq-sub {
     height: 4.5em;
     font-size: .75em;
+    margin-bottom: 1em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .faq-sub {
-    height: 5em;
+    height: 6em;
     font-size: .8em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .faq-sub {
-    height: 3em;
+    height: 5em;
     font-size: .7em;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .faq-sub {
-    height: 2.5em;
+    height: 4.5em;
     font-size: .55em;
   }
 }
@@ -8730,7 +8786,7 @@ input[type='checkbox'] {
 
 .testimonial-hero-text {
   text-align: center;
-  width: 95%;
+  width: 18em;
   margin: auto;
   position: absolute;
   bottom: 1em;
@@ -8740,25 +8796,25 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .testimonial-hero-text {
-    width: 65%;
+    width: 18em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-hero-text {
-    width: 55%;
+    width: 17em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-hero-text {
-    width: 20em;
+    width: 15em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .testimonial-hero-text {
-    width: 20em;
+    width: 15em;
   }
 }
 

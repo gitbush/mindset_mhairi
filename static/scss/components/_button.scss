@@ -1,6 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+a:focus{outline:0;}
+
+
 
 .coach-cta-btn{
     height: 30px;
@@ -13,6 +16,9 @@
     left: 0;
     right: 0;
     bottom: 1.5em;
+    &:hover{
+        cursor: pointer;
+    }
     @media #{$breakpoint-sm} {
         height: 30px;
     }
@@ -37,6 +43,7 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2em;
+    
     @media #{$breakpoint-sm} {
         font-size: 1em;
       }
@@ -52,26 +59,40 @@
       @media #{$breakpoint-xxl} {
         font-size: .56em;
       }
+      &:hover{
+        cursor: pointer;
+        color: $base-text-color;
+    }
 }
 
 .btn-pink{
+   
+    text-decoration: none;
     background-color: $pink;
     color: white;
     height: 100%;
     position: relative;
     margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.2em;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    height: 60%;
+    &:hover{
+        cursor: pointer;
+        color: white;
+    }
 }
 
 .about-cta-btn{
+    &:hover{
+        cursor: pointer;
+    }
     height: 30px;
     margin: auto;
     display: flex;
@@ -86,6 +107,9 @@
 }
 
 .btn-light-pink{
+    &:hover{
+        cursor: pointer;
+    }
     background-color: $light-pink;
     text-transform: uppercase;
     color: $base-text-color;
@@ -138,6 +162,10 @@
         font-size: .6em;
         padding: .6em .6em;
     }
+    &:hover{
+        cursor: pointer;
+        color: $base-text-color;
+    }
 }
 
 .btn-black{
@@ -150,6 +178,10 @@
         text-decoration: none !important;
         outline: none !important;
         background: white;
+    }
+    &:hover{
+        cursor: pointer;
+        color: white;
     }
 }
 
