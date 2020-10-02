@@ -1184,6 +1184,8 @@ footer {
   height: 7em;
   text-align: center;
   position: relative;
+  z-index: 5;
+  background: white;
 }
 
 .to-top-text {
@@ -3442,9 +3444,15 @@ input[type='checkbox'] {
   height: 19em;
   background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  z-index: 5;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote-parallax-container {
+    background-position: 0 -2em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -5598,16 +5606,22 @@ input[type='checkbox'] {
 .services-cta {
   position: relative;
   height: 25em;
-  background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .services-cta {
     height: 22em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .services-cta {
+    z-index: -1;
+    background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -5642,17 +5656,25 @@ input[type='checkbox'] {
   object-fit: cover;
   -o-object-position: 50% 55%;
      object-position: 50% 55%;
-  opacity: .5;
 }
 
-.parallax-container {
-  height: 100%;
-  background: black;
-  opacity: 0.3;
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  .services-cta .parallax-container {
+    z-index: -1;
+    bottom: 0em;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  .parallax-container {
+@media only screen and (max-width: 500px) and (min-width: 768px), only screen and (min-width: 500px) and (max-width: 767px) and (min-width: 768px) {
+  .services-cta .parallax-container {
     opacity: 0.7;
   }
 }
@@ -6378,9 +6400,15 @@ input[type='checkbox'] {
   height: 19em;
   background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  z-index: 5;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote-parallax-container {
+    background-position: 0 -2em;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
