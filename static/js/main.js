@@ -36,10 +36,10 @@
  * Animate on scroll inititiate and settings
  */
 
-AOS.init({
-  duration: 600, // values from 0 to 3000, with step 50ms
-  once: true,
-});
+// AOS.init({
+//   duration: 600, // values from 0 to 3000, with step 50ms
+//   once: true,
+// });
 
 var rellax = new Rellax('.rellax');
 
