@@ -41,7 +41,7 @@
 //   once: true,
 // });
 
-var rellax = new Rellax('.rellax');
+// var rellax = new Rellax('.rellax');
 
 /**
  * 
@@ -333,4 +333,5 @@ $(window).load(function () {
       $(this).remove();
   });
 });
+
 

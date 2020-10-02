@@ -1120,6 +1120,11 @@
 .services-cta{
     position: relative;
     height: 25em;
+    background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     // margin: 4em 0 0 0;
     @media #{$breakpoint-sm} {
         height: 22em;
@@ -1149,6 +1154,10 @@
 .parallax-container{
     height: 100%;
     background: black;
+    opacity: 0.3;
+    @media #{$breakpoint-min-md} {
+        opacity: 0.7;
+    }
 }
 
 .services-parallax-window{

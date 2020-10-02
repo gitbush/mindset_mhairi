@@ -3440,6 +3440,11 @@ input[type='checkbox'] {
 .quote-parallax-container {
   position: relative;
   height: 19em;
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -5593,6 +5598,11 @@ input[type='checkbox'] {
 .services-cta {
   position: relative;
   height: 25em;
+  background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
@@ -5638,6 +5648,13 @@ input[type='checkbox'] {
 .parallax-container {
   height: 100%;
   background: black;
+  opacity: 0.3;
+}
+
+@media only screen and (min-width: 768px) {
+  .parallax-container {
+    opacity: 0.7;
+  }
 }
 
 .services-parallax-window {
@@ -6359,6 +6376,11 @@ input[type='checkbox'] {
 .quote-parallax-container {
   position: relative;
   height: 19em;
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-comp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @media only screen and (min-width: 1200px) {
