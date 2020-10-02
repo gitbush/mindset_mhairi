@@ -368,9 +368,11 @@
 
 .faq-item{
     margin: 5em 0;
-    &:nth-of-type(8){
-        margin: 5em 0 0 0;
-        padding-bottom: 5em ;
+    @media #{$breakpoint-xs}{
+        &:nth-of-type(8){
+            margin: 5em 0 0 0;
+            padding-bottom: 5em ;
+        }
     }
     @media #{$breakpoint-min-md}{
         margin: 1em .5em;
