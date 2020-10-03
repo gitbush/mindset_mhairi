@@ -79,7 +79,7 @@ body { height: 100%; }
 }
 
 .quiz-item{
-    height: 75%;
+    height: 18.5em;
     margin: auto;
     display: block;
     position: absolute;
@@ -258,7 +258,7 @@ input[type='checkbox'] {
 }
 
 .quiz-result{
-    height: 21em!important;
+    height: 19em!important;
     @media #{$breakpoint-sm} {
         height: 15em!important;
     }

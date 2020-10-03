@@ -2302,7 +2302,7 @@ body {
 }
 
 .quiz-item {
-  height: 75%;
+  height: 18.5em;
   margin: auto;
   display: block;
   position: absolute;
@@ -2527,7 +2527,7 @@ input[type='checkbox'] {
 }
 
 .quiz-result {
-  height: 21em !important;
+  height: 19em !important;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
