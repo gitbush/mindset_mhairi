@@ -3880,6 +3880,16 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .testimonial-container .parallax-container {
+    background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
 .testimonial-container img {
   height: 150%;
   width: 100%;
@@ -6825,6 +6835,16 @@ input[type='checkbox'] {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .testimonial-container .parallax-container {
+    background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
 .testimonial-container img {
   height: 150%;
   width: 100%;
@@ -8180,37 +8200,46 @@ input[type='checkbox'] {
 
 .contact-hero-container {
   position: relative;
-}
-
-.contact-hero-parallax-window {
   min-height: 33em;
-  background: transparent;
-  position: relative;
   text-align: center;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
-  .contact-hero-parallax-window {
+  .contact-hero-container {
     min-height: 34em;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-hero-parallax-window {
+  .contact-hero-container {
     min-height: 18em;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .contact-hero-parallax-window {
+  .contact-hero-container {
     min-height: 19em;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .contact-hero-parallax-window {
+  .contact-hero-container {
     min-height: 19.5em;
   }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-hero-container {
+    background-image: url("../img/Mhairi_pics/typing-comp.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.contact-hero-parallax-window {
+  background: black;
 }
 
 .contact-hero-parallax-window:before {
