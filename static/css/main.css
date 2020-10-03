@@ -5675,7 +5675,13 @@ input[type='checkbox'] {
 .parallax-container {
   background-color: black;
   height: 100%;
-  opacity: .6;
+  opacity: .2;
+}
+
+@media only screen and (min-width: 768px) {
+  .parallax-container .parallax-container {
+    opacity: .4;
+  }
 }
 
 .services-parallax-window {
@@ -8200,32 +8206,6 @@ input[type='checkbox'] {
 
 .contact-hero-container {
   position: relative;
-  min-height: 33em;
-  text-align: center;
-}
-
-@media only screen and (min-width: 500px) and (max-width: 767px) {
-  .contact-hero-container {
-    min-height: 34em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .contact-hero-container {
-    min-height: 18em;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .contact-hero-container {
-    min-height: 19em;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .contact-hero-container {
-    min-height: 19.5em;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -8240,6 +8220,33 @@ input[type='checkbox'] {
 
 .contact-hero-parallax-window {
   background: black;
+  position: relative;
+  min-height: 33em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .contact-hero-parallax-window {
+    min-height: 34em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-hero-parallax-window {
+    min-height: 18em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .contact-hero-parallax-window {
+    min-height: 19em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-hero-parallax-window {
+    min-height: 19.5em;
+  }
 }
 
 .contact-hero-parallax-window:before {

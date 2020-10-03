@@ -4,6 +4,18 @@
 
 .contact-hero-container{
     position: relative;
+    @media #{$breakpoint-min-md}{
+        background-image: url("../img/Mhairi_pics/typing-comp.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.contact-hero-parallax-window{
+    background: black;
+    position: relative;
     min-height: 33em;
     text-align: center;
     @media #{$breakpoint-sm}{
@@ -18,17 +30,6 @@
     @media #{$breakpoint-xl}{
         min-height: 19.5em;
     }
-    @media #{$breakpoint-min-md}{
-        background-image: url("../img/Mhairi_pics/typing-comp.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-
-.contact-hero-parallax-window{
-    background: black;
 }
 
 .contact-hero-parallax-window:before{
