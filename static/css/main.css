@@ -3860,11 +3860,17 @@ input[type='checkbox'] {
   position: relative;
   background: black;
   height: 23em;
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 @media only screen and (min-width: 768px) {
   .testimonial-container {
     height: 15em;
+    background-attachment: fixed;
   }
 }
 
@@ -3877,16 +3883,6 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1600px) {
   .testimonial-container {
     height: 14em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .testimonial-container .parallax-container {
-    background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
 }
 
@@ -5675,12 +5671,12 @@ input[type='checkbox'] {
 .parallax-container {
   background-color: black;
   height: 100%;
-  opacity: .2;
+  opacity: .5;
 }
 
 @media only screen and (min-width: 768px) {
-  .parallax-container .parallax-container {
-    opacity: .4;
+  .parallax-container {
+    opacity: .2;
   }
 }
 
@@ -6821,11 +6817,17 @@ input[type='checkbox'] {
   position: relative;
   background: black;
   height: 23em;
+  background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 @media only screen and (min-width: 768px) {
   .testimonial-container {
     height: 15em;
+    background-attachment: fixed;
   }
 }
 
@@ -6838,16 +6840,6 @@ input[type='checkbox'] {
 @media only screen and (min-width: 1600px) {
   .testimonial-container {
     height: 14em;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .testimonial-container .parallax-container {
-    background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
 }
 

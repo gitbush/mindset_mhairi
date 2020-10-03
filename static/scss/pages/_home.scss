@@ -758,26 +758,21 @@
     position: relative;
     background: black;
     height: 23em;
+    background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     @media #{$breakpoint-min-md}{
         height: 15em;
+        background-attachment: fixed;
     }
     @media #{$breakpoint-xl}{
         height: 14em;
     }
     @media #{$breakpoint-xxl}{
         height: 14em;
-    }
-    .parallax-container{
-        @media #{$breakpoint-min-md}{
-            background-image: url("../img/Mhairi_pics/chair-circus-lane-crop.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-       
-    }
-   
+    }   
     img{
         height: 150%;
         width: 100%;

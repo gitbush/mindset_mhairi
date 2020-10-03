@@ -1160,11 +1160,9 @@
 .parallax-container{
     background-color: black;
     height: 100%;
-    opacity: .2;
-    .parallax-container{
-        @media #{$breakpoint-min-md}{
-           opacity: .4;
-        }
+    opacity: .5;
+    @media #{$breakpoint-min-md}{
+        opacity: .2;
     }
 }
 
