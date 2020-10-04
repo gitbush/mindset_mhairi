@@ -475,9 +475,15 @@
     z-index: 5;
     @media #{$breakpoint-min-md} {
         background-position: 0 -2em;
+        background-attachment: fixed;
     }
     @media #{$breakpoint-xl} {
         height: 14em;
+        background-position: 0 -2em;
+    }
+    @media #{$breakpoint-xxl} {
+        height: 14em;
+        background-position: 0 -1em;
     }
     img{
         height: 150%;

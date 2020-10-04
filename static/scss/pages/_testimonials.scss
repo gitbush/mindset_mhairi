@@ -3,8 +3,23 @@
     background-color: transparent;
 }
 
+.testimonial-hero-container{
+    position: relative;
+    @media #{$breakpoint-min-md}{
+        background-image: url("../img/Mhairi_pics/circus-lane-comp.jpg");
+        background-position: 50% 40%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
 .testimonial-hero{
     min-height: 26em;
+    opacity: .5;
+    @media #{$breakpoint-min-md}{
+        opacity: .2;
+    }
     @media  #{$breakpoint-md}{
         min-height: 20em;
     }

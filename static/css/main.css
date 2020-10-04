@@ -3488,12 +3488,21 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .quote-parallax-container {
     background-position: 0 -2em;
+    background-attachment: fixed;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-container {
     height: 14em;
+    background-position: 0 -2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote-parallax-container {
+    height: 14em;
+    background-position: 0 -1em;
   }
 }
 
@@ -6481,12 +6490,21 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .quote-parallax-container {
     background-position: 0 -2em;
+    background-attachment: fixed;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .quote-parallax-container {
     height: 14em;
+    background-position: 0 -2em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote-parallax-container {
+    height: 14em;
+    background-position: 0 -1em;
   }
 }
 
@@ -8852,8 +8870,29 @@ input[type='checkbox'] {
   background-color: transparent;
 }
 
+.testimonial-hero-container {
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonial-hero-container {
+    background-image: url("../img/Mhairi_pics/circus-lane-comp.jpg");
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
 .testimonial-hero {
   min-height: 26em;
+  opacity: .5;
+}
+
+@media only screen and (min-width: 768px) {
+  .testimonial-hero {
+    opacity: .2;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
