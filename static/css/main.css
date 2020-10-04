@@ -3097,52 +3097,6 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .coaching-1-1 {
-    grid-column: coaching-1-1;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .coaching-1-1 img {
-    -o-object-position: 50% 30%;
-       object-position: 50% 30%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .coaching-free {
-    grid-column: coaching-free;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .coaching-free img {
-    -o-object-position: 50% 10%;
-       object-position: 50% 10%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .coaching-why {
-    grid-column: coaching-why;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .coaching-why img {
-    -o-object-position: 50% 45%;
-       object-position: 50% 45%;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .coaching-why img {
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
-  }
-}
-
 .coaching-1-1,
 .coaching-free,
 .coaching-why {
@@ -3222,6 +3176,73 @@ input[type='checkbox'] {
   .coaching-img img {
     -o-object-position: 50% 25%;
        object-position: 50% 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-img img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-1-1 {
+    grid-column: coaching-1-1;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 20%;
+       object-position: 50% 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-free {
+    grid-column: coaching-free;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-free img {
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-why {
+    grid-column: coaching-why;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-why img {
+    -o-object-position: 50% 55%;
+       object-position: 50% 55%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-why img {
+    -o-object-position: 50% 40%;
+       object-position: 50% 40%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .coaching-why img {
+    -o-object-position: 50% 40%;
+       object-position: 50% 40%;
   }
 }
 
@@ -6069,52 +6090,6 @@ input[type='checkbox'] {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .coaching-1-1 {
-    grid-column: coaching-1-1;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .coaching-1-1 img {
-    -o-object-position: 50% 30%;
-       object-position: 50% 30%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .coaching-free {
-    grid-column: coaching-free;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
-  .coaching-free img {
-    -o-object-position: 50% 10%;
-       object-position: 50% 10%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .coaching-why {
-    grid-column: coaching-why;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .coaching-why img {
-    -o-object-position: 50% 45%;
-       object-position: 50% 45%;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .coaching-why img {
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%;
-  }
-}
-
 .coaching-1-1,
 .coaching-free,
 .coaching-why {
@@ -6194,6 +6169,73 @@ input[type='checkbox'] {
   .coaching-img img {
     -o-object-position: 50% 25%;
        object-position: 50% 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-img img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-1-1 {
+    grid-column: coaching-1-1;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 20%;
+       object-position: 50% 20%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-free {
+    grid-column: coaching-free;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
+  .coaching-free img {
+    -o-object-position: 50% 10%;
+       object-position: 50% 10%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .coaching-why {
+    grid-column: coaching-why;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-why img {
+    -o-object-position: 50% 55%;
+       object-position: 50% 55%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-why img {
+    -o-object-position: 50% 40%;
+       object-position: 50% 40%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .coaching-why img {
+    -o-object-position: 50% 40%;
+       object-position: 50% 40%;
   }
 }
 

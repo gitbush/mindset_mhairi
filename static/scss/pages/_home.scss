@@ -209,43 +209,6 @@
     } 
 }
 
-.coaching-1-1{
-    @media #{$breakpoint-min-md} {
-        grid-column: coaching-1-1;
-    }
-    img{
-        @media #{$breakpoint-lg}, #{$breakpoint-xl} {
-            object-position: 50% 30%;
-        }
-    }
-}
-
-.coaching-free{
-    @media #{$breakpoint-min-md} {
-        grid-column: coaching-free;
-    }
-    img{
-        @media #{$breakpoint-lg}, #{$breakpoint-xl} {
-            object-position: 50% 10%;
-        }
-    }
-    
-}
-.coaching-why{
-    @media #{$breakpoint-min-md} {
-        grid-column: coaching-why;
-    }
-    img{
-        @media #{$breakpoint-xl} {
-            object-position: 50% 45%;
-        }
-        @media #{$breakpoint-xxl} {
-            object-position: 50% 50%;
-        }
-    }
-    
-}
-
 .coaching-1-1,
 .coaching-free,
 .coaching-why{
@@ -287,10 +250,53 @@
         @media #{$breakpoint-sm}{
             object-position: 50% 25%;
         }
+        @media #{$breakpoint-md}{
+            object-position: 50% 30%;
+        }
     }
+}
 
-   
-   
+.coaching-1-1{
+    @media #{$breakpoint-min-md} {
+        grid-column: coaching-1-1;
+    }
+    img{
+        @media #{$breakpoint-lg} {
+            object-position: 50% 30%;
+        }
+        @media #{$breakpoint-xl} {
+            object-position: 50% 20%;
+        }
+    }
+}
+
+.coaching-free{
+    @media #{$breakpoint-min-md} {
+        grid-column: coaching-free;
+    }
+    img{
+        @media #{$breakpoint-lg}, #{$breakpoint-xl} {
+            object-position: 50% 10%;
+        }
+    }
+    
+}
+.coaching-why{
+    @media #{$breakpoint-min-md} {
+        grid-column: coaching-why;
+    }
+    img{
+        @media #{$breakpoint-md} {
+            object-position: 50% 55%;
+        }
+        @media #{$breakpoint-xl} {
+            object-position: 50% 40%;
+        }
+        @media #{$breakpoint-xxl} {
+            object-position: 50% 40%;
+        }
+    }
+    
 }
 
 .coaching-title{
