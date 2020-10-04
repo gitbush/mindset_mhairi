@@ -3344,7 +3344,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about {
-    margin-top: 4em;
+    margin: 4em 0 3em 0;
   }
 }
 
@@ -3353,7 +3353,7 @@ input[type='checkbox'] {
     -ms-grid-columns: auto 16em (12em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 12em) auto;
     height: 30em;
-    margin-top: 4em;
+    margin: 4em 0;
   }
 }
 
@@ -6337,7 +6337,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home-about {
-    margin-top: 4em;
+    margin: 4em 0 3em 0;
   }
 }
 
@@ -6346,7 +6346,7 @@ input[type='checkbox'] {
     -ms-grid-columns: auto 16em (12em)[2] auto;
         grid-template-columns: auto 16em repeat(2, 12em) auto;
     height: 30em;
-    margin-top: 4em;
+    margin: 4em 0;
   }
 }
 

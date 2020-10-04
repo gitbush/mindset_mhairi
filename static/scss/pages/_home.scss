@@ -370,12 +370,12 @@
         }
     }
     @media #{$breakpoint-md} {
-        margin-top: 4em;
+        margin: 4em 0 3em 0;
     }
     @media #{$breakpoint-lg} {
         grid-template-columns: auto 16em repeat(2, 12em) auto;
         height: 30em;
-        margin-top: 4em;
+        margin: 4em 0;
     }
     @media #{$breakpoint-xl}, #{$breakpoint-xxl} {
         grid-template-columns:  auto 13em repeat(2, 13em) auto;
