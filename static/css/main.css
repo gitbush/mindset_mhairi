@@ -3050,23 +3050,32 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
-    height: 135em;
+    height: 132em;
     padding-bottom: 3em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-coaching {
     -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
-    height: 39em;
-    margin: 0 0 0 0;
+    height: 32em;
+    margin: 4em 0;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching {
-    height: 35em;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+    height: 28em;
+    margin: 4em 0;
   }
 }
 
@@ -3074,7 +3083,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    height: 31em;
+    height: 24em;
+    margin: 4em 0;
   }
 }
 
@@ -3082,8 +3092,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    margin: 1em 0 0 0;
-    height: 31em;
+    margin: 4em 0;
+    height: 23em;
   }
 }
 
@@ -3158,6 +3168,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 14em 17.5em;
         grid-template-rows: 14em 17.5em;
+    margin: 0;
   }
 }
 
@@ -3167,6 +3178,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 13em 15em;
         grid-template-rows: 13em 15em;
+    margin: 0;
   }
 }
 
@@ -3176,6 +3188,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 11em 13em;
         grid-template-rows: 11em 13em;
+    margin: 0;
   }
 }
 
@@ -3185,6 +3198,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 12em 11em;
         grid-template-rows: 12em 11em;
+    margin: 0;
   }
 }
 
@@ -3264,6 +3278,7 @@ input[type='checkbox'] {
   .home-about {
     background-color: white;
     height: 36.5em;
+    padding-bottom: 0;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -3325,7 +3340,7 @@ input[type='checkbox'] {
   .home-about {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
-    margin-top: 4em;
+    margin: 4em 0;
     height: 25em;
   }
 }
@@ -6007,23 +6022,32 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: 50vw;
         grid-template-columns: 50vw;
-    height: 135em;
+    height: 132em;
     padding-bottom: 3em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .home-coaching {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home-coaching {
     -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
         grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
-    height: 39em;
-    margin: 0 0 0 0;
+    height: 32em;
+    margin: 4em 0;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .home-coaching {
-    height: 35em;
+    -ms-grid-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+        grid-template-columns: 2fr [coaching-1-1] minmax(auto, 12em) 2em [coaching-free] minmax(auto, 12em) 2em [coaching-why] minmax(auto, 12em) 2fr;
+    height: 28em;
+    margin: 4em 0;
   }
 }
 
@@ -6031,7 +6055,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    height: 31em;
+    height: 24em;
+    margin: 4em 0;
   }
 }
 
@@ -6039,8 +6064,8 @@ input[type='checkbox'] {
   .home-coaching {
     -ms-grid-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
         grid-template-columns: auto [coaching-1-1] minmax(auto, 11em) 2em [coaching-free] minmax(auto, 11em) 2em [coaching-why] minmax(auto, 11em) auto;
-    margin: 1em 0 0 0;
-    height: 31em;
+    margin: 4em 0;
+    height: 23em;
   }
 }
 
@@ -6115,6 +6140,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 14em 17.5em;
         grid-template-rows: 14em 17.5em;
+    margin: 0;
   }
 }
 
@@ -6124,6 +6150,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 13em 15em;
         grid-template-rows: 13em 15em;
+    margin: 0;
   }
 }
 
@@ -6133,6 +6160,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 11em 13em;
         grid-template-rows: 11em 13em;
+    margin: 0;
   }
 }
 
@@ -6142,6 +6170,7 @@ input[type='checkbox'] {
   .coaching-why {
     -ms-grid-rows: 12em 11em;
         grid-template-rows: 12em 11em;
+    margin: 0;
   }
 }
 
@@ -6221,6 +6250,7 @@ input[type='checkbox'] {
   .home-about {
     background-color: white;
     height: 36.5em;
+    padding-bottom: 0;
     -ms-grid-columns: 4em 15em (1fr)[2] 4em;
         grid-template-columns: 4em 15em repeat(2, 1fr) 4em;
     -ms-grid-rows: (1fr)[3];
@@ -6282,7 +6312,7 @@ input[type='checkbox'] {
   .home-about {
     -ms-grid-columns: auto 13em (13em)[2] auto;
         grid-template-columns: auto 13em repeat(2, 13em) auto;
-    margin-top: 4em;
+    margin: 4em 0;
     height: 25em;
   }
 }
