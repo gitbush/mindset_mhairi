@@ -8277,11 +8277,17 @@ input[type='checkbox'] {
 .includes-list-item {
   list-style: none;
   margin: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .includes-list-item {
     margin: 1em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -8483,10 +8489,11 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .contact-hero-container {
     background-image: url("../img/Mhairi_pics/typing-comp.jpg");
-    background-position: center;
+    background-position: 50% 30%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-top: .5em;
   }
 }
 
@@ -9086,6 +9093,13 @@ input[type='checkbox'] {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    margin-top: .5em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .testimonial-hero-container {
+    background-position: 50% 30%;
   }
 }
 

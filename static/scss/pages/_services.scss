@@ -724,9 +724,11 @@
 .includes-list-item{
     list-style: none;
     margin: 1.5em 0;
+    display: flex;
     
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
         margin: 1em 0;
+        display: flex;
     }
 }
 

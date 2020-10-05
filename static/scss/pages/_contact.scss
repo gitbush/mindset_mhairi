@@ -5,16 +5,17 @@
 .contact-hero-container{
     position: relative;
     background-image: url("../img/Mhairi_pics/typing-comp.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     @media #{$breakpoint-min-md}{
         background-image: url("../img/Mhairi_pics/typing-comp.jpg");
-        background-position: center;
+        background-position: 50% 30%;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin-top: .5em;
     }
     .parallax-container{
         @media #{$breakpoint-min-md}{

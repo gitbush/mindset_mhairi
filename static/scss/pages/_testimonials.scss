@@ -16,6 +16,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+        margin-top: .5em;
+    }
+    @media  #{$breakpoint-xl}{
+        background-position: 50% 30%;
     }
     .parallax-container{
         opacity: 0;
