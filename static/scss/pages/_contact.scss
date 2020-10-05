@@ -11,6 +11,11 @@
         background-size: cover;
         background-attachment: fixed;
     }
+    .parallax-container{
+        @media #{$breakpoint-min-md}{
+            opacity: .4;
+        }
+    }
 }
 
 .contact-hero-parallax-window{
