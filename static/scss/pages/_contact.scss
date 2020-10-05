@@ -4,6 +4,11 @@
 
 .contact-hero-container{
     position: relative;
+    background-image: url("../img/Mhairi_pics/typing-comp.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
     @media #{$breakpoint-min-md}{
         background-image: url("../img/Mhairi_pics/typing-comp.jpg");
         background-position: center;
@@ -275,6 +280,7 @@
 }
 
 #message{
+    text-align: left;
     @media #{$breakpoint-min-md}{
         height: 100%!important;
     }
@@ -282,7 +288,7 @@
 
 .form-field{
     display: block;
-    text-align: center;
+    text-align: left;
     width: 100%;
     padding: .375rem .75rem;
     font-size: 1.1rem;

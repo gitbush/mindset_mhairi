@@ -8465,6 +8465,11 @@ input[type='checkbox'] {
 
 .contact-hero-container {
   position: relative;
+  background-image: url("../img/Mhairi_pics/typing-comp.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8852,6 +8857,10 @@ input[type='checkbox'] {
   }
 }
 
+#message {
+  text-align: left;
+}
+
 @media only screen and (min-width: 768px) {
   #message {
     height: 100% !important;
@@ -8860,7 +8869,7 @@ input[type='checkbox'] {
 
 .form-field {
   display: block;
-  text-align: center;
+  text-align: left;
   width: 100%;
   padding: .375rem .75rem;
   font-size: 1.1rem;
