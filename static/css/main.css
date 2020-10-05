@@ -933,6 +933,13 @@ break {
   }
 }
 
+@media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
+  [data-aos-delay] {
+    -webkit-transition-delay: 0s !important;
+            transition-delay: 0s !important;
+  }
+}
+
 #header {
   text-align: left;
   width: 100vw;
@@ -3473,6 +3480,91 @@ input[type='checkbox'] {
   .home-about-text {
     padding: 0 5.5em;
   }
+}
+
+.home-you-will-gain {
+  text-align: center;
+  background-color: #f0f3f3;
+  padding: 1em 0 2em 0;
+}
+
+.home-gain-heading {
+  margin: 1em 1em 3em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-heading {
+    margin: 1em 1em 1em 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-gain-heading {
+    margin: 0 1em;
+  }
+}
+
+.home-gain-content {
+  width: 80vw;
+  margin: 1em auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-gain-content {
+    width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.home-gain-item {
+  margin: 4em 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-item {
+    position: relative;
+    margin: 1em 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    width: 31% !important;
+    padding: 0 .5em;
+  }
+  .home-gain-item:nth-of-type(1):after, .home-gain-item:nth-of-type(2):after, .home-gain-item:nth-of-type(4):after, .home-gain-item:nth-of-type(5):after {
+    content: "";
+    background-color: #f58c7c;
+    position: absolute;
+    width: 2px;
+    height: 5em;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.home-gain-item .sect-subtitle {
+  margin: .5em;
+  color: #f58c7c;
 }
 
 .quote-parallax-container {
@@ -6475,6 +6567,91 @@ input[type='checkbox'] {
   .home-about-text {
     padding: 0 5.5em;
   }
+}
+
+.home-you-will-gain {
+  text-align: center;
+  background-color: #f0f3f3;
+  padding: 1em 0 2em 0;
+}
+
+.home-gain-heading {
+  margin: 1em 1em 3em 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-heading {
+    margin: 1em 1em 1em 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .home-gain-heading {
+    margin: 0 1em;
+  }
+}
+
+.home-gain-content {
+  width: 80vw;
+  margin: 1em auto;
+  position: relative;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .home-gain-content {
+    width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.home-gain-item {
+  margin: 4em 0;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-gain-item {
+    position: relative;
+    margin: 1em 0;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    width: 31% !important;
+    padding: 0 .5em;
+  }
+  .home-gain-item:nth-of-type(1):after, .home-gain-item:nth-of-type(2):after, .home-gain-item:nth-of-type(4):after, .home-gain-item:nth-of-type(5):after {
+    content: "";
+    background-color: #f58c7c;
+    position: absolute;
+    width: 2px;
+    height: 5em;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+  }
+}
+
+.home-gain-item .sect-subtitle {
+  margin: .5em;
+  color: #f58c7c;
 }
 
 .quote-parallax-container {

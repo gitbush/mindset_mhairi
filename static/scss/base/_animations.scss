@@ -50,3 +50,9 @@
     }
   }
 }
+
+@media #{$breakpoint-xs}, #{$breakpoint-sm} {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}
