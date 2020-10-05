@@ -156,7 +156,7 @@
 
     }
     @media  #{$breakpoint-min-md}{
-        grid-template-columns: auto auto;
+        grid-template-columns: 13em auto;
 
     }
     @media  #{$breakpoint-xxl}{

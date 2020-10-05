@@ -36,12 +36,15 @@
  * Animate on scroll inititiate and settings
  */
 
+const homeGain = document.getElementsByClassName('home-you-will-gain')[0]
 
+if(homeGain){
+  AOS.init({
+    duration: 1200, // values from 0 to 3000, with step 50ms
+    // once: true,
+  });
+}
 
-AOS.init({
-  duration: 1200, // values from 0 to 3000, with step 50ms
-  // once: true,
-});
 
 
 
