@@ -5,12 +5,20 @@
 
 .testimonial-hero-container{
     position: relative;
+    background-image: url("../img/Mhairi_pics/circus-lane-comp.jpg");
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     @media #{$breakpoint-min-md}{
         background-image: url("../img/Mhairi_pics/circus-lane-comp.jpg");
         background-position: 50% 40%;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .parallax-container{
+        opacity: 0;
     }
 }
 

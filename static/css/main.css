@@ -9049,6 +9049,11 @@ input[type='checkbox'] {
 
 .testimonial-hero-container {
   position: relative;
+  background-image: url("../img/Mhairi_pics/circus-lane-comp.jpg");
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 @media only screen and (min-width: 768px) {
@@ -9059,6 +9064,10 @@ input[type='checkbox'] {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+
+.testimonial-hero-container .parallax-container {
+  opacity: 0;
 }
 
 .testimonial-hero {
