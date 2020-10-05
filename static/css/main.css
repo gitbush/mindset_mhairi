@@ -2816,6 +2816,11 @@ input[type='checkbox'] {
   }
 }
 
+.home-hero .home-hero-2 {
+  -o-object-position: 50% 35%;
+     object-position: 50% 35%;
+}
+
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
@@ -5900,6 +5905,11 @@ input[type='checkbox'] {
   .services-cta-btn {
     padding: .7em 1.5em;
   }
+}
+
+.home-hero .home-hero-2 {
+  -o-object-position: 50% 35%;
+     object-position: 50% 35%;
 }
 
 @media only screen and (max-width: 500px) {

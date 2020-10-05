@@ -6,6 +6,9 @@
 // Home hero section
 // ---------------------------------------------------------------
 .home-hero{
+    .home-hero-2{
+        object-position: 50% 35%;
+    }
     @media #{$breakpoint-xs} {
         position: relative;
         height: 45em;
