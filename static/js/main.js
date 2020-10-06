@@ -346,10 +346,17 @@ $(window).load(function () {
  * Custom netlify subject in email
  */
 
-let userEmail = document.getElementById('email-field')
+// let userEmail = document.getElementById('email-field').value
+// const form = document.getElementById('contactForm')
 
-function updateSubject(valEmail) {
-  document.getElementById('customSubject').value = "Webform submission from " + valEmail;
-}
+// function updateSubject(valEmail) {
+//   document.getElementById('customSubject').value = "Webform submission from " + valEmail;
+//   console.log(document.getElementById('customSubject').value)
+// }
 
-updateSubject(userEmail)
+// form.addEventListener('submit', function(e){
+//   updateSubject(userEmail)
+  
+  
+// })
+
