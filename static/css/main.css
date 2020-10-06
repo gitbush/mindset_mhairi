@@ -2840,7 +2840,7 @@ input[type='checkbox'] {
   .home-hero {
     display: -ms-grid;
     display: grid;
-    margin-top: 2em;
+    margin-top: 1em;
   }
   .home-hero .home-hero-text {
     z-index: 99;
@@ -5944,7 +5944,7 @@ input[type='checkbox'] {
   .home-hero {
     display: -ms-grid;
     display: grid;
-    margin-top: 2em;
+    margin-top: 1em;
   }
   .home-hero .home-hero-text {
     z-index: 99;
