@@ -1130,10 +1130,6 @@
     }
     @media #{$breakpoint-min-md} {
         z-index: -1;
-        background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         background-attachment: fixed;
     }
     @media #{$breakpoint-md} {

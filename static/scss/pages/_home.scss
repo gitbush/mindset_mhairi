@@ -7,7 +7,7 @@
 // ---------------------------------------------------------------
 .home-hero{
     .home-hero-2{
-        object-position: 50% 35%;
+        object-position: 50% 50%;
     }
     @media #{$breakpoint-xs} {
         position: relative;
@@ -51,7 +51,7 @@
             }
         }
         .home-hero-2{
-            object-position: 50% 25%;
+            object-position: 50% 22%;
         }
 
     }
@@ -264,6 +264,10 @@
         grid-column: coaching-1-1;
     }
     img{
+        object-position: 50% 40%;
+        @media #{$breakpoint-md} {
+            object-position: 50% 30%;
+        }
         @media #{$breakpoint-lg} {
             object-position: 50% 30%;
         }
@@ -289,8 +293,9 @@
         grid-column: coaching-why;
     }
     img{
+        object-position: 50% 70%;
         @media #{$breakpoint-md} {
-            object-position: 50% 55%;
+            object-position: 50% 60%;
         }
         @media #{$breakpoint-xl} {
             object-position: 50% 40%;

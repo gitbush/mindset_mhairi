@@ -2818,8 +2818,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 35%;
-     object-position: 50% 35%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -2886,8 +2886,8 @@ input[type='checkbox'] {
        object-fit: cover;
   }
   .home-hero .home-hero-2 {
-    -o-object-position: 50% 25%;
-       object-position: 50% 25%;
+    -o-object-position: 50% 22%;
+       object-position: 50% 22%;
   }
 }
 
@@ -3205,6 +3205,18 @@ input[type='checkbox'] {
   }
 }
 
+.coaching-1-1 img {
+  -o-object-position: 50% 40%;
+     object-position: 50% 40%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .coaching-1-1 img {
     -o-object-position: 50% 30%;
@@ -3238,10 +3250,15 @@ input[type='checkbox'] {
   }
 }
 
+.coaching-why img {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .coaching-why img {
-    -o-object-position: 50% 55%;
-       object-position: 50% 55%;
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
   }
 }
 
@@ -5769,10 +5786,6 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) {
   .services-cta {
     z-index: -1;
-    background-image: url("../img/Mhairi_pics/patio_sitting_comp.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 }
@@ -5909,8 +5922,8 @@ input[type='checkbox'] {
 }
 
 .home-hero .home-hero-2 {
-  -o-object-position: 50% 35%;
-     object-position: 50% 35%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 @media only screen and (max-width: 500px) {
@@ -5977,8 +5990,8 @@ input[type='checkbox'] {
        object-fit: cover;
   }
   .home-hero .home-hero-2 {
-    -o-object-position: 50% 25%;
-       object-position: 50% 25%;
+    -o-object-position: 50% 22%;
+       object-position: 50% 22%;
   }
 }
 
@@ -6296,6 +6309,18 @@ input[type='checkbox'] {
   }
 }
 
+.coaching-1-1 img {
+  -o-object-position: 50% 40%;
+     object-position: 50% 40%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-1-1 img {
+    -o-object-position: 50% 30%;
+       object-position: 50% 30%;
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .coaching-1-1 img {
     -o-object-position: 50% 30%;
@@ -6329,10 +6354,15 @@ input[type='checkbox'] {
   }
 }
 
+.coaching-why img {
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .coaching-why img {
-    -o-object-position: 50% 55%;
-       object-position: 50% 55%;
+    -o-object-position: 50% 60%;
+       object-position: 50% 60%;
   }
 }
 
