@@ -4139,7 +4139,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto (14em)[2] 17em auto;
         grid-template-columns: auto repeat(2, 14em) 17em auto;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 3em;
   }
 }
@@ -4150,7 +4150,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto (13em)[2] 2em 17em auto;
         grid-template-columns: auto repeat(2, 13em) 2em 17em auto;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 3em;
   }
 }
@@ -4161,7 +4161,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto (14em)[2] 3em 16em auto;
         grid-template-columns: auto repeat(2, 14em) 3em 16em auto;
-    margin-top: 3em;
+    margin-top: 1em;
     margin-bottom: 3em;
   }
 }
@@ -4172,7 +4172,7 @@ input[type='checkbox'] {
     display: grid;
     -ms-grid-columns: auto (12em)[2] 3em 14em auto;
         grid-template-columns: auto repeat(2, 12em) 3em 14em auto;
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 3em;
   }
 }
