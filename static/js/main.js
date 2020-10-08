@@ -360,6 +360,9 @@ $(window).load(function () {
   
 // })
 
+/**
+ * Sticky nav
+ */
 
 window.onscroll = function() {myFunction()};
 
@@ -379,6 +382,10 @@ function myFunction() {
     }
   }
 }
+
+/**
+ * Smooth scroll
+ */
 
 $(document).ready(function(){
 
