@@ -2955,7 +2955,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 45em;
+    height: 41em;
   }
 }
 
@@ -3058,7 +3058,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
-    top: 17em;
+    top: 14em;
     left: 0;
     right: 0;
     text-align: center;
@@ -6059,7 +6059,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px) {
   .home-hero {
     position: relative;
-    height: 45em;
+    height: 41em;
   }
 }
 
@@ -6162,7 +6162,7 @@ input[type='checkbox'] {
 @media only screen and (max-width: 500px), only screen and (min-width: 500px) and (max-width: 767px) {
   .home-hero-text {
     position: absolute;
-    top: 17em;
+    top: 14em;
     left: 0;
     right: 0;
     text-align: center;
