@@ -377,6 +377,21 @@ template {
   src: url("../fonts/Biko_Regular.otf") format("truetype");
 }
 
+@font-face {
+  font-family: 'parisienne';
+  src: url("../fonts/Parisienne_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'rogue-script';
+  src: url("../fonts/RougeScript-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'lovers';
+  src: url("../fonts/LoversQuarrel-Regular.ttf") format("truetype");
+}
+
 .fw-n {
   font-weight: 400 !important;
 }
