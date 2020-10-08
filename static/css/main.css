@@ -2818,18 +2818,19 @@ input[type='checkbox'] {
 }
 
 .quiz-banner {
-  background-color: blue;
+  background-color: #b3ded9;
   padding: 20px;
   text-align: center;
-  height: 9em;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .quiz-banner {
-    height: 3em;
+    height: 2em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 999;
   }
 }
 
@@ -2839,18 +2840,9 @@ input[type='checkbox'] {
   }
 }
 
-.toggle-header-fixed {
-  position: fixed !important;
-  top: 0;
-  bottom: 0;
-  z-index: 99;
-  text-align: initial;
-}
-
-@media only screen and (min-width: 768px) {
-  .toggle-header-fixed {
-    background-color: transparent;
-  }
+.quiz-banner-btn {
+  width: auto;
+  padding: .1em 1.3em;
 }
 
 .toggle-header-relative {
@@ -2898,6 +2890,7 @@ input[type='checkbox'] {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 99;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2912,11 +2905,22 @@ input[type='checkbox'] {
   }
 }
 
+.placeholder {
+  height: 50px;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .placeholder {
+    display: block;
+  }
+}
+
 .header-name-quiz {
   font-family: "Roboto", serif;
   position: relative;
-  top: .6em;
-  left: .5em;
+  height: 100%;
+  padding: .5em;
   color: #3b403f;
   text-transform: uppercase;
   line-height: 1.1;
@@ -2930,8 +2934,6 @@ input[type='checkbox'] {
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .header-name-quiz {
     margin: 0;
-    left: .6em;
-    top: .5em;
   }
 }
 

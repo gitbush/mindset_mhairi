@@ -360,50 +360,33 @@ $(window).load(function () {
   
 // })
 
-// function findOffset(element) {
-//   var top = 0, left = 0;
-
-//   do {
-//     top += element.offsetTop  || 0;
-//     left += element.offsetLeft || 0;
-//     element = element.offsetParent;
-//   } while(element);
-
-//   return {
-//     top: top,
-//     left: left
-//   };
-// }
-
-// // This function will run a throttled script every 300 ms
-// var checkHeader = _.throttle(() => { 
-
-//   // Detect scroll position
-//   let scrollPosition = Math.round(window.scrollY);
-//   console.log(scrollPosition)
-//   // If we've scrolled 100px, add "sticky" class to the header
-//   if (scrollPosition > 110){
-//       document.getElementById('sticky').classList.add('toggle-header-fixed');
-//   }
-//   // If not, remove "sticky" class from header
-//   else {
-//       document.getElementById('sticky').classList.remove('toggle-header-fixed');
-//   }
-// }, 100);
-
-// // Run the checkHeader function every time you scroll
-// window.addEventListener('scroll', checkHeader);
-// console.log('yes')
 
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("header-nav");
+var navbar = document.getElementById("header");
+var placeholder = document.getElementsByClassName('placeholder')[0]
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+
+  if(window.innerWidth < 769){
+    if (window.pageYOffset >= sticky)  {
+      navbar.classList.add("sticky")
+      placeholder.style.display = "block"
+    } else {
+      navbar.classList.remove("sticky");
+      placeholder.style.display = "none"
+    }
   }
 }
+
+$(document).ready(function(){
+
+
+  $("#bannerBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#quizSection").offset().top -150
+    }, 1000);
+  });
+
+});
