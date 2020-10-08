@@ -3,24 +3,37 @@
     padding: 1em .8em;
     text-align: center;
     width: 100%;
-    .normal-text{
-        font-size: 1.1em;
-    }
+    
     @media #{$breakpoint-min-md}{
         height: 2em;
         display: flex;
         // position: fixed;
+        padding: 0;
         z-index: 999;
     }
     @media #{$breakpoint-xl}{
         height: 2em;
     }
       
+    .normal-text{
+        font-size: 1.1em;
+        @media #{$breakpoint-min-md}{
+            font-size: .9em;
+        }
+    }
+    .sect-subtitle{
+        @media #{$breakpoint-min-md}{
+            font-size: .7em;
+        }
+    }
 }
 
 .quiz-banner-btn{
     width: auto;
     padding: .1em 1.3em;
+    @media #{$breakpoint-min-md}{
+        font-size: .7em;
+    }
 }
 
 .toggle-header-relative{
