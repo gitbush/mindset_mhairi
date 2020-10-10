@@ -2833,7 +2833,7 @@ input[type='checkbox'] {
 }
 
 .quiz-banner {
-  background-color: #b3ded9;
+  background-color: #f58c7c;
   padding: 1em .8em;
   text-align: center;
   width: 100%;
@@ -2870,6 +2870,7 @@ input[type='checkbox'] {
 }
 
 .quiz-banner .normal-text {
+  color: white;
   font-size: 1.1em;
 }
 
@@ -2893,6 +2894,10 @@ input[type='checkbox'] {
   }
 }
 
+.quiz-banner .sect-subtitle {
+  color: white;
+}
+
 @media only screen and (min-width: 768px) {
   .quiz-banner .sect-subtitle {
     font-size: .7em;
@@ -2909,6 +2914,8 @@ input[type='checkbox'] {
 .quiz-banner-btn {
   width: auto;
   padding: .1em 1.3em;
+  background-color: black;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -8235,6 +8242,10 @@ input[type='checkbox'] {
   padding: 2em 2em;
 }
 
+.how-item:nth-child(1) {
+  margin: 2em 1.5em;
+}
+
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .how-item {
     height: auto;
@@ -8250,6 +8261,7 @@ input[type='checkbox'] {
   .how-item:nth-child(1) {
     -ms-grid-column: 2;
     grid-column: 2;
+    margin: 0;
   }
   .how-item:nth-child(2) {
     -ms-grid-column: 4;
@@ -8389,7 +8401,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .signature-package .how-title {
-    margin: .8em 0 .8em 0;
+    margin: .8em 0 1.5em 0;
   }
 }
 

@@ -364,24 +364,25 @@ $(window).load(function () {
  * Sticky nav
  */
 
-window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("header");
 var placeholder = document.getElementsByClassName('placeholder')[0]
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+if(window.innerWidth < 769 & placeholder){
+  window.onscroll = function() {myFunction()};
 
-  if(window.innerWidth < 769){
-    if (window.pageYOffset >= sticky)  {
-      navbar.classList.add("sticky")
-      placeholder.style.display = "block"
-    } else {
-      navbar.classList.remove("sticky");
-      placeholder.style.display = "none"
-    }
+  function myFunction() {
+  
+      if (window.pageYOffset >= sticky)  {
+        navbar.classList.add("sticky")
+        placeholder.style.display = "block"
+      } else {
+        navbar.classList.remove("sticky");
+        placeholder.style.display = "none"
+      }
   }
 }
+
 
 /**
  * Smooth scroll

@@ -1,5 +1,6 @@
 .quiz-banner{
-    background-color: rgba(179,222,217,1);
+    // background-color: rgba(179,222,217,1);
+    background-color: #f58c7c;
     padding: 1em .8em;
     text-align: center;
     width: 100%;
@@ -19,6 +20,7 @@
     }
       
     .normal-text{
+        color: white;
         font-size: 1.1em;
         @media #{$breakpoint-min-md}{
             font-size: .8em;
@@ -33,6 +35,7 @@
         }
     }
     .sect-subtitle{
+        color: white;
         @media #{$breakpoint-min-md}{
             font-size: .7em;
             margin: 0;
@@ -46,6 +49,8 @@
 .quiz-banner-btn{
     width: auto;
     padding: .1em 1.3em;
+    background-color: black;
+    color: white;
     @media #{$breakpoint-min-md}{
         font-size: .7em;
         margin: 0;
