@@ -366,9 +366,11 @@ $(window).load(function () {
 
 var navbar = document.getElementById("header");
 var placeholder = document.getElementsByClassName('placeholder')[0]
+var quizBanner = document.getElementsByClassName('quiz-banner')[0]
 var sticky = navbar.offsetTop;
 
-if(window.innerWidth < 769 & placeholder){
+
+if(window.innerWidth < 769 && quizBanner){
   window.onscroll = function() {myFunction()};
 
   function myFunction() {

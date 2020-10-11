@@ -6,7 +6,7 @@
     width: 100%;
     
     @media #{$breakpoint-min-md}{
-        height: 2em;
+        height: 1.5em;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -16,7 +16,7 @@
     }
     @media #{$breakpoint-xl}{
         justify-content: center;
-        height: 2em;
+        height: 1.3em;
     }
       
     .normal-text{
@@ -54,14 +54,16 @@
     @media #{$breakpoint-min-md}{
         font-size: .7em;
         margin: 0;
+        height: 70%;
     }
     @media #{$breakpoint-lg}{
-        font-size: .65em;
-        padding: .25em 1.3em;
+        font-size: .6em;
+        padding: .2em 1.3em;
     }
     @media #{$breakpoint-xl}{
-        font-size: .55em;
-        padding: .3em 1.3em;
+        font-size: .5em;
+        padding: .2em 1.3em;
+        height: 70%;
     }
     
     
@@ -78,10 +80,10 @@
     @media #{$breakpoint-min-md}{
         background-color: transparent;
         position: absolute;
-        top: 3em;
+        top: 2em;
     }
     @media #{$breakpoint-xl}{
-        top: 3em;
+        top: 2em;
     }
     .nav-toggle{
         @media #{$breakpoint-min-md}{
