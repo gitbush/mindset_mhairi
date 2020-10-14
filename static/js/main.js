@@ -36,14 +36,11 @@
  * Animate on scroll inititiate and settings
  */
 
-const homeGain = document.getElementsByClassName('home-you-will-gain')[0]
 
-if(homeGain){
-  AOS.init({
-    duration: 1200, // values from 0 to 3000, with step 50ms
-    // once: true,
-  });
-}
+AOS.init({
+  duration: 1200, // values from 0 to 3000, with step 50ms
+  // once: true,
+});
 
 
 
@@ -343,20 +340,42 @@ $(window).load(function () {
 
 
 /**
- * Custom netlify subject in email
+ * Sticky nav
  */
 
-// let userEmail = document.getElementById('email-field').value
-// const form = document.getElementById('contactForm')
+var navbar = document.getElementById("header");
+var placeholder = document.getElementsByClassName('placeholder')[0]
+var quizBanner = document.getElementsByClassName('quiz-banner')[0]
+var sticky = navbar.offsetTop;
 
-// function updateSubject(valEmail) {
-//   document.getElementById('customSubject').value = "Webform submission from " + valEmail;
-//   console.log(document.getElementById('customSubject').value)
-// }
 
-// form.addEventListener('submit', function(e){
-//   updateSubject(userEmail)
+if(window.innerWidth < 769 && quizBanner){
+  window.onscroll = function() {myFunction()};
+
+  function myFunction() {
   
-  
-// })
+      if (window.pageYOffset >= sticky)  {
+        navbar.classList.add("sticky")
+        placeholder.style.display = "block"
+      } else {
+        navbar.classList.remove("sticky");
+        placeholder.style.display = "none"
+      }
+  }
+}
 
+
+/**
+ * Smooth scroll
+ */
+
+$(document).ready(function(){
+
+
+  $("#bannerBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#quizSection").offset().top -150
+    }, 1000);
+  });
+
+});

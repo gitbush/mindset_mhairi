@@ -17,7 +17,20 @@
   src: url('../fonts/Biko_Regular.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'parisienne';
+  src: url('../fonts/Parisienne_Regular.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'rogue-script';
+  src: url('../fonts/RougeScript-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lovers';
+  src: url('../fonts/LoversQuarrel-Regular.ttf') format('truetype');
+}
 
 $font-parisienne: 'alaskan', serif;
 $font-roboto: 'Roboto', serif;
