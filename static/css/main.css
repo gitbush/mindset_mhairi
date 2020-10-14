@@ -8515,6 +8515,31 @@ input[type='checkbox'] {
   margin-bottom: 2em;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .coaching-package-intro {
+    margin-bottom: 0;
+    height: 8em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .coaching-package-intro {
+    height: 10em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .coaching-package-intro {
+    height: 8em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .coaching-package-intro {
+    height: 7em;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-includes {
     -ms-grid-column: 2;

@@ -705,6 +705,19 @@
 
 .coaching-package-intro{
     margin-bottom: 2em;
+    @media #{$breakpoint-md}{
+        margin-bottom: 0;
+        height: 8em;
+    }
+    @media #{$breakpoint-lg}{
+        height: 10em;
+    }
+    @media #{$breakpoint-xl}{
+        height: 8em;
+    }
+    @media #{$breakpoint-xxl}{
+        height: 7em;
+    }
 }
 
 .signature-includes{
