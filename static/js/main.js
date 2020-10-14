@@ -36,14 +36,11 @@
  * Animate on scroll inititiate and settings
  */
 
-const homeGain = document.getElementsByClassName('home-you-will-gain')[0]
 
-if(homeGain){
-  AOS.init({
-    duration: 1200, // values from 0 to 3000, with step 50ms
-    // once: true,
-  });
-}
+AOS.init({
+  duration: 1200, // values from 0 to 3000, with step 50ms
+  // once: true,
+});
 
 
 
@@ -341,24 +338,6 @@ $(window).load(function () {
   });
 });
 
-
-/**
- * Custom netlify subject in email
- */
-
-// let userEmail = document.getElementById('email-field').value
-// const form = document.getElementById('contactForm')
-
-// function updateSubject(valEmail) {
-//   document.getElementById('customSubject').value = "Webform submission from " + valEmail;
-//   console.log(document.getElementById('customSubject').value)
-// }
-
-// form.addEventListener('submit', function(e){
-//   updateSubject(userEmail)
-  
-  
-// })
 
 /**
  * Sticky nav
