@@ -633,7 +633,6 @@ template {
 
 .quote-text {
   color: #f58c7c;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
@@ -3676,14 +3675,20 @@ input[type='checkbox'] {
 }
 
 .quote .quote-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .quote .quote-text {
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote .quote-text {
+    font-size: 1em;
   }
 }
 
@@ -3711,12 +3716,9 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quote {
-    height: 11em;
+    height: 10em;
     width: 31em;
     padding: 2em 3em;
-  }
-  .quote .quote-text {
-    font-size: 1.2em;
   }
 }
 
@@ -3752,7 +3754,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .quote {
-    height: 7em;
+    height: 8em;
     width: 24em;
     padding: 1.5em 0;
   }
@@ -6780,14 +6782,20 @@ input[type='checkbox'] {
 }
 
 .quote .quote-text {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.6em .6em 0 .6em;
   letter-spacing: .3em;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .quote .quote-text {
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .quote .quote-text {
+    font-size: 1em;
   }
 }
 
@@ -6815,12 +6823,9 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .quote {
-    height: 11em;
+    height: 10em;
     width: 31em;
     padding: 2em 3em;
-  }
-  .quote .quote-text {
-    font-size: 1.2em;
   }
 }
 
@@ -6856,7 +6861,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 1600px) {
   .quote {
-    height: 7em;
+    height: 8em;
     width: 24em;
     padding: 1.5em 0;
   }

@@ -606,11 +606,14 @@
     padding: 2em 1em;
     background: white;
     .quote-text{
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin: 0.6em .6em 0 .6em;
         letter-spacing: .3em;
         @media #{$breakpoint-sm} {
-            font-size: 1.4em;
+            font-size: 1.2em;
+        }
+        @media #{$breakpoint-md} {
+            font-size: 1em;
         }
         @media #{$breakpoint-lg} {
             margin: 1em .6em 0.4em .6em;
@@ -629,12 +632,9 @@
         }
     }
     @media #{$breakpoint-md} {
-        height: 11em;
+        height: 10em;
         width: 31em;
         padding: 2em 3em;
-        .quote-text{
-            font-size: 1.2em;
-        }
     }
     @media #{$breakpoint-lg} {
         height: 11em;
@@ -661,7 +661,7 @@
         }
     }
     @media #{$breakpoint-xxl} {
-        height: 7em;
+        height: 8em;
         width: 24em;
         padding: 1.5em 0;
         .quote-text{
