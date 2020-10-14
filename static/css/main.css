@@ -3917,6 +3917,23 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote .quote-text {
     margin: 1em .6em 0.4em .6em;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote .quote-text {
+    font-size: .9em;
+    padding: 0 2em;
+    margin: 1em .6em .6em .6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote .quote-text {
+    font-size: .8em;
+    padding: 0 2em;
+    margin: 0.6em .6em .6em .6em;
   }
 }
 
@@ -3929,10 +3946,6 @@ input[type='checkbox'] {
     height: 14em;
     width: 26em;
     padding: 1.5em;
-  }
-  .quote .quote-text {
-    margin: .6em .6em 0.4em .6em;
-    font-size: 1.4em;
   }
 }
 
@@ -3950,9 +3963,6 @@ input[type='checkbox'] {
     width: 32em;
     padding: 2em 3em;
   }
-  .quote .quote-text {
-    font-size: 1.1em;
-  }
   .quote .quote-author {
     font-size: .6em;
   }
@@ -3964,11 +3974,6 @@ input[type='checkbox'] {
     width: 25em;
     padding: 1em 0;
   }
-  .quote .quote-text {
-    font-size: .9em;
-    padding: 0 2em;
-    margin: 1em .6em .6em .6em;
-  }
   .quote .quote-author {
     font-size: .6em;
   }
@@ -3979,11 +3984,6 @@ input[type='checkbox'] {
     height: 8em;
     width: 24em;
     padding: 1.5em 0;
-  }
-  .quote .quote-text {
-    font-size: .8em;
-    padding: 0 2em;
-    margin: 0.6em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;
@@ -7024,6 +7024,23 @@ input[type='checkbox'] {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .quote .quote-text {
     margin: 1em .6em 0.4em .6em;
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .quote .quote-text {
+    font-size: .9em;
+    padding: 0 2em;
+    margin: 1em .6em .6em .6em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .quote .quote-text {
+    font-size: .8em;
+    padding: 0 2em;
+    margin: 0.6em .6em .6em .6em;
   }
 }
 
@@ -7036,10 +7053,6 @@ input[type='checkbox'] {
     height: 14em;
     width: 26em;
     padding: 1.5em;
-  }
-  .quote .quote-text {
-    margin: .6em .6em 0.4em .6em;
-    font-size: 1.4em;
   }
 }
 
@@ -7057,9 +7070,6 @@ input[type='checkbox'] {
     width: 32em;
     padding: 2em 3em;
   }
-  .quote .quote-text {
-    font-size: 1.1em;
-  }
   .quote .quote-author {
     font-size: .6em;
   }
@@ -7071,11 +7081,6 @@ input[type='checkbox'] {
     width: 25em;
     padding: 1em 0;
   }
-  .quote .quote-text {
-    font-size: .9em;
-    padding: 0 2em;
-    margin: 1em .6em .6em .6em;
-  }
   .quote .quote-author {
     font-size: .6em;
   }
@@ -7086,11 +7091,6 @@ input[type='checkbox'] {
     height: 8em;
     width: 24em;
     padding: 1.5em 0;
-  }
-  .quote .quote-text {
-    font-size: .8em;
-    padding: 0 2em;
-    margin: 0.6em .6em .6em .6em;
   }
   .quote .quote-author {
     font-size: .6em;

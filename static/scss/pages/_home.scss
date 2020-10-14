@@ -617,6 +617,17 @@
         }
         @media #{$breakpoint-lg} {
             margin: 1em .6em 0.4em .6em;
+            font-size: 1.1em;
+        }
+        @media #{$breakpoint-xl} {
+            font-size: .9em;
+            padding: 0 2em;
+            margin: 1em .6em .6em .6em;
+        }
+        @media #{$breakpoint-xxl} {
+            font-size: .8em;
+            padding: 0 2em;
+            margin: 0.6em .6em .6em .6em;
         }
     }
     .quote-author{
@@ -626,10 +637,6 @@
         height: 14em;
         width: 26em;
         padding: 1.5em;
-        .quote-text{
-            margin: .6em .6em 0.4em .6em;
-            font-size: 1.4em;
-        }
     }
     @media #{$breakpoint-md} {
         height: 10em;
@@ -640,9 +647,6 @@
         height: 11em;
         width: 32em;
         padding: 2em 3em;
-        .quote-text{
-            font-size: 1.1em;
-        }
         .quote-author{
             font-size: .6em;
         }
@@ -651,11 +655,6 @@
         height: 8em;
         width: 25em;
         padding: 1em 0;
-        .quote-text{
-            font-size: .9em;
-            padding: 0 2em;
-            margin: 1em .6em .6em .6em;
-        }
         .quote-author{
             font-size: .6em;
         }
@@ -664,11 +663,6 @@
         height: 8em;
         width: 24em;
         padding: 1.5em 0;
-        .quote-text{
-            font-size: .8em;
-            padding: 0 2em;
-            margin: 0.6em .6em .6em .6em;
-        }
         .quote-author{
             font-size: .6em;
         }
