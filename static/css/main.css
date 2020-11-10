@@ -8390,8 +8390,7 @@ input[type='checkbox'] {
 }
 
 .signature-package {
-  margin: 4em auto 0 auto;
-  padding-bottom: 4em;
+  margin: 4em auto 4em auto;
   text-align: center;
   height: auto;
   background: white;
@@ -8401,7 +8400,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px), only screen and (min-width: 1600px) {
   .signature-package {
-    margin: 2em 0 0 0;
+    margin: 2em 0 2em 0;
     width: 100%;
   }
 }
@@ -8473,7 +8472,7 @@ input[type='checkbox'] {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .coaching-package-item {
     margin: var(--gap) 0 0 var(--gap);
-    height: 24.5em;
+    height: auto;
     width: 18em;
   }
   .coaching-package-item:nth-child(5) {
@@ -8483,7 +8482,7 @@ input[type='checkbox'] {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) {
   .coaching-package-item {
-    height: 19em;
+    height: auto;
   }
   .coaching-package-item:nth-child(1) {
     -ms-grid-column: 2;
@@ -8496,18 +8495,6 @@ input[type='checkbox'] {
   .coaching-package-item:nth-child(5) {
     -ms-grid-column: 6;
     grid-column: 6;
-  }
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .coaching-package-item {
-    height: 24em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
-  .coaching-package-item {
-    height: 17em;
   }
 }
 

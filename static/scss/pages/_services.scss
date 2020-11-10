@@ -619,15 +619,15 @@
 // ---------------------------------------------------------------
 
 .signature-package{
-    margin: 4em auto 0 auto;
-    padding-bottom: 4em;
+    margin: 4em auto 4em auto;
+    // padding-bottom: 4em;
     text-align: center;
     height: auto;
     background: white;
     position: relative;
     z-index: 5;
     @media #{$breakpoint-md}, #{$breakpoint-lg}, #{$breakpoint-xl}, #{$breakpoint-xxl}{
-        margin: 2em 0 0 0;
+        margin: 2em 0 2em 0;
         width: 100%;
     }
     .how-title{
@@ -677,14 +677,16 @@
     }
     @media #{$breakpoint-md}{
         margin: var(--gap) 0 0 var(--gap);
-        height: 24.5em;
+        // height: 24.5em;
+        height: auto;
         width: 18em;
         &:nth-child(5){
             margin-top: 2em;
         }
     }
     @media #{$breakpoint-lg}, #{$breakpoint-xl}{
-        height: 19em;
+        // height: 19em;
+        height: auto;
         &:nth-child(1){
             grid-column: 2;
         }
@@ -695,12 +697,12 @@
             grid-column: 6;
         }
     }
-    @media #{$breakpoint-lg}{
-        height: 24em;
-    }
-    @media #{$breakpoint-xxl}{
-        height: 17em;
-    }
+    // @media #{$breakpoint-lg}{
+    //     height: 24em;
+    // }
+    // @media #{$breakpoint-xxl}{
+    //     height: 17em;
+    // }
 }
 
 .coaching-package-intro{
@@ -780,9 +782,6 @@
         width: 12em;
         height: 8em;
     }
-
-    
-    
 }
 
 .price-content{
