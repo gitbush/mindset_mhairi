@@ -2832,7 +2832,7 @@ input[type='checkbox'] {
 }
 
 .quiz-banner {
-  background-color: #e4f1f1;
+  background-color: #f58c7c;
   padding: 1em .8em;
   text-align: center;
   width: 100%;
@@ -2869,7 +2869,7 @@ input[type='checkbox'] {
 }
 
 .quiz-banner .normal-text {
-  color: #3b403f;
+  color: white;
   font-size: 1.1em;
 }
 
@@ -2894,7 +2894,7 @@ input[type='checkbox'] {
 }
 
 .quiz-banner .sect-subtitle {
-  color: #3b403f;
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
